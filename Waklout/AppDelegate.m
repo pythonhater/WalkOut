@@ -7,13 +7,13 @@
 //
 
 #import "AppDelegate.h"
-#import "WK_TabbarViewController.h"
+#import "RDVTabBarController.h"
 #import "RDVTabBarItem.h"
 #import "HomeViewController.h"
 
 
 @interface AppDelegate ()
-@property (strong, nonatomic) WK_TabbarViewController *tabBarViewController;
+@property (strong, nonatomic) UIViewController *rootViewController;
 
 @end
 
@@ -25,7 +25,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self setupViewControllers];
-    self.window.rootViewController = self.tabBarViewController;
+    self.window.rootViewController = self.rootViewController;
     [self.window makeKeyAndVisible];
     
     [self customizeInterface];
@@ -34,30 +34,30 @@
 
 - (void)setupViewControllers {
     HomeViewController *firstViewController = [[HomeViewController alloc] init];
-    firstViewController.title = @"FIRST";
+    firstViewController.title = NSLocalizedString(@"HOME", nil);
     UIViewController *firstNavigationController = [[UINavigationController alloc]
                                                    initWithRootViewController:firstViewController];
     
     UIViewController *secondViewController = [[UIViewController alloc] init];
-    secondViewController.title = @"SECOND";
+    secondViewController.title = NSLocalizedString(@"LIFE", nil);
     UIViewController *secondNavigationController = [[UINavigationController alloc]
                                                     initWithRootViewController:secondViewController];
     
     UIViewController *thirdViewController = [[UIViewController alloc] init];
-    thirdViewController.title = @"THIRD";
+    thirdViewController.title = NSLocalizedString(@"MINE", nil);
     UIViewController *thirdNavigationController = [[UINavigationController alloc]
                                                    initWithRootViewController:thirdViewController];
     
-    WK_TabbarViewController *tabBarController = [[WK_TabbarViewController alloc] init];
+    RDVTabBarController *tabBarController = [[RDVTabBarController alloc] init];
     [tabBarController setViewControllers:@[firstNavigationController, secondNavigationController,
                                            thirdNavigationController]];
-    self.tabBarViewController = tabBarController;
+    self.rootViewController = tabBarController;
     
     [self customizeTabBarForController:tabBarController];
 }
 
 
-- (void)customizeTabBarForController:(WK_TabbarViewController *)tabBarController {
+- (void)customizeTabBarForController:(RDVTabBarController *)tabBarController {
     UIImage *finishedImage = [UIImage imageNamed:@"tabbar_selected_background"];
     UIImage *unfinishedImage = [UIImage imageNamed:@"tabbar_normal_background"];
     NSArray *tabBarItemImages = @[@"first", @"second", @"third"];
