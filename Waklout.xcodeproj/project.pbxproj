@@ -10,7 +10,6 @@
 		05E75AF21B4BCAE90098FC6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E75AF11B4BCAE90098FC6E /* main.m */; };
 		05E75AF51B4BCAE90098FC6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E75AF41B4BCAE90098FC6E /* AppDelegate.m */; };
 		05E75AF81B4BCAE90098FC6E /* Waklout.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 05E75AF61B4BCAE90098FC6E /* Waklout.xcdatamodeld */; };
-		05E75AFB1B4BCAE90098FC6E /* WK_TabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E75AFA1B4BCAE90098FC6E /* WK_TabbarViewController.m */; };
 		05E75B001B4BCAE90098FC6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05E75AFF1B4BCAE90098FC6E /* Images.xcassets */; };
 		05E75B0F1B4BCAE90098FC6E /* WakloutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E75B0E1B4BCAE90098FC6E /* WakloutTests.m */; };
 		05E75B201B4BCECC0098FC6E /* RDVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E75B1B1B4BCECC0098FC6E /* RDVTabBar.m */; };
@@ -40,8 +39,6 @@
 		05E75AF31B4BCAE90098FC6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		05E75AF41B4BCAE90098FC6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		05E75AF71B4BCAE90098FC6E /* Waklout.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Waklout.xcdatamodel; sourceTree = "<group>"; };
-		05E75AF91B4BCAE90098FC6E /* WK_TabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WK_TabbarViewController.h; sourceTree = "<group>"; };
-		05E75AFA1B4BCAE90098FC6E /* WK_TabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WK_TabbarViewController.m; sourceTree = "<group>"; };
 		05E75AFF1B4BCAE90098FC6E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		05E75B081B4BCAE90098FC6E /* WakloutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WakloutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E75B0D1B4BCAE90098FC6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,8 +101,6 @@
 			children = (
 				05E75AF31B4BCAE90098FC6E /* AppDelegate.h */,
 				05E75AF41B4BCAE90098FC6E /* AppDelegate.m */,
-				05E75AF91B4BCAE90098FC6E /* WK_TabbarViewController.h */,
-				05E75AFA1B4BCAE90098FC6E /* WK_TabbarViewController.m */,
 				05E7CADC1B4CB72A00C8A220 /* Models */,
 				05E75B4F1B4BDA6A0098FC6E /* Controllers */,
 				05E75B181B4BCEC10098FC6E /* Vendors */,
@@ -289,7 +284,6 @@
 				05E75AF51B4BCAE90098FC6E /* AppDelegate.m in Sources */,
 				05E75AF21B4BCAE90098FC6E /* main.m in Sources */,
 				05E7CADF1B4CB74000C8A220 /* User.m in Sources */,
-				05E75AFB1B4BCAE90098FC6E /* WK_TabbarViewController.m in Sources */,
 				05E75B201B4BCECC0098FC6E /* RDVTabBar.m in Sources */,
 				05E75B211B4BCECC0098FC6E /* RDVTabBarController.m in Sources */,
 				05E75AF81B4BCAE90098FC6E /* Waklout.xcdatamodeld in Sources */,
