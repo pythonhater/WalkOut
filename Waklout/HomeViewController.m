@@ -24,6 +24,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.appDelegate = [[UIApplication sharedApplication] delegate];
+    
+    
+    NSMutableArray *firstArray = [NSMutableArray array];
+    NSMutableArray *secondArray = [NSMutableArray array];
+    [firstArray addObject:secondArray];
+    [secondArray addObject:firstArray];
+    
 }
 - (IBAction)addIntoDataSource:(id)sender {
     User *user = [NSEntityDescription insertNewObjectForEntityForName:@"User" inManagedObjectContext:self.appDelegate.managedObjectContext];
