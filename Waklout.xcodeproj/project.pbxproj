@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05E75AF21B4BCAE90098FC6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E75AF11B4BCAE90098FC6E /* main.m */; };
+		05E75AF51B4BCAE90098FC6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E75AF41B4BCAE90098FC6E /* AppDelegate.m */; };
+		05E75AF81B4BCAE90098FC6E /* Waklout.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 05E75AF61B4BCAE90098FC6E /* Waklout.xcdatamodeld */; };
+		05E75AFB1B4BCAE90098FC6E /* WK_TabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E75AFA1B4BCAE90098FC6E /* WK_TabbarViewController.m */; };
+		05E75B001B4BCAE90098FC6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05E75AFF1B4BCAE90098FC6E /* Images.xcassets */; };
+		05E75B0F1B4BCAE90098FC6E /* WakloutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E75B0E1B4BCAE90098FC6E /* WakloutTests.m */; };
+		05E75B201B4BCECC0098FC6E /* RDVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E75B1B1B4BCECC0098FC6E /* RDVTabBar.m */; };
+		05E75B211B4BCECC0098FC6E /* RDVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E75B1D1B4BCECC0098FC6E /* RDVTabBarController.m */; };
+		05E75B221B4BCECC0098FC6E /* RDVTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E75B1F1B4BCECC0098FC6E /* RDVTabBarItem.m */; };
+		05E75B4E1B4BDA4B0098FC6E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E75B4D1B4BDA4B0098FC6E /* HomeViewController.m */; };
+		05E7CADB1B4CB4A600C8A220 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05E7CADA1B4CB4A600C8A220 /* HomeViewController.xib */; };
+		05E7CADF1B4CB74000C8A220 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E7CADE1B4CB74000C8A220 /* User.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05E75B091B4BCAE90098FC6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05E75AE41B4BCAE90098FC6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05E75AEB1B4BCAE90098FC6E;
+			remoteInfo = Waklout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05E75AEC1B4BCAE90098FC6E /* Waklout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Waklout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05E75AF01B4BCAE90098FC6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05E75AF11B4BCAE90098FC6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		05E75AF31B4BCAE90098FC6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		05E75AF41B4BCAE90098FC6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		05E75AF71B4BCAE90098FC6E /* Waklout.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Waklout.xcdatamodel; sourceTree = "<group>"; };
+		05E75AF91B4BCAE90098FC6E /* WK_TabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WK_TabbarViewController.h; sourceTree = "<group>"; };
+		05E75AFA1B4BCAE90098FC6E /* WK_TabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WK_TabbarViewController.m; sourceTree = "<group>"; };
+		05E75AFF1B4BCAE90098FC6E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		05E75B081B4BCAE90098FC6E /* WakloutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WakloutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05E75B0D1B4BCAE90098FC6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05E75B0E1B4BCAE90098FC6E /* WakloutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WakloutTests.m; sourceTree = "<group>"; };
+		05E75B1A1B4BCECC0098FC6E /* RDVTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBar.h; sourceTree = "<group>"; };
+		05E75B1B1B4BCECC0098FC6E /* RDVTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBar.m; sourceTree = "<group>"; };
+		05E75B1C1B4BCECC0098FC6E /* RDVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarController.h; sourceTree = "<group>"; };
+		05E75B1D1B4BCECC0098FC6E /* RDVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarController.m; sourceTree = "<group>"; };
+		05E75B1E1B4BCECC0098FC6E /* RDVTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarItem.h; sourceTree = "<group>"; };
+		05E75B1F1B4BCECC0098FC6E /* RDVTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarItem.m; sourceTree = "<group>"; };
+		05E75B4C1B4BDA4B0098FC6E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = ../HomeViewController.h; sourceTree = "<group>"; };
+		05E75B4D1B4BDA4B0098FC6E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = ../HomeViewController.m; sourceTree = "<group>"; };
+		05E7CADA1B4CB4A600C8A220 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		05E7CADD1B4CB74000C8A220 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		05E7CADE1B4CB74000C8A220 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05E75AE91B4BCAE90098FC6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05E75B051B4BCAE90098FC6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05E75AE31B4BCAE90098FC6E = {
+			isa = PBXGroup;
+			children = (
+				05E75AEE1B4BCAE90098FC6E /* Waklout */,
+				05E75B0B1B4BCAE90098FC6E /* WakloutTests */,
+				05E75AED1B4BCAE90098FC6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		05E75AED1B4BCAE90098FC6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05E75AEC1B4BCAE90098FC6E /* Waklout.app */,
+				05E75B081B4BCAE90098FC6E /* WakloutTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05E75AEE1B4BCAE90098FC6E /* Waklout */ = {
+			isa = PBXGroup;
+			children = (
+				05E75AF31B4BCAE90098FC6E /* AppDelegate.h */,
+				05E75AF41B4BCAE90098FC6E /* AppDelegate.m */,
+				05E75AF91B4BCAE90098FC6E /* WK_TabbarViewController.h */,
+				05E75AFA1B4BCAE90098FC6E /* WK_TabbarViewController.m */,
+				05E7CADC1B4CB72A00C8A220 /* Models */,
+				05E75B4F1B4BDA6A0098FC6E /* Controllers */,
+				05E75B181B4BCEC10098FC6E /* Vendors */,
+				05E75AFF1B4BCAE90098FC6E /* Images.xcassets */,
+				05E75AF61B4BCAE90098FC6E /* Waklout.xcdatamodeld */,
+				05E75AEF1B4BCAE90098FC6E /* Supporting Files */,
+			);
+			path = Waklout;
+			sourceTree = "<group>";
+		};
+		05E75AEF1B4BCAE90098FC6E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				05E75AF01B4BCAE90098FC6E /* Info.plist */,
+				05E75AF11B4BCAE90098FC6E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		05E75B0B1B4BCAE90098FC6E /* WakloutTests */ = {
+			isa = PBXGroup;
+			children = (
+				05E75B0E1B4BCAE90098FC6E /* WakloutTests.m */,
+				05E75B0C1B4BCAE90098FC6E /* Supporting Files */,
+			);
+			path = WakloutTests;
+			sourceTree = "<group>";
+		};
+		05E75B0C1B4BCAE90098FC6E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				05E75B0D1B4BCAE90098FC6E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		05E75B181B4BCEC10098FC6E /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				05E75B191B4BCECC0098FC6E /* RDVTabBarController */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		05E75B191B4BCECC0098FC6E /* RDVTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				05E75B1A1B4BCECC0098FC6E /* RDVTabBar.h */,
+				05E75B1B1B4BCECC0098FC6E /* RDVTabBar.m */,
+				05E75B1C1B4BCECC0098FC6E /* RDVTabBarController.h */,
+				05E75B1D1B4BCECC0098FC6E /* RDVTabBarController.m */,
+				05E75B1E1B4BCECC0098FC6E /* RDVTabBarItem.h */,
+				05E75B1F1B4BCECC0098FC6E /* RDVTabBarItem.m */,
+			);
+			path = RDVTabBarController;
+			sourceTree = "<group>";
+		};
+		05E75B4F1B4BDA6A0098FC6E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				05E75B4C1B4BDA4B0098FC6E /* HomeViewController.h */,
+				05E75B4D1B4BDA4B0098FC6E /* HomeViewController.m */,
+				05E7CADA1B4CB4A600C8A220 /* HomeViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		05E7CADC1B4CB72A00C8A220 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				05E7CADD1B4CB74000C8A220 /* User.h */,
+				05E7CADE1B4CB74000C8A220 /* User.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05E75AEB1B4BCAE90098FC6E /* Waklout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05E75B121B4BCAE90098FC6E /* Build configuration list for PBXNativeTarget "Waklout" */;
+			buildPhases = (
+				05E75AE81B4BCAE90098FC6E /* Sources */,
+				05E75AE91B4BCAE90098FC6E /* Frameworks */,
+				05E75AEA1B4BCAE90098FC6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Waklout;
+			productName = Waklout;
+			productReference = 05E75AEC1B4BCAE90098FC6E /* Waklout.app */;
+			productType = "com.apple.product-type.application";
+		};
+		05E75B071B4BCAE90098FC6E /* WakloutTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05E75B151B4BCAE90098FC6E /* Build configuration list for PBXNativeTarget "WakloutTests" */;
+			buildPhases = (
+				05E75B041B4BCAE90098FC6E /* Sources */,
+				05E75B051B4BCAE90098FC6E /* Frameworks */,
+				05E75B061B4BCAE90098FC6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05E75B0A1B4BCAE90098FC6E /* PBXTargetDependency */,
+			);
+			name = WakloutTests;
+			productName = WakloutTests;
+			productReference = 05E75B081B4BCAE90098FC6E /* WakloutTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05E75AE41B4BCAE90098FC6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = janlee;
+				TargetAttributes = {
+					05E75AEB1B4BCAE90098FC6E = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					05E75B071B4BCAE90098FC6E = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 05E75AEB1B4BCAE90098FC6E;
+					};
+				};
+			};
+			buildConfigurationList = 05E75AE71B4BCAE90098FC6E /* Build configuration list for PBXProject "Waklout" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05E75AE31B4BCAE90098FC6E;
+			productRefGroup = 05E75AED1B4BCAE90098FC6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05E75AEB1B4BCAE90098FC6E /* Waklout */,
+				05E75B071B4BCAE90098FC6E /* WakloutTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05E75AEA1B4BCAE90098FC6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05E75B001B4BCAE90098FC6E /* Images.xcassets in Resources */,
+				05E7CADB1B4CB4A600C8A220 /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05E75B061B4BCAE90098FC6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05E75AE81B4BCAE90098FC6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05E75AF51B4BCAE90098FC6E /* AppDelegate.m in Sources */,
+				05E75AF21B4BCAE90098FC6E /* main.m in Sources */,
+				05E7CADF1B4CB74000C8A220 /* User.m in Sources */,
+				05E75AFB1B4BCAE90098FC6E /* WK_TabbarViewController.m in Sources */,
+				05E75B201B4BCECC0098FC6E /* RDVTabBar.m in Sources */,
+				05E75B211B4BCECC0098FC6E /* RDVTabBarController.m in Sources */,
+				05E75AF81B4BCAE90098FC6E /* Waklout.xcdatamodeld in Sources */,
+				05E75B221B4BCECC0098FC6E /* RDVTabBarItem.m in Sources */,
+				05E75B4E1B4BDA4B0098FC6E /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05E75B041B4BCAE90098FC6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05E75B0F1B4BCAE90098FC6E /* WakloutTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05E75B0A1B4BCAE90098FC6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05E75AEB1B4BCAE90098FC6E /* Waklout */;
+			targetProxy = 05E75B091B4BCAE90098FC6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05E75B101B4BCAE90098FC6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		05E75B111B4BCAE90098FC6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05E75B131B4BCAE90098FC6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Waklout/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		05E75B141B4BCAE90098FC6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Waklout/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		05E75B161B4BCAE90098FC6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WakloutTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Waklout.app/Waklout";
+			};
+			name = Debug;
+		};
+		05E75B171B4BCAE90098FC6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WakloutTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Waklout.app/Waklout";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05E75AE71B4BCAE90098FC6E /* Build configuration list for PBXProject "Waklout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05E75B101B4BCAE90098FC6E /* Debug */,
+				05E75B111B4BCAE90098FC6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05E75B121B4BCAE90098FC6E /* Build configuration list for PBXNativeTarget "Waklout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05E75B131B4BCAE90098FC6E /* Debug */,
+				05E75B141B4BCAE90098FC6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05E75B151B4BCAE90098FC6E /* Build configuration list for PBXNativeTarget "WakloutTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05E75B161B4BCAE90098FC6E /* Debug */,
+				05E75B171B4BCAE90098FC6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		05E75AF61B4BCAE90098FC6E /* Waklout.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				05E75AF71B4BCAE90098FC6E /* Waklout.xcdatamodel */,
+			);
+			currentVersion = 05E75AF71B4BCAE90098FC6E /* Waklout.xcdatamodel */;
+			path = Waklout.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 05E75AE41B4BCAE90098FC6E /* Project object */;
+}
