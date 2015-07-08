@@ -19,6 +19,8 @@
 		05E75B4E1B4BDA4B0098FC6E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E75B4D1B4BDA4B0098FC6E /* HomeViewController.m */; };
 		05E7CADB1B4CB4A600C8A220 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05E7CADA1B4CB4A600C8A220 /* HomeViewController.xib */; };
 		05E7CADF1B4CB74000C8A220 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E7CADE1B4CB74000C8A220 /* User.m */; };
+		05E7CAFD1B4D242300C8A220 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E7CAFC1B4D242300C8A220 /* MineViewController.m */; };
+		05E7CB001B4D27F800C8A220 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 05E7CB021B4D27F800C8A220 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		05E7CADA1B4CB4A600C8A220 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		05E7CADD1B4CB74000C8A220 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		05E7CADE1B4CB74000C8A220 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		05E7CAFB1B4D242300C8A220 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		05E7CAFC1B4D242300C8A220 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		05E7CB011B4D27F800C8A220 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		05E7CB031B4D280500C8A220 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,7 @@
 			children = (
 				05E75AF01B4BCAE90098FC6E /* Info.plist */,
 				05E75AF11B4BCAE90098FC6E /* main.m */,
+				05E7CB021B4D27F800C8A220 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -163,6 +170,8 @@
 				05E75B4C1B4BDA4B0098FC6E /* HomeViewController.h */,
 				05E75B4D1B4BDA4B0098FC6E /* HomeViewController.m */,
 				05E7CADA1B4CB4A600C8A220 /* HomeViewController.xib */,
+				05E7CAFB1B4D242300C8A220 /* MineViewController.h */,
+				05E7CAFC1B4D242300C8A220 /* MineViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -239,6 +248,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 05E75AE31B4BCAE90098FC6E;
 			productRefGroup = 05E75AED1B4BCAE90098FC6E /* Products */;
@@ -257,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05E75B001B4BCAE90098FC6E /* Images.xcassets in Resources */,
+				05E7CB001B4D27F800C8A220 /* Localizable.strings in Resources */,
 				05E7CADB1B4CB4A600C8A220 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +293,7 @@
 				05E75B201B4BCECC0098FC6E /* RDVTabBar.m in Sources */,
 				05E75B211B4BCECC0098FC6E /* RDVTabBarController.m in Sources */,
 				05E75AF81B4BCAE90098FC6E /* Waklout.xcdatamodeld in Sources */,
+				05E7CAFD1B4D242300C8A220 /* MineViewController.m in Sources */,
 				05E75B221B4BCECC0098FC6E /* RDVTabBarItem.m in Sources */,
 				05E75B4E1B4BDA4B0098FC6E /* HomeViewController.m in Sources */,
 			);
@@ -304,6 +316,18 @@
 			targetProxy = 05E75B091B4BCAE90098FC6E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		05E7CB021B4D27F800C8A220 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05E7CB011B4D27F800C8A220 /* en */,
+				05E7CB031B4D280500C8A220 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		05E75B101B4BCAE90098FC6E /* Debug */ = {
