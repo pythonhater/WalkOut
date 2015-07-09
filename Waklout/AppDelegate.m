@@ -9,7 +9,9 @@
 #import "AppDelegate.h"
 #import "RDVTabBarController.h"
 #import "RDVTabBarItem.h"
-#import "HomeViewController.h"
+#import "WK_NavigationController.h"
+#import "WK_HomeViewController.h"
+#import "WK_MineViewController.h"
 
 
 @interface AppDelegate ()
@@ -33,24 +35,22 @@
 }
 
 - (void)setupViewControllers {
-    HomeViewController *firstViewController = [[HomeViewController alloc] init];
-    firstViewController.title = NSLocalizedString(@"HOME", nil);
-    UIViewController *firstNavigationController = [[UINavigationController alloc]
-                                                   initWithRootViewController:firstViewController];
+    WK_HomeViewController *homeViewController = [[WK_HomeViewController alloc] init];
+    WK_NavigationController *homeNavigationController = [[WK_NavigationController alloc]
+                                                   initWithRootViewController:homeViewController];
     
-    UIViewController *secondViewController = [[UIViewController alloc] init];
-    secondViewController.title = NSLocalizedString(@"LIFE", nil);
-    UIViewController *secondNavigationController = [[UINavigationController alloc]
-                                                    initWithRootViewController:secondViewController];
+    UIViewController *lifeViewController = [[UIViewController alloc] init];
+    lifeViewController.title = NSLocalizedString(@"LIFE", nil);
+    WK_NavigationController *lifeNavigationController = [[WK_NavigationController alloc]
+                                                    initWithRootViewController:lifeViewController];
     
-    UIViewController *thirdViewController = [[UIViewController alloc] init];
-    thirdViewController.title = NSLocalizedString(@"MINE", nil);
-    UIViewController *thirdNavigationController = [[UINavigationController alloc]
-                                                   initWithRootViewController:thirdViewController];
+    WK_MineViewController *mineViewController = [[WK_MineViewController alloc] init];
+    WK_NavigationController *mineNavigationController = [[WK_NavigationController alloc]
+                                                   initWithRootViewController:mineViewController];
     
     RDVTabBarController *tabBarController = [[RDVTabBarController alloc] init];
-    [tabBarController setViewControllers:@[firstNavigationController, secondNavigationController,
-                                           thirdNavigationController]];
+    [tabBarController setViewControllers:@[homeNavigationController, lifeNavigationController,
+                                           mineNavigationController]];
     self.rootViewController = tabBarController;
     
     [self customizeTabBarForController:tabBarController];

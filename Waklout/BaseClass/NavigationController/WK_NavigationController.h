@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YH_NavigationController : UINavigationController
+@interface WK_NavigationController : UINavigationController
 
 @property (nonatomic, strong) UIView *overlayView;
 

@@ -7,7 +7,7 @@
 
 #import "M16HUDUtil.h"
 
-#import "YH_NavigationController.h"
+#import "WK_NavigationController.h"
 
 static NSInteger const kLinkStateHeight = 36;
 static NSInteger const kLinkStateImagePaddingLeft = 18;
@@ -558,8 +558,8 @@ static NSInteger const kLinkStateLabelPaddingLeft = 5;
 - (UIView *)overlayView
 {
     if (_overlayView == nil) {
-        if ([self.navigationController isKindOfClass:[YH_NavigationController class]]) {
-            YH_NavigationController *navi = (YH_NavigationController *)self.navigationController;
+        if ([self.navigationController isKindOfClass:[WK_NavigationController class]]) {
+            WK_NavigationController *navi = (WK_NavigationController *)self.navigationController;
             if (navi.overlayView){
                 _overlayView = navi.overlayView;
             }
@@ -642,7 +642,7 @@ static NSInteger const kLinkStateLabelPaddingLeft = 5;
 {
     if (self.linkStateView.hidden == YES && self.scrollableView) {
         self.linkStateView.hidden = NO;
-        self.linkStateLabel.text = LOCALIZATION(@"LOSTINTERNET");
+        self.linkStateLabel.text = NSLocalizedString(@"LOSTINTERNET", nil);
         CGRect viewFrame = self.scrollableView.frame;
         viewFrame.origin.y +=  CGRectGetMaxY(self.linkStateView.frame);
         viewFrame.size.height -= CGRectGetMaxY(self.linkStateView.frame);

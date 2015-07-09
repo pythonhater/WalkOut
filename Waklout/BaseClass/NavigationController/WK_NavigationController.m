@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 YOHO. All rights reserved.
 //
 
-#import "YH_NavigationController.h"
+#import "WK_NavigationController.h"
 
 #if DEBUG
 
@@ -14,13 +14,13 @@
 
 #endif
 
-@interface YH_NavigationController ()
+@interface WK_NavigationController ()
 
 @property (strong, nonatomic) UISwipeGestureRecognizer *swipeGestureRecognizer;
 
 @end
 
-@implementation YH_NavigationController
+@implementation WK_NavigationController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

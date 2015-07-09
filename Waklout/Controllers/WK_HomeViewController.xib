@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WK_HomeViewController">
             <connections>
                 <outlet property="ageTextField" destination="Tke-4w-P53" id="aEq-9v-ACy"/>
                 <outlet property="nameTextField" destination="TgR-vv-K81" id="idA-Nf-6a6"/>

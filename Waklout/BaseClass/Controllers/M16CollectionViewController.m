@@ -15,7 +15,7 @@
 {
     [super viewDidLoad];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(languageChanged:) name:kNotificationLanguageChanged object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(languageChanged:) name:kNotificationLanguageChanged object:nil];
 
     self.view.backgroundColor = [UIColor whiteColor];
     
@@ -135,13 +135,13 @@
     if (self.collectionView.showsPullToRefresh == false) {
         return;
     }
-    self.linkStateLabel.text = LOCALIZATION(@"LOSTINTERNET");
-    [self.collectionView.pullToRefreshView setTitle:LOCALIZATION(@"LOADING") forState:SVPullToRefreshStateLoading];
-    [self.collectionView.pullToRefreshView setTitle:LOCALIZATION(@"RELEASETOREFRESH") forState:SVPullToRefreshStateTriggered];
-    [self.collectionView.pullToRefreshView setTitle:LOCALIZATION(@"PULLTOREFRESH") forState:SVPullToRefreshStateStopped];
+    self.linkStateLabel.text = NSLocalizedString(@"LOSTINTERNET", nil);
+    [self.collectionView.pullToRefreshView setTitle:NSLocalizedString(@"LOADING", nil) forState:SVPullToRefreshStateLoading];
+    [self.collectionView.pullToRefreshView setTitle:NSLocalizedString(@"RELEASETOREFRESH", nil) forState:SVPullToRefreshStateTriggered];
+    [self.collectionView.pullToRefreshView setTitle:NSLocalizedString(@"PULLTOREFRESH", nil) forState:SVPullToRefreshStateStopped];
     if (self.lastRefreshTime > 1) {
         NSDate *date= [NSDate dateWithTimeIntervalSince1970:self.lastRefreshTime];
-        NSString *refreshtip =[NSString stringWithFormat:@"%@: %@",LOCALIZATION(@"UPDATETO"),[NSString stringWithDate:date dateFormat:@"yyyy-MM-dd HH:mm"]];
+        NSString *refreshtip =[NSString stringWithFormat:@"%@: %@",NSLocalizedString(@"UPDATETO", nil),[NSString stringWithDate:date dateFormat:@"yyyy-MM-dd HH:mm"]];
         [self.collectionView.pullToRefreshView setTitle:refreshtip forState:SVPullToRefreshStateStopped];
         [self.collectionView.pullToRefreshView setTitle:refreshtip forState:SVPullToRefreshStateTriggered];
         [self.collectionView.pullToRefreshView setTitle:refreshtip forState:SVPullToRefreshStateLoading];

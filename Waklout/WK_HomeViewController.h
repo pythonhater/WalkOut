@@ -1,5 +1,5 @@
 //
-//  HomeViewController.h
+//  WK_HomeViewController.h
 //  Waklout
 //
 //  Created by yoho on 15/7/7.
@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "M16ViewController.h"
 
-@interface HomeViewController : UIViewController
+@interface WK_HomeViewController : M16ViewController
 
 @end

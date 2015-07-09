@@ -1086,42 +1086,42 @@ BOOL yoho_option_contains_bit(NSUInteger option, NSUInteger bit)
 
 - (void)alert:(NSString *)message type:(YHAlertType)type completion:(dispatch_block_t)completion
 {
-    MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:self];
-    hud.detailsLabelFont = [UIFont systemFontOfSize:12.0f];
-    hud.detailsLabelText = message;
-    hud.yOffset = -80.0f;
-    hud.removeFromSuperViewOnHide = YES;
-    
-    NSString *alertImageName = @"";
-    if (type == YHAlertTypeFail) {
-        alertImageName = @"shared_alert_fail";
-    }
-    else if (type == YHAlertTypeSuccess) {
-        alertImageName = @"shared_alert_success";
-    }
-    else if (type == YHAlertTypeNetwork) {
-        alertImageName = @"shared_alert_network";
-    }
-    hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:alertImageName]];
-    hud.mode = MBProgressHUDModeCustomView;
-    
-    [self addSubview:hud];
-    [hud show:YES];
-    double delayInSeconds = 2.0;
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-        [hud hide:YES];
-        if (completion) {
-            completion();
-        }
-    });
+//    MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:self];
+//    hud.detailsLabelFont = [UIFont systemFontOfSize:12.0f];
+//    hud.detailsLabelText = message;
+//    hud.yOffset = -80.0f;
+//    hud.removeFromSuperViewOnHide = YES;
+//    
+//    NSString *alertImageName = @"";
+//    if (type == YHAlertTypeFail) {
+//        alertImageName = @"shared_alert_fail";
+//    }
+//    else if (type == YHAlertTypeSuccess) {
+//        alertImageName = @"shared_alert_success";
+//    }
+//    else if (type == YHAlertTypeNetwork) {
+//        alertImageName = @"shared_alert_network";
+//    }
+//    hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:alertImageName]];
+//    hud.mode = MBProgressHUDModeCustomView;
+//    
+//    [self addSubview:hud];
+//    [hud show:YES];
+//    double delayInSeconds = 2.0;
+//    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+//    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+//        [hud hide:YES];
+//        if (completion) {
+//            completion();
+//        }
+//    });
 }
 
 
 - (void)alertNetwork
 {
 
-    [self alert:NSLocalizedInfoPlistString(@"network failure, please try again later.", @"") type:YHAlertTypeNetwork];
+//    [self alert:NSLocalizedInfoPlistString(@"network failure, please try again later.", @"") type:YHAlertTypeNetwork];
 }
 
 
@@ -1134,21 +1134,21 @@ BOOL yoho_option_contains_bit(NSUInteger option, NSUInteger bit)
 
 - (void)showWait
 {
-    MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:self];
-    hud.yOffset = -80.0f;
-    //    hud.removeFromSuperViewOnHide = YES;
-    hud.tag = kTagWaitView;
-    hud.mode = MBProgressHUDModeIndeterminate;
-    [self addSubview:hud];
-    [self bringSubviewToFront:hud];
-    [hud show:YES];
+//    MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:self];
+//    hud.yOffset = -80.0f;
+//    //    hud.removeFromSuperViewOnHide = YES;
+//    hud.tag = kTagWaitView;
+//    hud.mode = MBProgressHUDModeIndeterminate;
+//    [self addSubview:hud];
+//    [self bringSubviewToFront:hud];
+//    [hud show:YES];
 }
 
 
 - (void)hideWait
 {
-    [[self viewWithTag:kTagWaitView] removeFromSuperview];
-    [MBProgressHUD hideHUDForView:self animated:NO];
+//    [[self viewWithTag:kTagWaitView] removeFromSuperview];
+//    [MBProgressHUD hideHUDForView:self animated:NO];
 }
 
 @end
@@ -1394,27 +1394,27 @@ static NSDateFormatter *formatter_ = nil;
 @end
 
 
-@implementation MBProgressHUD (YOHO)
-
-+ (MBProgressHUD *)alertMessage:(NSString *)aMessage addedTo:(UIView *)view animated:(BOOL)animated
-{
-    return [MBProgressHUD alertMessage:aMessage withDuration:0.5 addedTo:view animated:animated];
-}
-
-
-+ (MBProgressHUD *)alertMessage:(NSString *)aMessage withDuration:(double)duration addedTo:(UIView *)view animated:(BOOL)animated
-{
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:animated];
-    hud.labelText = aMessage;
-    double delayInSeconds = duration;
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-        [MBProgressHUD hideHUDForView:view animated:animated];
-    });
-    return hud;
-}
-
-@end
+//@implementation MBProgressHUD (YOHO)
+//
+//+ (MBProgressHUD *)alertMessage:(NSString *)aMessage addedTo:(UIView *)view animated:(BOOL)animated
+//{
+//    return [MBProgressHUD alertMessage:aMessage withDuration:0.5 addedTo:view animated:animated];
+//}
+//
+//
+//+ (MBProgressHUD *)alertMessage:(NSString *)aMessage withDuration:(double)duration addedTo:(UIView *)view animated:(BOOL)animated
+//{
+//    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:animated];
+//    hud.labelText = aMessage;
+//    double delayInSeconds = duration;
+//    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+//    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+//        [MBProgressHUD hideHUDForView:view animated:animated];
+//    });
+//    return hud;
+//}
+//
+//@end
 
 
 @implementation UITableView (YOHO)

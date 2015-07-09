@@ -1,16 +1,16 @@
 //
-//  HomeViewController.m
+//  WK_HomeViewController.m
 //  Waklout
 //
 //  Created by yoho on 15/7/7.
 //  Copyright (c) 2015年 janlee. All rights reserved.
 //
 
-#import "HomeViewController.h"
+#import "WK_HomeViewController.h"
 #import "AppDelegate.h"
 #import "User.h"
 
-@interface HomeViewController ()
+@interface WK_HomeViewController ()
 @property (strong, nonatomic) IBOutlet UITextField *nameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *ageTextField;
 @property (strong, nonatomic) IBOutlet UITextField *sexTextField;
@@ -18,7 +18,16 @@
 
 @end
 
-@implementation HomeViewController
+@implementation WK_HomeViewController
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.push = YES;
+        self.title = NSLocalizedString(@"HOME", nil);
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

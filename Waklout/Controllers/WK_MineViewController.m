@@ -6,13 +6,22 @@
 //  Copyright (c) 2015年 janlee. All rights reserved.
 //
 
-#import "MineViewController.h"
+#import "WK_MineViewController.h"
 
-@interface MineViewController ()
+@interface WK_MineViewController ()
 
 @end
 
-@implementation MineViewController
+@implementation WK_MineViewController
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.push = YES;
+        self.title = NSLocalizedString(@"MINE", nil);
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

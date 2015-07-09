@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "M16ViewController.h"
 
-@interface MineViewController : UIViewController
+@interface WK_MineViewController : M16ViewController
 
 @end
