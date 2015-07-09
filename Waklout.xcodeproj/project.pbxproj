@@ -109,11 +109,11 @@
 		05FED0651B4E41AC0009F53A /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FED0531B4E41AC0009F53A /* UIWebView+AFNetworking.m */; };
 		05FED06C1B4E42710009F53A /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FED0691B4E42710009F53A /* UIScrollView+SVInfiniteScrolling.m */; };
 		05FED06D1B4E42710009F53A /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FED06B1B4E42710009F53A /* UIScrollView+SVPullToRefresh.m */; };
-		05FED0721B4E43FA0009F53A /* YHAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FED0711B4E43FA0009F53A /* YHAssistant.m */; };
 		05FED0751B4E44C10009F53A /* M16HUDUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FED0741B4E44C10009F53A /* M16HUDUtil.m */; };
 		05FED0781B4E45250009F53A /* UIColor+M16RGB.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FED0771B4E45250009F53A /* UIColor+M16RGB.m */; };
 		05FED07E1B4E45910009F53A /* M16CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FED07B1B4E45910009F53A /* M16CollectionViewCell.m */; };
 		05FED07F1B4E45910009F53A /* M16TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FED07D1B4E45910009F53A /* M16TableViewCell.m */; };
+		05FED0841B4E499C0009F53A /* YHAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FED0831B4E499C0009F53A /* YHAssistant.m */; };
 		18F53D4D1B4D5EFD003B93EB /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53D371B4D5EFD003B93EB /* MASCompositeConstraint.m */; };
 		18F53D4E1B4D5EFD003B93EB /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53D3A1B4D5EFD003B93EB /* MASConstraint.m */; };
 		18F53D4F1B4D5EFD003B93EB /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53D3C1B4D5EFD003B93EB /* MASConstraintMaker.m */; };
@@ -347,8 +347,6 @@
 		05FED0691B4E42710009F53A /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVInfiniteScrolling.m"; sourceTree = "<group>"; };
 		05FED06A1B4E42710009F53A /* UIScrollView+SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVPullToRefresh.h"; sourceTree = "<group>"; };
 		05FED06B1B4E42710009F53A /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVPullToRefresh.m"; sourceTree = "<group>"; };
-		05FED0701B4E43FA0009F53A /* YHAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHAssistant.h; sourceTree = "<group>"; };
-		05FED0711B4E43FA0009F53A /* YHAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHAssistant.m; sourceTree = "<group>"; };
 		05FED0731B4E44C10009F53A /* M16HUDUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M16HUDUtil.h; sourceTree = "<group>"; };
 		05FED0741B4E44C10009F53A /* M16HUDUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M16HUDUtil.m; sourceTree = "<group>"; };
 		05FED0761B4E45250009F53A /* UIColor+M16RGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+M16RGB.h"; sourceTree = "<group>"; };
@@ -357,6 +355,8 @@
 		05FED07B1B4E45910009F53A /* M16CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M16CollectionViewCell.m; sourceTree = "<group>"; };
 		05FED07C1B4E45910009F53A /* M16TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M16TableViewCell.h; sourceTree = "<group>"; };
 		05FED07D1B4E45910009F53A /* M16TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M16TableViewCell.m; sourceTree = "<group>"; };
+		05FED0821B4E499C0009F53A /* YHAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHAssistant.h; sourceTree = "<group>"; };
+		05FED0831B4E499C0009F53A /* YHAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHAssistant.m; sourceTree = "<group>"; };
 		18F53D361B4D5EFD003B93EB /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		18F53D371B4D5EFD003B93EB /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
 		18F53D381B4D5EFD003B93EB /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -424,6 +424,7 @@
 			children = (
 				05E75AF31B4BCAE90098FC6E /* AppDelegate.h */,
 				05E75AF41B4BCAE90098FC6E /* AppDelegate.m */,
+				05FED0801B4E499C0009F53A /* Components */,
 				05FECF3E1B4E3C010009F53A /* BaseClass */,
 				05E7CADC1B4CB72A00C8A220 /* Models */,
 				05E75B4F1B4BDA6A0098FC6E /* Controllers */,
@@ -513,10 +514,10 @@
 		05FECF3E1B4E3C010009F53A /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
+				05FECFEE1B4E3CA00009F53A /* Macros */,
 				05FED06E1B4E43FA0009F53A /* Utils */,
 				05FED0791B4E45910009F53A /* Views */,
 				05FECFF71B4E40CD0009F53A /* Controllers */,
-				05FECFEE1B4E3CA00009F53A /* Macros */,
 				05FECFF31B4E3DCC0009F53A /* NavigationController */,
 			);
 			path = BaseClass;
@@ -844,18 +845,8 @@
 				05FED0771B4E45250009F53A /* UIColor+M16RGB.m */,
 				05FED0731B4E44C10009F53A /* M16HUDUtil.h */,
 				05FED0741B4E44C10009F53A /* M16HUDUtil.m */,
-				05FED06F1B4E43FA0009F53A /* Legacy */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		05FED06F1B4E43FA0009F53A /* Legacy */ = {
-			isa = PBXGroup;
-			children = (
-				05FED0701B4E43FA0009F53A /* YHAssistant.h */,
-				05FED0711B4E43FA0009F53A /* YHAssistant.m */,
-			);
-			path = Legacy;
 			sourceTree = "<group>";
 		};
 		05FED0791B4E45910009F53A /* Views */ = {
@@ -867,6 +858,23 @@
 				05FED07D1B4E45910009F53A /* M16TableViewCell.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		05FED0801B4E499C0009F53A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				05FED0811B4E499C0009F53A /* Legacy */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		05FED0811B4E499C0009F53A /* Legacy */ = {
+			isa = PBXGroup;
+			children = (
+				05FED0821B4E499C0009F53A /* YHAssistant.h */,
+				05FED0831B4E499C0009F53A /* YHAssistant.m */,
+			);
+			path = Legacy;
 			sourceTree = "<group>";
 		};
 		18F53D351B4D5EFD003B93EB /* Masonry */ = {
@@ -1042,7 +1050,6 @@
 				05FED0241B4E417B0009F53A /* JGProgressHUDFadeAnimation.m in Sources */,
 				05FECFD61B4E3C520009F53A /* FLEXWebViewController.m in Sources */,
 				05FECFDC1B4E3C520009F53A /* FLEXDefaultsExplorerViewController.m in Sources */,
-				05FED0721B4E43FA0009F53A /* YHAssistant.m in Sources */,
 				18F53D4F1B4D5EFD003B93EB /* MASConstraintMaker.m in Sources */,
 				18F53D551B4D5EFD003B93EB /* View+MASAdditions.m in Sources */,
 				05FECFE71B4E3C520009F53A /* FLEXHeapEnumerator.m in Sources */,
@@ -1052,6 +1059,7 @@
 				05FED06D1B4E42710009F53A /* UIScrollView+SVPullToRefresh.m in Sources */,
 				05FECFEC1B4E3C520009F53A /* FLEXHierarchyTableViewController.m in Sources */,
 				18F53D501B4D5EFD003B93EB /* MASLayoutConstraint.m in Sources */,
+				05FED0841B4E499C0009F53A /* YHAssistant.m in Sources */,
 				05FED07F1B4E45910009F53A /* M16TableViewCell.m in Sources */,
 				05FED0751B4E44C10009F53A /* M16HUDUtil.m in Sources */,
 				05FECFBF1B4E3C520009F53A /* FLEXArgumentInputStructView.m in Sources */,

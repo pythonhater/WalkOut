@@ -23,7 +23,6 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        self.push = YES;
         self.title = NSLocalizedString(@"HOME", nil);
     }
     return self;
@@ -33,6 +32,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.appDelegate = [[UIApplication sharedApplication] delegate];
+    [self followScrollView:self.view];
     
 }
 - (IBAction)addIntoDataSource:(id)sender {

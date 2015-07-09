@@ -17,7 +17,6 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        self.push = YES;
         self.title = NSLocalizedString(@"MINE", nil);
     }
     return self;
