@@ -11,6 +11,7 @@
 #import "RDVTabBarItem.h"
 #import "WK_NavigationController.h"
 #import "WK_HomeViewController.h"
+#import "WK_LifeViewController.h"
 #import "WK_MineViewController.h"
 
 
@@ -39,7 +40,7 @@
     WK_NavigationController *homeNavigationController = [[WK_NavigationController alloc]
                                                    initWithRootViewController:homeViewController];
     
-    UIViewController *lifeViewController = [[UIViewController alloc] init];
+    WK_LifeViewController *lifeViewController = [[WK_LifeViewController alloc] init];
     lifeViewController.title = NSLocalizedString(@"LIFE", nil);
     WK_NavigationController *lifeNavigationController = [[WK_NavigationController alloc]
                                                     initWithRootViewController:lifeViewController];

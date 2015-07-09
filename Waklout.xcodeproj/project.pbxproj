@@ -15,10 +15,7 @@
 		05E75B201B4BCECC0098FC6E /* RDVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E75B1B1B4BCECC0098FC6E /* RDVTabBar.m */; };
 		05E75B211B4BCECC0098FC6E /* RDVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E75B1D1B4BCECC0098FC6E /* RDVTabBarController.m */; };
 		05E75B221B4BCECC0098FC6E /* RDVTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E75B1F1B4BCECC0098FC6E /* RDVTabBarItem.m */; };
-		05E75B4E1B4BDA4B0098FC6E /* WK_HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E75B4D1B4BDA4B0098FC6E /* WK_HomeViewController.m */; };
-		05E7CADB1B4CB4A600C8A220 /* WK_HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05E7CADA1B4CB4A600C8A220 /* WK_HomeViewController.xib */; };
 		05E7CADF1B4CB74000C8A220 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E7CADE1B4CB74000C8A220 /* User.m */; };
-		05E7CAFD1B4D242300C8A220 /* WK_MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E7CAFC1B4D242300C8A220 /* WK_MineViewController.m */; };
 		05E7CB001B4D27F800C8A220 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 05E7CB021B4D27F800C8A220 /* Localizable.strings */; };
 		05FECFB81B4E3C520009F53A /* FLEXArgumentInputColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FECF461B4E3C520009F53A /* FLEXArgumentInputColorView.m */; };
 		05FECFB91B4E3C520009F53A /* FLEXArgumentInputFontsPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FECF481B4E3C520009F53A /* FLEXArgumentInputFontsPickerView.m */; };
@@ -114,6 +111,11 @@
 		05FED07E1B4E45910009F53A /* M16CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FED07B1B4E45910009F53A /* M16CollectionViewCell.m */; };
 		05FED07F1B4E45910009F53A /* M16TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FED07D1B4E45910009F53A /* M16TableViewCell.m */; };
 		05FED0841B4E499C0009F53A /* YHAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FED0831B4E499C0009F53A /* YHAssistant.m */; };
+		05FED08C1B4E54150009F53A /* WK_HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FED0871B4E54150009F53A /* WK_HomeViewController.m */; };
+		05FED08D1B4E54150009F53A /* WK_HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05FED0881B4E54150009F53A /* WK_HomeViewController.xib */; };
+		05FED08E1B4E54150009F53A /* WK_MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FED08B1B4E54150009F53A /* WK_MineViewController.m */; };
+		05FED0921B4E544C0009F53A /* WK_LifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FED0911B4E544C0009F53A /* WK_LifeViewController.m */; };
+		05FED09C1B4E5C560009F53A /* WK_FollowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FED09B1B4E5C560009F53A /* WK_FollowView.m */; };
 		18F53D4D1B4D5EFD003B93EB /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53D371B4D5EFD003B93EB /* MASCompositeConstraint.m */; };
 		18F53D4E1B4D5EFD003B93EB /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53D3A1B4D5EFD003B93EB /* MASConstraint.m */; };
 		18F53D4F1B4D5EFD003B93EB /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53D3C1B4D5EFD003B93EB /* MASConstraintMaker.m */; };
@@ -152,13 +154,8 @@
 		05E75B1D1B4BCECC0098FC6E /* RDVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarController.m; sourceTree = "<group>"; };
 		05E75B1E1B4BCECC0098FC6E /* RDVTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarItem.h; sourceTree = "<group>"; };
 		05E75B1F1B4BCECC0098FC6E /* RDVTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarItem.m; sourceTree = "<group>"; };
-		05E75B4C1B4BDA4B0098FC6E /* WK_HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WK_HomeViewController.h; path = ../WK_HomeViewController.h; sourceTree = "<group>"; };
-		05E75B4D1B4BDA4B0098FC6E /* WK_HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WK_HomeViewController.m; path = ../WK_HomeViewController.m; sourceTree = "<group>"; };
-		05E7CADA1B4CB4A600C8A220 /* WK_HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WK_HomeViewController.xib; sourceTree = "<group>"; };
 		05E7CADD1B4CB74000C8A220 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		05E7CADE1B4CB74000C8A220 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		05E7CAFB1B4D242300C8A220 /* WK_MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_MineViewController.h; sourceTree = "<group>"; };
-		05E7CAFC1B4D242300C8A220 /* WK_MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_MineViewController.m; sourceTree = "<group>"; };
 		05E7CB011B4D27F800C8A220 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		05E7CB031B4D280500C8A220 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		05FECF451B4E3C520009F53A /* FLEXArgumentInputColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLEXArgumentInputColorView.h; sourceTree = "<group>"; };
@@ -357,6 +354,15 @@
 		05FED07D1B4E45910009F53A /* M16TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M16TableViewCell.m; sourceTree = "<group>"; };
 		05FED0821B4E499C0009F53A /* YHAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHAssistant.h; sourceTree = "<group>"; };
 		05FED0831B4E499C0009F53A /* YHAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHAssistant.m; sourceTree = "<group>"; };
+		05FED0861B4E54150009F53A /* WK_HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_HomeViewController.h; sourceTree = "<group>"; };
+		05FED0871B4E54150009F53A /* WK_HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_HomeViewController.m; sourceTree = "<group>"; };
+		05FED0881B4E54150009F53A /* WK_HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WK_HomeViewController.xib; sourceTree = "<group>"; };
+		05FED08A1B4E54150009F53A /* WK_MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_MineViewController.h; sourceTree = "<group>"; };
+		05FED08B1B4E54150009F53A /* WK_MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_MineViewController.m; sourceTree = "<group>"; };
+		05FED0901B4E544C0009F53A /* WK_LifeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_LifeViewController.h; sourceTree = "<group>"; };
+		05FED0911B4E544C0009F53A /* WK_LifeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_LifeViewController.m; sourceTree = "<group>"; };
+		05FED09A1B4E5C560009F53A /* WK_FollowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_FollowView.h; sourceTree = "<group>"; };
+		05FED09B1B4E5C560009F53A /* WK_FollowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_FollowView.m; sourceTree = "<group>"; };
 		18F53D361B4D5EFD003B93EB /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		18F53D371B4D5EFD003B93EB /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
 		18F53D381B4D5EFD003B93EB /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -427,6 +433,7 @@
 				05FED0801B4E499C0009F53A /* Components */,
 				05FECF3E1B4E3C010009F53A /* BaseClass */,
 				05E7CADC1B4CB72A00C8A220 /* Models */,
+				05FED0991B4E5C200009F53A /* Views */,
 				05E75B4F1B4BDA6A0098FC6E /* Controllers */,
 				05E75B181B4BCEC10098FC6E /* Vendors */,
 				05E75AFF1B4BCAE90098FC6E /* Images.xcassets */,
@@ -493,11 +500,9 @@
 		05E75B4F1B4BDA6A0098FC6E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				05E75B4C1B4BDA4B0098FC6E /* WK_HomeViewController.h */,
-				05E75B4D1B4BDA4B0098FC6E /* WK_HomeViewController.m */,
-				05E7CADA1B4CB4A600C8A220 /* WK_HomeViewController.xib */,
-				05E7CAFB1B4D242300C8A220 /* WK_MineViewController.h */,
-				05E7CAFC1B4D242300C8A220 /* WK_MineViewController.m */,
+				05FED0851B4E54150009F53A /* HomeViewController */,
+				05FED08F1B4E54320009F53A /* LifeViewController */,
+				05FED0891B4E54150009F53A /* MineViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -877,6 +882,43 @@
 			path = Legacy;
 			sourceTree = "<group>";
 		};
+		05FED0851B4E54150009F53A /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				05FED0861B4E54150009F53A /* WK_HomeViewController.h */,
+				05FED0871B4E54150009F53A /* WK_HomeViewController.m */,
+				05FED0881B4E54150009F53A /* WK_HomeViewController.xib */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		05FED0891B4E54150009F53A /* MineViewController */ = {
+			isa = PBXGroup;
+			children = (
+				05FED08A1B4E54150009F53A /* WK_MineViewController.h */,
+				05FED08B1B4E54150009F53A /* WK_MineViewController.m */,
+			);
+			path = MineViewController;
+			sourceTree = "<group>";
+		};
+		05FED08F1B4E54320009F53A /* LifeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				05FED0901B4E544C0009F53A /* WK_LifeViewController.h */,
+				05FED0911B4E544C0009F53A /* WK_LifeViewController.m */,
+			);
+			path = LifeViewController;
+			sourceTree = "<group>";
+		};
+		05FED0991B4E5C200009F53A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				05FED09A1B4E5C560009F53A /* WK_FollowView.h */,
+				05FED09B1B4E5C560009F53A /* WK_FollowView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		18F53D351B4D5EFD003B93EB /* Masonry */ = {
 			isa = PBXGroup;
 			children = (
@@ -991,7 +1033,7 @@
 				05FED0201B4E417B0009F53A /* JGProgressHUD Resources.bundle in Resources */,
 				05E75B001B4BCAE90098FC6E /* Images.xcassets in Resources */,
 				05E7CB001B4D27F800C8A220 /* Localizable.strings in Resources */,
-				05E7CADB1B4CB4A600C8A220 /* WK_HomeViewController.xib in Resources */,
+				05FED08D1B4E54150009F53A /* WK_HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1024,6 +1066,7 @@
 				05FECFEB1B4E3C520009F53A /* FLEXHierarchyTableViewCell.m in Sources */,
 				05FED0211B4E417B0009F53A /* JGProgressHUD.m in Sources */,
 				05FECFD31B4E3C520009F53A /* FLEXInstancesTableViewController.m in Sources */,
+				05FED08E1B4E54150009F53A /* WK_MineViewController.m in Sources */,
 				05FECFC91B4E3C520009F53A /* FLEXPropertyEditorViewController.m in Sources */,
 				05FECFBD1B4E3C520009F53A /* FLEXArgumentInputNumberView.m in Sources */,
 				05FECFC61B4E3C520009F53A /* FLEXFieldEditorViewController.m in Sources */,
@@ -1089,9 +1132,10 @@
 				05FECFDD1B4E3C520009F53A /* FLEXDescriptionTableViewCell.m in Sources */,
 				05FED0221B4E417B0009F53A /* JGProgressHUDAnimation.m in Sources */,
 				05FECFDE1B4E3C520009F53A /* FLEXDictionaryExplorerViewController.m in Sources */,
+				05FED09C1B4E5C560009F53A /* WK_FollowView.m in Sources */,
 				05FECFBC1B4E3C520009F53A /* FLEXArgumentInputNotSupportedView.m in Sources */,
+				05FED08C1B4E54150009F53A /* WK_HomeViewController.m in Sources */,
 				05FECFCB1B4E3C520009F53A /* FLEXExplorerViewController.m in Sources */,
-				05E7CAFD1B4D242300C8A220 /* WK_MineViewController.m in Sources */,
 				05FECFD21B4E3C520009F53A /* FLEXGlobalsTableViewController.m in Sources */,
 				05FED07E1B4E45910009F53A /* M16CollectionViewCell.m in Sources */,
 				05FED0591B4E41AC0009F53A /* AFSecurityPolicy.m in Sources */,
@@ -1102,6 +1146,7 @@
 				05FED0651B4E41AC0009F53A /* UIWebView+AFNetworking.m in Sources */,
 				05FECFE61B4E3C520009F53A /* FLEXViewExplorerViewController.m in Sources */,
 				05FECFCC1B4E3C520009F53A /* FLEXManager.m in Sources */,
+				05FED0921B4E544C0009F53A /* WK_LifeViewController.m in Sources */,
 				05FECFCA1B4E3C520009F53A /* FLEXExplorerToolbar.m in Sources */,
 				05FECFE21B4E3C520009F53A /* FLEXObjectExplorerFactory.m in Sources */,
 				05FED06C1B4E42710009F53A /* UIScrollView+SVInfiniteScrolling.m in Sources */,
@@ -1112,7 +1157,6 @@
 				05FECFE81B4E3C520009F53A /* FLEXResources.m in Sources */,
 				05FED05B1B4E41AC0009F53A /* AFURLRequestSerialization.m in Sources */,
 				05E75B221B4BCECC0098FC6E /* RDVTabBarItem.m in Sources */,
-				05E75B4E1B4BDA4B0098FC6E /* WK_HomeViewController.m in Sources */,
 				05FECFD01B4E3C520009F53A /* FLEXFileBrowserSearchOperation.m in Sources */,
 				05FED0601B4E41AC0009F53A /* UIAlertView+AFNetworking.m in Sources */,
 				05FECFDA1B4E3C520009F53A /* FLEXArrayExplorerViewController.m in Sources */,

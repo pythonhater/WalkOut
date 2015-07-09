@@ -1,33 +1,36 @@
 //
-//  MineViewController.m
+//  LifeViewController.m
 //  Waklout
 //
-//  Created by yoho on 15/7/8.
+//  Created by yoho on 15/7/9.
 //  Copyright (c) 2015年 janlee. All rights reserved.
 //
 
-#import "WK_MineViewController.h"
+#import "WK_LifeViewController.h"
 
-@interface WK_MineViewController ()
+@interface WK_LifeViewController ()
 
 @end
 
-@implementation WK_MineViewController
+@implementation WK_LifeViewController
 
-- (instancetype)init {
+- (instancetype)init
+{
     self = [super init];
     if (self) {
-        self.title = NSLocalizedString(@"MINE", nil);
+        self.title = NSLocalizedString(@"LIFE", nil);
     }
     return self;
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

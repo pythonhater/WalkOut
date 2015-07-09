@@ -20,7 +20,8 @@
 
 @implementation WK_HomeViewController
 
-- (instancetype)init {
+- (instancetype)init
+{
     self = [super init];
     if (self) {
         self.title = NSLocalizedString(@"HOME", nil);
@@ -28,14 +29,17 @@
     return self;
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.appDelegate = [[UIApplication sharedApplication] delegate];
     [self followScrollView:self.view];
     
 }
-- (IBAction)addIntoDataSource:(id)sender {
+
+- (IBAction)addIntoDataSource:(id)sender
+{
     User *user = [NSEntityDescription insertNewObjectForEntityForName:@"User" inManagedObjectContext:self.appDelegate.managedObjectContext];
     [user setName:self.nameTextField.text];
     [user setAge:@([self.ageTextField.text integerValue])];
@@ -49,7 +53,9 @@
     }
     
 }
-- (IBAction)query:(id)sender {
+
+- (IBAction)query:(id)sender
+{
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     NSEntityDescription *user = [NSEntityDescription entityForName:@"User" inManagedObjectContext:self.appDelegate.managedObjectContext];
     [request setEntity:user];
@@ -65,7 +71,8 @@
     }
 }
 
-- (IBAction)update:(id)sender {
+- (IBAction)update:(id)sender
+{
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     NSEntityDescription *user = [NSEntityDescription entityForName:@"User" inManagedObjectContext:self.appDelegate.managedObjectContext];
     [request setEntity:user];
@@ -85,7 +92,9 @@
         NSLog(@"Error:%@,%@",error,[error userInfo]);
     }
 }
-- (IBAction)delete:(id)sender {
+
+- (IBAction)delete:(id)sender
+{
     
     NSFetchRequest* request=[[NSFetchRequest alloc] init];
     NSEntityDescription* user=[NSEntityDescription entityForName:@"User" inManagedObjectContext:self.appDelegate.managedObjectContext];
@@ -106,7 +115,8 @@
     }
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
