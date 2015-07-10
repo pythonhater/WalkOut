@@ -41,7 +41,6 @@
                                                    initWithRootViewController:homeViewController];
     
     WK_LifeViewController *lifeViewController = [[WK_LifeViewController alloc] init];
-    lifeViewController.title = NSLocalizedString(@"LIFE", nil);
     WK_NavigationController *lifeNavigationController = [[WK_NavigationController alloc]
                                                     initWithRootViewController:lifeViewController];
     

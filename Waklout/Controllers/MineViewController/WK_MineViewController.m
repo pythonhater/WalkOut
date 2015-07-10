@@ -32,9 +32,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor blueColor];
     [self setupTopContentView];
-    
 }
 
 - (void)setupTopContentView
@@ -42,10 +40,10 @@
     self.topContentView = [[UIView alloc] init];
     self.topContentView.backgroundColor = [UIColor redColor];
     [self.view addSubview:self.topContentView];
-    [self.view mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.topContentView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view.mas_left).offset(0);
         make.right.equalTo(self.view.mas_right).offset(0);
-        make.top.equalTo(self.view.mas_top).offset(100);
+        make.top.equalTo(self.view.mas_top).offset(0);
         make.height.equalTo(@(60));
     }];
     
@@ -62,23 +60,23 @@
     [self.topContentView addSubview:self.fansView];
     
     [self.userIconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.view.mas_centerX);
+        make.centerX.equalTo(self.topContentView.mas_centerX);
         make.width.equalTo(@(45));
-        make.centerY.equalTo(self.view.mas_centerY);
+        make.centerY.equalTo(self.topContentView.mas_centerY);
         make.height.equalTo(@(45));
     }];
     
     [self.focusView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(self.userIconImageView.mas_left).offset(-10);
         make.width.equalTo(@(30));
-        make.centerY.equalTo(self.view.mas_centerY);
+        make.centerY.equalTo(self.topContentView.mas_centerY);
         make.height.equalTo(@(30));
     }];
     
     [self.fansView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.userIconImageView.mas_right).offset(10);
         make.width.equalTo(@(30));
-        make.centerY.equalTo(self.view.mas_centerY);
+        make.centerY.equalTo(self.topContentView.mas_centerY);
         make.height.equalTo(@(30));
     }];
 }
