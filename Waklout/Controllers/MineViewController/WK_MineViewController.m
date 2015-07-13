@@ -9,6 +9,16 @@
 #import "WK_MineViewController.h"
 #import "WK_FollowView.h"
 
+static CGFloat const kTopContentViewHeight = 60.0f;
+static CGFloat const kUserIconImageViewWidth = 45.0f;
+static CGFloat const kUserIconImageViewHeight = 45.0f;
+static CGFloat const kFocusViewRightEdge = 10.0f;
+static CGFloat const kFocusViewWidth = 30.0f;
+static CGFloat const kFocusViewHeight = 30.0f;
+static CGFloat const kFansViewLeftEdge = 10.0f;
+static CGFloat const kFansViewWidth = 30.0f;
+static CGFloat const kFansViewHeight = 30.0f;
+
 @interface WK_MineViewController ()
 @property (strong, nonatomic) UIView *topContentView;
 @property (strong, nonatomic) WK_FollowView *focusView;
@@ -44,7 +54,7 @@
         make.left.equalTo(self.view.mas_left).offset(0);
         make.right.equalTo(self.view.mas_right).offset(0);
         make.top.equalTo(self.view.mas_top).offset(0);
-        make.height.equalTo(@(60));
+        make.height.equalTo(@(kTopContentViewHeight));
     }];
     
     self.focusView = [[WK_FollowView alloc] init];
@@ -61,23 +71,23 @@
     
     [self.userIconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.topContentView.mas_centerX);
-        make.width.equalTo(@(45));
+        make.width.equalTo(@(kUserIconImageViewWidth));
         make.centerY.equalTo(self.topContentView.mas_centerY);
-        make.height.equalTo(@(45));
+        make.height.equalTo(@(kUserIconImageViewHeight));
     }];
     
     [self.focusView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(self.userIconImageView.mas_left).offset(-10);
-        make.width.equalTo(@(30));
+        make.right.equalTo(self.userIconImageView.mas_left).offset(-kFocusViewRightEdge);
+        make.width.equalTo(@(kFocusViewWidth));
         make.centerY.equalTo(self.topContentView.mas_centerY);
-        make.height.equalTo(@(30));
+        make.height.equalTo(@(kFocusViewHeight));
     }];
     
     [self.fansView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.userIconImageView.mas_right).offset(10);
-        make.width.equalTo(@(30));
+        make.left.equalTo(self.userIconImageView.mas_right).offset(kFansViewLeftEdge);
+        make.width.equalTo(@(kFansViewWidth));
         make.centerY.equalTo(self.topContentView.mas_centerY);
-        make.height.equalTo(@(30));
+        make.height.equalTo(@(kFansViewHeight));
     }];
 }
 
