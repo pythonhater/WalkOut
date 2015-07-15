@@ -115,6 +115,27 @@
     }
 }
 
+- (IBAction)savePostButtonClicked:(id)sender {
+    AVObject *post = [AVObject objectWithClassName:@"Post"];
+    [post setObject:@"每个Objective-C程序员必备的8个开发工具" forKey:@"content"];
+    [post setObject:@"LeanCloud官方客服" forKey:@"pubUser"];
+    [post setObject:@(1435541999) forKey:@"pubTimestamp"];
+    [post save];
+}
+
+- (IBAction)queryButtonClicked:(id)sender {
+    //检索对象
+    AVQuery *query = [AVQuery queryWithClassName:@"Post"];
+    AVObject *post = [query getObjectWithId:@"55a4b811e4b0c829313d444b"];
+    int timestamp = [[post objectForKey:@"publishTimestamp"] intValue];
+    NSString *userName = [post objectForKey:@"pubUser"];
+    NSString *content = [post objectForKey:@"content"];
+    //获取三个特殊属性
+    NSString *objectId = post.objectId;
+    NSDate *updatedAt = post.updatedAt;
+    NSDate *createdAt = post.createdAt;
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

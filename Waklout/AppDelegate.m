@@ -14,6 +14,8 @@
 #import "WK_LifeViewController.h"
 #import "WK_MineViewController.h"
 
+static NSString *const kAVOSCloudAppID = @"d886tre9o8elsdnxxh1iv8sn1j0ts9qqvbek6djlffclhq51";
+static NSString *const kAVOSCloudAppKey = @"pw0hhi7mfhu95vmul4mtt3vsrsdb3yjljsl23fuh76luscy5";
 
 @interface AppDelegate ()
 @property (strong, nonatomic) UIViewController *rootViewController;
@@ -25,6 +27,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [AVOSCloud setApplicationId:kAVOSCloudAppID clientKey:kAVOSCloudAppKey];
+    AVObject *testObject = [AVObject objectWithClassName:@"TestObject"];
+    [testObject setObject:@"bar" forKey:@"foo"];
+    [testObject save];
+    
+    NSData *data = [@"Working with LeanCloud is great!" dataUsingEncoding:NSUTF8StringEncoding];
+    AVFile *file = [AVFile fileWithName:@"resume.txt" data:data];
+    [file saveInBackground];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self setupViewControllers];

@@ -116,6 +116,30 @@
                         <rect key="frame" x="56" y="112" width="29" height="21"/>
                     </variation>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18w-lh-tug">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="保存Post">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="16" y="340" width="85" height="30"/>
+                    </variation>
+                    <connections>
+                        <action selector="savePostButtonClicked:" destination="-1" eventType="touchUpInside" id="bMs-xB-j4p"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMe-rj-U2v">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="QueryPost">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="127" y="340" width="73" height="30"/>
+                    </variation>
+                    <connections>
+                        <action selector="queryButtonClicked:" destination="-1" eventType="touchUpInside" id="gUm-wr-sig"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <variation key="default">
@@ -130,6 +154,8 @@
                     <exclude reference="aKm-fZ-jK6"/>
                     <exclude reference="qJj-wH-68N"/>
                     <exclude reference="rHI-qZ-HPR"/>
+                    <exclude reference="18w-lh-tug"/>
+                    <exclude reference="AMe-rj-U2v"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
@@ -144,6 +170,8 @@
                     <include reference="aKm-fZ-jK6"/>
                     <include reference="qJj-wH-68N"/>
                     <include reference="rHI-qZ-HPR"/>
+                    <include reference="18w-lh-tug"/>
+                    <include reference="AMe-rj-U2v"/>
                 </mask>
             </variation>
         </view>

@@ -17,6 +17,7 @@
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import <AVOSCloud/AVOSCloud.h>
 #import "Macros.h"
 #import "YHAssistant.h"
 #import "Masonry.h"
