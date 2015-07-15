@@ -132,6 +132,19 @@
 		18F53D531B4D5EFD003B93EB /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53D461B4D5EFD003B93EB /* NSArray+MASAdditions.m */; };
 		18F53D541B4D5EFD003B93EB /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53D491B4D5EFD003B93EB /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		18F53D551B4D5EFD003B93EB /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53D4B1B4D5EFD003B93EB /* View+MASAdditions.m */; };
+		18F53DAA1B568749003B93EB /* WK_PageContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DA91B568749003B93EB /* WK_PageContainerViewController.m */; };
+		18F53DAE1B5690F6003B93EB /* WK_LocalNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DAD1B5690F6003B93EB /* WK_LocalNotesViewController.m */; };
+		18F53DB11B56910E003B93EB /* WK_PublishedNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DB01B56910E003B93EB /* WK_PublishedNotesViewController.m */; };
+		18F53DB41B56913A003B93EB /* WK_CollectedNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DB31B56913A003B93EB /* WK_CollectedNotesViewController.m */; };
+		18F53DEA1B569FAE003B93EB /* XLBarPagerTabStripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DD71B569FAE003B93EB /* XLBarPagerTabStripViewController.m */; };
+		18F53DEB1B569FAE003B93EB /* XLButtonBarPagerTabStripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DD91B569FAE003B93EB /* XLButtonBarPagerTabStripViewController.m */; };
+		18F53DEC1B569FAE003B93EB /* XLPagerTabStripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DDB1B569FAE003B93EB /* XLPagerTabStripViewController.m */; };
+		18F53DED1B569FAE003B93EB /* XLSegmentedPagerTabStripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DDD1B569FAE003B93EB /* XLSegmentedPagerTabStripViewController.m */; };
+		18F53DEE1B569FAE003B93EB /* XLTwitterPagerTabStripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DDF1B569FAE003B93EB /* XLTwitterPagerTabStripViewController.m */; };
+		18F53DEF1B569FAE003B93EB /* FXPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DE31B569FAE003B93EB /* FXPageControl.m */; };
+		18F53DF01B569FAE003B93EB /* XLBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DE51B569FAE003B93EB /* XLBarView.m */; };
+		18F53DF11B569FAE003B93EB /* XLButtonBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DE71B569FAE003B93EB /* XLButtonBarView.m */; };
+		18F53DF21B569FAE003B93EB /* XLButtonBarViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DE91B569FAE003B93EB /* XLButtonBarViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -401,6 +414,32 @@
 		18F53D4B1B4D5EFD003B93EB /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
 		18F53D4C1B4D5EFD003B93EB /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		18F53D561B4D6053003B93EB /* Waklout-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Waklout-Prefix.pch"; sourceTree = "<group>"; };
+		18F53DA81B568749003B93EB /* WK_PageContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_PageContainerViewController.h; sourceTree = "<group>"; };
+		18F53DA91B568749003B93EB /* WK_PageContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_PageContainerViewController.m; sourceTree = "<group>"; };
+		18F53DAC1B5690F6003B93EB /* WK_LocalNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_LocalNotesViewController.h; sourceTree = "<group>"; };
+		18F53DAD1B5690F6003B93EB /* WK_LocalNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_LocalNotesViewController.m; sourceTree = "<group>"; };
+		18F53DAF1B56910E003B93EB /* WK_PublishedNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_PublishedNotesViewController.h; sourceTree = "<group>"; };
+		18F53DB01B56910E003B93EB /* WK_PublishedNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_PublishedNotesViewController.m; sourceTree = "<group>"; };
+		18F53DB21B56913A003B93EB /* WK_CollectedNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_CollectedNotesViewController.h; sourceTree = "<group>"; };
+		18F53DB31B56913A003B93EB /* WK_CollectedNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_CollectedNotesViewController.m; sourceTree = "<group>"; };
+		18F53DD61B569FAE003B93EB /* XLBarPagerTabStripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLBarPagerTabStripViewController.h; sourceTree = "<group>"; };
+		18F53DD71B569FAE003B93EB /* XLBarPagerTabStripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLBarPagerTabStripViewController.m; sourceTree = "<group>"; };
+		18F53DD81B569FAE003B93EB /* XLButtonBarPagerTabStripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLButtonBarPagerTabStripViewController.h; sourceTree = "<group>"; };
+		18F53DD91B569FAE003B93EB /* XLButtonBarPagerTabStripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLButtonBarPagerTabStripViewController.m; sourceTree = "<group>"; };
+		18F53DDA1B569FAE003B93EB /* XLPagerTabStripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPagerTabStripViewController.h; sourceTree = "<group>"; };
+		18F53DDB1B569FAE003B93EB /* XLPagerTabStripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPagerTabStripViewController.m; sourceTree = "<group>"; };
+		18F53DDC1B569FAE003B93EB /* XLSegmentedPagerTabStripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLSegmentedPagerTabStripViewController.h; sourceTree = "<group>"; };
+		18F53DDD1B569FAE003B93EB /* XLSegmentedPagerTabStripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLSegmentedPagerTabStripViewController.m; sourceTree = "<group>"; };
+		18F53DDE1B569FAE003B93EB /* XLTwitterPagerTabStripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTwitterPagerTabStripViewController.h; sourceTree = "<group>"; };
+		18F53DDF1B569FAE003B93EB /* XLTwitterPagerTabStripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTwitterPagerTabStripViewController.m; sourceTree = "<group>"; };
+		18F53DE21B569FAE003B93EB /* FXPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXPageControl.h; sourceTree = "<group>"; };
+		18F53DE31B569FAE003B93EB /* FXPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXPageControl.m; sourceTree = "<group>"; };
+		18F53DE41B569FAE003B93EB /* XLBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLBarView.h; sourceTree = "<group>"; };
+		18F53DE51B569FAE003B93EB /* XLBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLBarView.m; sourceTree = "<group>"; };
+		18F53DE61B569FAE003B93EB /* XLButtonBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLButtonBarView.h; sourceTree = "<group>"; };
+		18F53DE71B569FAE003B93EB /* XLButtonBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLButtonBarView.m; sourceTree = "<group>"; };
+		18F53DE81B569FAE003B93EB /* XLButtonBarViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLButtonBarViewCell.h; sourceTree = "<group>"; };
+		18F53DE91B569FAE003B93EB /* XLButtonBarViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLButtonBarViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -510,6 +549,7 @@
 		05E75B181B4BCEC10098FC6E /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				18F53DD41B569FAE003B93EB /* XLPagerTabStrip */,
 				05FED02B1B4E41AC0009F53A /* AFNetworking */,
 				05FECF421B4E3C520009F53A /* FLEX */,
 				05FED00A1B4E417B0009F53A /* JGProgressHUD */,
@@ -536,6 +576,7 @@
 		05E75B4F1B4BDA6A0098FC6E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				18F53DA71B56872B003B93EB /* PageContainViewController */,
 				05FED0851B4E54150009F53A /* HomeViewController */,
 				05FED08F1B4E54320009F53A /* LifeViewController */,
 				05FED0891B4E54150009F53A /* MineViewController */,
@@ -933,6 +974,7 @@
 			children = (
 				05FED08A1B4E54150009F53A /* WK_MineViewController.h */,
 				05FED08B1B4E54150009F53A /* WK_MineViewController.m */,
+				18F53DAB1B56902A003B93EB /* PersonCollectionViewController */,
 			);
 			path = MineViewController;
 			sourceTree = "<group>";
@@ -983,6 +1025,77 @@
 				18F53D4C1B4D5EFD003B93EB /* View+MASShorthandAdditions.h */,
 			);
 			path = Masonry;
+			sourceTree = "<group>";
+		};
+		18F53DA71B56872B003B93EB /* PageContainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18F53DA81B568749003B93EB /* WK_PageContainerViewController.h */,
+				18F53DA91B568749003B93EB /* WK_PageContainerViewController.m */,
+			);
+			path = PageContainViewController;
+			sourceTree = "<group>";
+		};
+		18F53DAB1B56902A003B93EB /* PersonCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18F53DAC1B5690F6003B93EB /* WK_LocalNotesViewController.h */,
+				18F53DAD1B5690F6003B93EB /* WK_LocalNotesViewController.m */,
+				18F53DAF1B56910E003B93EB /* WK_PublishedNotesViewController.h */,
+				18F53DB01B56910E003B93EB /* WK_PublishedNotesViewController.m */,
+				18F53DB21B56913A003B93EB /* WK_CollectedNotesViewController.h */,
+				18F53DB31B56913A003B93EB /* WK_CollectedNotesViewController.m */,
+			);
+			path = PersonCollectionViewController;
+			sourceTree = "<group>";
+		};
+		18F53DD41B569FAE003B93EB /* XLPagerTabStrip */ = {
+			isa = PBXGroup;
+			children = (
+				18F53DD51B569FAE003B93EB /* Controllers */,
+				18F53DE01B569FAE003B93EB /* Views */,
+			);
+			path = XLPagerTabStrip;
+			sourceTree = "<group>";
+		};
+		18F53DD51B569FAE003B93EB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18F53DD61B569FAE003B93EB /* XLBarPagerTabStripViewController.h */,
+				18F53DD71B569FAE003B93EB /* XLBarPagerTabStripViewController.m */,
+				18F53DD81B569FAE003B93EB /* XLButtonBarPagerTabStripViewController.h */,
+				18F53DD91B569FAE003B93EB /* XLButtonBarPagerTabStripViewController.m */,
+				18F53DDA1B569FAE003B93EB /* XLPagerTabStripViewController.h */,
+				18F53DDB1B569FAE003B93EB /* XLPagerTabStripViewController.m */,
+				18F53DDC1B569FAE003B93EB /* XLSegmentedPagerTabStripViewController.h */,
+				18F53DDD1B569FAE003B93EB /* XLSegmentedPagerTabStripViewController.m */,
+				18F53DDE1B569FAE003B93EB /* XLTwitterPagerTabStripViewController.h */,
+				18F53DDF1B569FAE003B93EB /* XLTwitterPagerTabStripViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18F53DE01B569FAE003B93EB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18F53DE11B569FAE003B93EB /* FXPageControl */,
+				18F53DE41B569FAE003B93EB /* XLBarView.h */,
+				18F53DE51B569FAE003B93EB /* XLBarView.m */,
+				18F53DE61B569FAE003B93EB /* XLButtonBarView.h */,
+				18F53DE71B569FAE003B93EB /* XLButtonBarView.m */,
+				18F53DE81B569FAE003B93EB /* XLButtonBarViewCell.h */,
+				18F53DE91B569FAE003B93EB /* XLButtonBarViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18F53DE11B569FAE003B93EB /* FXPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				18F53DE21B569FAE003B93EB /* FXPageControl.h */,
+				18F53DE31B569FAE003B93EB /* FXPageControl.m */,
+			);
+			path = FXPageControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1110,16 +1223,21 @@
 				05E7CADF1B4CB74000C8A220 /* User.m in Sources */,
 				05FECFED1B4E3C520009F53A /* FLEXImagePreviewViewController.m in Sources */,
 				05FECFBE1B4E3C520009F53A /* FLEXArgumentInputStringView.m in Sources */,
+				18F53DF11B569FAE003B93EB /* XLButtonBarView.m in Sources */,
 				05FECFC11B4E3C520009F53A /* FLEXArgumentInputTextView.m in Sources */,
 				05FECFCF1B4E3C520009F53A /* FLEXClassesTableViewController.m in Sources */,
+				18F53DF21B569FAE003B93EB /* XLButtonBarViewCell.m in Sources */,
 				05FED0621B4E41AC0009F53A /* UIImageView+AFNetworking.m in Sources */,
+				18F53DF01B569FAE003B93EB /* XLBarView.m in Sources */,
 				05FED05C1B4E41AC0009F53A /* AFURLResponseSerialization.m in Sources */,
 				05FED0781B4E45250009F53A /* UIColor+M16RGB.m in Sources */,
 				05FED05F1B4E41AC0009F53A /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				05FED05E1B4E41AC0009F53A /* AFNetworkActivityIndicatorManager.m in Sources */,
+				18F53DED1B569FAE003B93EB /* XLSegmentedPagerTabStripViewController.m in Sources */,
 				05FECFE01B4E3C520009F53A /* FLEXImageExplorerViewController.m in Sources */,
 				05FECFC01B4E3C520009F53A /* FLEXArgumentInputSwitchView.m in Sources */,
 				05FECFBB1B4E3C520009F53A /* FLEXArgumentInputJSONObjectView.m in Sources */,
+				18F53DEA1B569FAE003B93EB /* XLBarPagerTabStripViewController.m in Sources */,
 				05FECFD81B4E3C520009F53A /* FLEXSystemLogTableViewCell.m in Sources */,
 				05FECFD51B4E3C520009F53A /* FLEXLiveObjectsTableViewController.m in Sources */,
 				05E75B201B4BCECC0098FC6E /* RDVTabBar.m in Sources */,
@@ -1128,6 +1246,7 @@
 				05FECFC31B4E3C520009F53A /* FLEXArgumentInputViewFactory.m in Sources */,
 				05FED0241B4E417B0009F53A /* JGProgressHUDFadeAnimation.m in Sources */,
 				05FECFD61B4E3C520009F53A /* FLEXWebViewController.m in Sources */,
+				18F53DAE1B5690F6003B93EB /* WK_LocalNotesViewController.m in Sources */,
 				05FECFDC1B4E3C520009F53A /* FLEXDefaultsExplorerViewController.m in Sources */,
 				18F53D4F1B4D5EFD003B93EB /* MASConstraintMaker.m in Sources */,
 				18F53D551B4D5EFD003B93EB /* View+MASAdditions.m in Sources */,
@@ -1139,12 +1258,15 @@
 				05FECFEC1B4E3C520009F53A /* FLEXHierarchyTableViewController.m in Sources */,
 				18F53D501B4D5EFD003B93EB /* MASLayoutConstraint.m in Sources */,
 				05FED0841B4E499C0009F53A /* YHAssistant.m in Sources */,
+				18F53DEE1B569FAE003B93EB /* XLTwitterPagerTabStripViewController.m in Sources */,
 				05FED07F1B4E45910009F53A /* M16TableViewCell.m in Sources */,
 				05FED0751B4E44C10009F53A /* M16HUDUtil.m in Sources */,
 				05FECFBF1B4E3C520009F53A /* FLEXArgumentInputStructView.m in Sources */,
 				18F53D4E1B4D5EFD003B93EB /* MASConstraint.m in Sources */,
 				05FECFC51B4E3C520009F53A /* FLEXFieldEditorView.m in Sources */,
 				05FED0561B4E41AC0009F53A /* AFHTTPRequestOperationManager.m in Sources */,
+				18F53DEB1B569FAE003B93EB /* XLButtonBarPagerTabStripViewController.m in Sources */,
+				18F53DEC1B569FAE003B93EB /* XLPagerTabStripViewController.m in Sources */,
 				05FECFC81B4E3C520009F53A /* FLEXMethodCallingViewController.m in Sources */,
 				05FECFCE1B4E3C520009F53A /* FLEXWindow.m in Sources */,
 				05FED0271B4E417B0009F53A /* JGProgressHUDIndicatorView.m in Sources */,
@@ -1165,6 +1287,7 @@
 				05FECFD71B4E3C520009F53A /* FLEXSystemLogMessage.m in Sources */,
 				18F53D541B4D5EFD003B93EB /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				05FED02A1B4E417B0009F53A /* JGProgressHUDSuccessIndicatorView.m in Sources */,
+				18F53DAA1B568749003B93EB /* WK_PageContainerViewController.m in Sources */,
 				05FECFDD1B4E3C520009F53A /* FLEXDescriptionTableViewCell.m in Sources */,
 				05FED0221B4E417B0009F53A /* JGProgressHUDAnimation.m in Sources */,
 				05FECFDE1B4E3C520009F53A /* FLEXDictionaryExplorerViewController.m in Sources */,
@@ -1186,6 +1309,7 @@
 				05FECFCA1B4E3C520009F53A /* FLEXExplorerToolbar.m in Sources */,
 				05FECFE21B4E3C520009F53A /* FLEXObjectExplorerFactory.m in Sources */,
 				05FED06C1B4E42710009F53A /* UIScrollView+SVInfiniteScrolling.m in Sources */,
+				18F53DB41B56913A003B93EB /* WK_CollectedNotesViewController.m in Sources */,
 				05FED0291B4E417B0009F53A /* JGProgressHUDRingIndicatorView.m in Sources */,
 				05FECFC71B4E3C520009F53A /* FLEXIvarEditorViewController.m in Sources */,
 				05FED0641B4E41AC0009F53A /* UIRefreshControl+AFNetworking.m in Sources */,
@@ -1195,11 +1319,13 @@
 				05E75B221B4BCECC0098FC6E /* RDVTabBarItem.m in Sources */,
 				05FECFD01B4E3C520009F53A /* FLEXFileBrowserSearchOperation.m in Sources */,
 				05FED0601B4E41AC0009F53A /* UIAlertView+AFNetworking.m in Sources */,
+				18F53DEF1B569FAE003B93EB /* FXPageControl.m in Sources */,
 				05FECFDA1B4E3C520009F53A /* FLEXArrayExplorerViewController.m in Sources */,
 				05FECFD11B4E3C520009F53A /* FLEXFileBrowserTableViewController.m in Sources */,
 				05FED0001B4E41050009F53A /* M16TableViewController.m in Sources */,
 				05FECFB81B4E3C520009F53A /* FLEXArgumentInputColorView.m in Sources */,
 				05FECFD91B4E3C520009F53A /* FLEXSystemLogTableViewController.m in Sources */,
+				18F53DB11B56910E003B93EB /* WK_PublishedNotesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

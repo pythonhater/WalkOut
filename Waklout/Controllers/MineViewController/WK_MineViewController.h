@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "M16ViewController.h"
+#import "WK_PageContainerViewController.h"
 
-@interface WK_MineViewController : M16ViewController
+@interface WK_MineViewController : WK_PageContainerViewController
 
 @end

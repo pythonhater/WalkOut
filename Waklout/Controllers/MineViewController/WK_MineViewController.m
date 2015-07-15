@@ -8,6 +8,9 @@
 
 #import "WK_MineViewController.h"
 #import "WK_FollowView.h"
+#import "WK_LocalNotesViewController.h"
+#import "WK_PublishedNotesViewController.h"
+#import "WK_CollectedNotesViewController.h"
 
 static CGFloat const kTopContentViewHeight = 60.0f;
 static CGFloat const kUserIconImageViewWidth = 45.0f;
@@ -43,6 +46,8 @@ static CGFloat const kFansViewHeight = 30.0f;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self setupTopContentView];
+    
+
 }
 
 - (void)setupTopContentView
@@ -89,6 +94,21 @@ static CGFloat const kFansViewHeight = 30.0f;
         make.centerY.equalTo(self.topContentView.mas_centerY);
         make.height.equalTo(@(kFansViewHeight));
     }];
+}
+
+#pragma mark - PageContainerViewControllerDataSource
+-(NSArray *)childViewControllersForPagerTabStripViewController:(XLPagerTabStripViewController *)pagerTabStripViewController
+{
+    WK_LocalNotesViewController *localNotesViewController = [[WK_LocalNotesViewController alloc] init];
+    WK_PublishedNotesViewController *publishedNotesViewController = [[WK_PublishedNotesViewController alloc] init];
+    WK_CollectedNotesViewController *collectedNotesViewController = [[WK_CollectedNotesViewController alloc] init];
+    return @[localNotesViewController, publishedNotesViewController, collectedNotesViewController];
+}
+
+- (void)moveToViewControllerAtIndex:(NSUInteger)index
+{
+    //点击频道名称切换
+    [super moveToViewControllerAtIndex:index];
 }
 
 - (void)didReceiveMemoryWarning
