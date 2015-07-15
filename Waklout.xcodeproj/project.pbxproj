@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		055483691B54D20E00058ED5 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055483681B54D20E00058ED5 /* AVOSCloud.framework */; };
+		0554836B1B54D24600058ED5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554836A1B54D24600058ED5 /* SystemConfiguration.framework */; };
+		0554836D1B54D24F00058ED5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554836C1B54D24F00058ED5 /* MobileCoreServices.framework */; };
+		0554836F1B54D25600058ED5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554836E1B54D25600058ED5 /* CoreTelephony.framework */; };
+		055483711B54D25E00058ED5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055483701B54D25E00058ED5 /* CoreLocation.framework */; };
+		055483731B54D26A00058ED5 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 055483721B54D26A00058ED5 /* libicucore.dylib */; };
+		055483751B54D27600058ED5 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 055483741B54D27600058ED5 /* libc++.dylib */; };
 		05E75AF21B4BCAE90098FC6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E75AF11B4BCAE90098FC6E /* main.m */; };
 		05E75AF51B4BCAE90098FC6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E75AF41B4BCAE90098FC6E /* AppDelegate.m */; };
 		05E75AF81B4BCAE90098FC6E /* Waklout.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 05E75AF61B4BCAE90098FC6E /* Waklout.xcdatamodeld */; };
@@ -138,6 +145,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		055483681B54D20E00058ED5 /* AVOSCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AVOSCloud.framework; sourceTree = "<group>"; };
+		0554836A1B54D24600058ED5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0554836C1B54D24F00058ED5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		0554836E1B54D25600058ED5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		055483701B54D25E00058ED5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		055483721B54D26A00058ED5 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		055483741B54D27600058ED5 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		05E75AEC1B4BCAE90098FC6E /* Waklout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Waklout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E75AF01B4BCAE90098FC6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05E75AF11B4BCAE90098FC6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -394,6 +408,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				055483751B54D27600058ED5 /* libc++.dylib in Frameworks */,
+				055483731B54D26A00058ED5 /* libicucore.dylib in Frameworks */,
+				055483711B54D25E00058ED5 /* CoreLocation.framework in Frameworks */,
+				0554836F1B54D25600058ED5 /* CoreTelephony.framework in Frameworks */,
+				0554836D1B54D24F00058ED5 /* MobileCoreServices.framework in Frameworks */,
+				0554836B1B54D24600058ED5 /* SystemConfiguration.framework in Frameworks */,
+				055483691B54D20E00058ED5 /* AVOSCloud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,11 +428,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		055483671B54D1DF00058ED5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				055483741B54D27600058ED5 /* libc++.dylib */,
+				055483721B54D26A00058ED5 /* libicucore.dylib */,
+				055483701B54D25E00058ED5 /* CoreLocation.framework */,
+				0554836E1B54D25600058ED5 /* CoreTelephony.framework */,
+				0554836C1B54D24F00058ED5 /* MobileCoreServices.framework */,
+				0554836A1B54D24600058ED5 /* SystemConfiguration.framework */,
+				055483681B54D20E00058ED5 /* AVOSCloud.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		05E75AE31B4BCAE90098FC6E = {
 			isa = PBXGroup;
 			children = (
 				05E75AEE1B4BCAE90098FC6E /* Waklout */,
 				05E75B0B1B4BCAE90098FC6E /* WakloutTests */,
+				055483671B54D1DF00058ED5 /* Frameworks */,
 				05E75AED1B4BCAE90098FC6E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -1278,6 +1314,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Waklout/Waklout-Prefix.pch";
 				INFOPLIST_FILE = Waklout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1289,6 +1329,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Waklout/Waklout-Prefix.pch";
 				INFOPLIST_FILE = Waklout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
