@@ -68,13 +68,13 @@
     return self;
 }
 
--(UIView *)selectedBar
-{
-    if (_selectedBar) return _selectedBar;
-    _selectedBar = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
-    [self updateSelectedBarPositionWithAnimation:NO];
-    return _selectedBar;
-}
+//-(UIView *)selectedBar
+//{
+//    if (_selectedBar) return _selectedBar;
+//    _selectedBar = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+//    [self updateSelectedBarPositionWithAnimation:NO];
+//    return _selectedBar;
+//}
 
 
 #pragma mark - Helpers

@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WK_PageContainerViewController.h"
+#import "XLButtonBarPagerTabStripViewController.h"
 
-@interface WK_MineViewController : WK_PageContainerViewController
+@interface WK_MineViewController : XLButtonBarPagerTabStripViewController
 
 @end

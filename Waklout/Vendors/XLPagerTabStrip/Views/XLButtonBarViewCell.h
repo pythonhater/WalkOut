@@ -25,9 +25,11 @@
 
 #import <UIKit/UIKit.h>
 
+#define BlackImage [UIImage imageNamed:@"solidus_black"]
+#define GrayImage [UIImage imageNamed:@"solidus_gray"]
+
 @interface XLButtonBarViewCell : UICollectionViewCell
 
-@property (readonly, nonatomic) UIImageView * imageView;
-@property (readonly, nonatomic) UILabel * label;
+@property (strong, nonatomic) UILabel *label;
 
 @end

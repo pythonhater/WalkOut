@@ -24,17 +24,66 @@
 // THE SOFTWARE.
 
 #import "XLButtonBarViewCell.h"
+static CGFloat const kLabelLeftEdge = 10.0f;
+static CGFloat const kLabelRigthEdge = 10.0f;
 
 @interface XLButtonBarViewCell()
 
-@property IBOutlet UIImageView * imageView;
-@property IBOutlet UILabel * label;
 
 @end
 
 @implementation XLButtonBarViewCell
 
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.label = [[UILabel alloc] init];
+        self.label.textColor = [UIColor grayColor];
+        self.label.textAlignment = NSTextAlignmentCenter;
+        self.label.backgroundColor = [UIColor clearColor];
+        self.label.font = [UIFont fontWithName:@"Helvetica-Bold" size:14.0f];
+        [self.contentView addSubview:self.label];
+        
+        [self.label mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.contentView.mas_left).offset(kLabelLeftEdge);
+            make.right.equalTo(self.contentView.mas_right).offset(-kLabelRigthEdge);
+            make.centerY.equalTo(self.contentView.mas_centerY);
+        }];
+    }
+    return self;
+}
 
+- (void)setSelected:(BOOL)selected
+{
+    [super setSelected:selected];
+    [self setLabelColor:selected];
+    [self animateVerticalLines:selected];
+}
 
+-(void)setLabelColor:(BOOL)selected
+{
+    if (selected) {
+        self.label.textColor = [UIColor blackColor];
+    } else {
+        self.label.textColor = [UIColor grayColor];
+    }
+}
+
+- (void)animateVerticalLines:(BOOL)selected
+{
+    if (!selected) {
+        return;
+    }
+    [UIView animateWithDuration:0.2 animations:^{
+        [self.label setTransform:CGAffineTransformMakeScale(1.2, 1.2)];
+    } completion:^(BOOL finished){
+        if (finished) {
+            [UIView animateWithDuration:0.2 animations:^{
+                [self.label setTransform:CGAffineTransformMakeScale(1.0, 1.0)];
+            }];
+        }
+    }];
+}
 
 @end

@@ -25,9 +25,14 @@
 
 #import "XLButtonBarView.h"
 #import "XLPagerTabStripViewController.h"
+extern NSUInteger const kXLButtonBarViewCellHeight;
 
-@interface XLButtonBarPagerTabStripViewController : XLPagerTabStripViewController
+@interface XLButtonBarPagerTabStripViewController : XLPagerTabStripViewController<UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (readonly, nonatomic) XLButtonBarView * buttonBarView;
+
+@property (nonatomic) BOOL shouldUpdateButtonBarView;
+
+- (void)updateBarStatus:(NSInteger)currentIndex;
 
 @end

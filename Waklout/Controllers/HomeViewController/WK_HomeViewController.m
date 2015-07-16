@@ -24,7 +24,7 @@
 {
     self = [super init];
     if (self) {
-        self.title = NSLocalizedString(@"HOME", nil);
+        self.title = NSLocalizedString(@"WK_HOME", nil);
     }
     return self;
 }

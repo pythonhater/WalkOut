@@ -81,6 +81,7 @@
     if (!self.containerView){
         self.containerView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds))];
         self.containerView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        self.containerView.backgroundColor = [UIColor clearColor];
 
         [self.view addSubview:self.containerView];
     }

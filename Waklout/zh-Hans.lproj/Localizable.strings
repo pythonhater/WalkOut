@@ -5,6 +5,10 @@
   Created by yoho on 15/7/8.
   Copyright (c) 2015年 janlee. All rights reserved.
 */
-"HOME" = "首页";
-"LIFE" = "生活";
-"MINE" = "我的";
+"WK_HOME" = "首页";
+"WK_LIFE" = "生活";
+"WK_MINE" = "我的";
+
+"WK_Record" = "记录";
+"WK_Published" = "发布";
+"WK_Collected" = "收藏";

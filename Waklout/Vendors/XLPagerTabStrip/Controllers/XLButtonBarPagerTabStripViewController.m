@@ -25,11 +25,11 @@
 
 #import "XLButtonBarViewCell.h"
 #import "XLButtonBarPagerTabStripViewController.h"
+NSUInteger const kXLButtonBarViewCellHeight = 40;
 
 @interface XLButtonBarPagerTabStripViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (nonatomic) IBOutlet XLButtonBarView * buttonBarView;
-@property (nonatomic) BOOL shouldUpdateButtonBarView;
 
 @end
 
@@ -70,7 +70,7 @@
         self.buttonBarView.dataSource = self;
     }
     self.buttonBarView.labelFont = [UIFont boldSystemFontOfSize:18.0f];
-    self.buttonBarView.leftRightMargin = 8;
+    self.buttonBarView.leftRightMargin = 20;
     [self.buttonBarView setScrollsToTop:NO];
     UICollectionViewFlowLayout * flowLayout = (id)self.buttonBarView.collectionViewLayout;
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
@@ -80,9 +80,9 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    UICollectionViewLayoutAttributes *attributes = [self.buttonBarView layoutAttributesForItemAtIndexPath:[NSIndexPath indexPathForItem:self.currentIndex inSection:0]];
-    CGRect cellRect = attributes.frame;
-    [self.buttonBarView.selectedBar setFrame:CGRectMake(cellRect.origin.x, self.buttonBarView.frame.size.height - 5, cellRect.size.width, 5)];
+//    UICollectionViewLayoutAttributes *attributes = [self.buttonBarView layoutAttributesForItemAtIndexPath:[NSIndexPath indexPathForItem:self.currentIndex inSection:0]];
+//    CGRect cellRect = attributes.frame;
+//    [self.buttonBarView.selectedBar setFrame:CGRectMake(cellRect.origin.x, self.buttonBarView.frame.size.height - 5, cellRect.size.width, 5)];
 }
 
 -(void)reloadPagerTabStripView
@@ -95,6 +95,12 @@
     }
 }
 
+- (void)updateBarStatus:(NSInteger)currentIndex
+{
+    //    NSString *imageName = [NSString stringWithFormat:@"nav_%@", [YH_MenuService channelNameForType:currentIndex]];
+    //    self.titleImageView.image = [UIImage imageNamed:imageName];
+    [self.buttonBarView selectItemAtIndexPath:[NSIndexPath indexPathForItem:currentIndex inSection:0] animated:YES scrollPosition:UICollectionViewScrollPositionNone];
+}
 
 #pragma mark - Properties
 
@@ -103,10 +109,9 @@
     if (_buttonBarView) return _buttonBarView;
     UICollectionViewFlowLayout * flowLayout = [[UICollectionViewFlowLayout alloc] init];
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
-    [flowLayout setSectionInset:UIEdgeInsetsMake(0, 35, 0, 35)];
-    _buttonBarView = [[XLButtonBarView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44.0f) collectionViewLayout:flowLayout];
-    _buttonBarView.backgroundColor = [UIColor orangeColor];
-    _buttonBarView.selectedBar.backgroundColor = [UIColor blackColor];
+    [flowLayout setSectionInset:UIEdgeInsetsMake(0, 5, 0, 5)];
+    _buttonBarView = [[XLButtonBarView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), kXLButtonBarViewCellHeight) collectionViewLayout:flowLayout];
+    _buttonBarView.selectedBar.backgroundColor = [UIColor clearColor];
     _buttonBarView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     return _buttonBarView;
 }
@@ -147,9 +152,9 @@
     label.font = self.buttonBarView.labelFont;
     UIViewController<XLPagerTabStripChildItem> * childController =   [self.pagerTabStripChildViewControllers objectAtIndex:indexPath.item];
     [label setText:[childController titleForPagerTabStripViewController:self]];
-    CGSize labelSize = [label intrinsicContentSize];
+    CGFloat labelWidth = [label intrinsicContentSize].width;
     
-    return CGSizeMake(labelSize.width + (self.buttonBarView.leftRightMargin * 2), collectionView.frame.size.height);
+    return CGSizeMake(labelWidth + (self.buttonBarView.leftRightMargin * 2), collectionView.frame.size.height);
 }
 
 #pragma mark - UICollectionViewDelegate
@@ -158,21 +163,42 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     [self.buttonBarView moveToIndex:indexPath.item animated:YES swipeDirection:XLPagerTabStripDirectionNone];
-    self.shouldUpdateButtonBarView = NO;
-    [self moveToViewControllerAtIndex:indexPath.item];  
+    if (self.currentIndex != indexPath.item) {
+        self.shouldUpdateButtonBarView = NO;
+    }
+    [self moveToViewControllerAtIndex:indexPath.item];
 }
 
 #pragma merk - UICollectionViewDataSource
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return self.pagerTabStripChildViewControllers.count;
+    return [self.pagerTabStripChildViewControllers count];
 }
 
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    
     UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    switch (indexPath.item) {
+        case 0:
+        {
+            cell.contentView.backgroundColor = [UIColor purpleColor];
+        }
+            break;
+            case 1:
+        {
+            cell.contentView.backgroundColor = [UIColor blueColor];
+        }
+            break;
+        case 2:{
+            cell.contentView.backgroundColor = [UIColor redColor];
+        }
+            break;
+        default:
+            break;
+    }
     if (!cell){
         cell = [[XLButtonBarViewCell alloc] initWithFrame:CGRectMake(0, 0, 50, self.buttonBarView.frame.size.height)];
     }

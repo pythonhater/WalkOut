@@ -8,7 +8,8 @@
 
 #import "WK_MineViewController.h"
 #import "WK_FollowView.h"
-#import "WK_LocalNotesViewController.h"
+#import "XLButtonBarViewCell.h"
+#import "WK_RecordlNotesViewController.h"
 #import "WK_PublishedNotesViewController.h"
 #import "WK_CollectedNotesViewController.h"
 
@@ -36,7 +37,7 @@ static CGFloat const kFansViewHeight = 30.0f;
 {
     self = [super init];
     if (self) {
-        self.title = NSLocalizedString(@"MINE", nil);
+        self.title = NSLocalizedString(@"WK_MINE", nil);
     }
     return self;
 }
@@ -47,20 +48,24 @@ static CGFloat const kFansViewHeight = 30.0f;
     // Do any additional setup after loading the view.
     [self setupTopContentView];
     
-
+    self.buttonBarView.frame = CGRectMake(0, CGRectGetMaxY(self.topContentView.frame), SCREEN_WIDTH, kXLButtonBarViewCellHeight);
+    self.buttonBarView.backgroundColor = [UIColor m16_colorwithHexString:@"#F5F5F5"];
+    [self.buttonBarView registerClass:[XLButtonBarViewCell class] forCellWithReuseIdentifier:@"Cell"];
+    
+    UICollectionViewFlowLayout *flowLayout = (UICollectionViewFlowLayout *)self.buttonBarView.collectionViewLayout;
+    flowLayout.minimumLineSpacing = 0;
+    flowLayout.minimumInteritemSpacing = 0;
+    
+    self.containerView.bounces = NO;
+    self.containerView.frame = CGRectMake(0, CGRectGetMaxY(self.buttonBarView.frame), SCREEN_WIDTH, CGRectGetHeight(self.view.frame) - kTopContentViewHeight - kXLButtonBarViewCellHeight);
 }
 
 - (void)setupTopContentView
 {
     self.topContentView = [[UIView alloc] init];
     self.topContentView.backgroundColor = [UIColor redColor];
+    self.topContentView.frame = CGRectMake(0, 0, SCREEN_WIDTH, kTopContentViewHeight);
     [self.view addSubview:self.topContentView];
-    [self.topContentView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.view.mas_left).offset(0);
-        make.right.equalTo(self.view.mas_right).offset(0);
-        make.top.equalTo(self.view.mas_top).offset(0);
-        make.height.equalTo(@(kTopContentViewHeight));
-    }];
     
     self.focusView = [[WK_FollowView alloc] init];
     self.focusView.backgroundColor = [UIColor purpleColor];
@@ -99,10 +104,10 @@ static CGFloat const kFansViewHeight = 30.0f;
 #pragma mark - PageContainerViewControllerDataSource
 -(NSArray *)childViewControllersForPagerTabStripViewController:(XLPagerTabStripViewController *)pagerTabStripViewController
 {
-    WK_LocalNotesViewController *localNotesViewController = [[WK_LocalNotesViewController alloc] init];
+    WK_RecordlNotesViewController *recordNotedViewController = [[WK_RecordlNotesViewController alloc] init];
     WK_PublishedNotesViewController *publishedNotesViewController = [[WK_PublishedNotesViewController alloc] init];
     WK_CollectedNotesViewController *collectedNotesViewController = [[WK_CollectedNotesViewController alloc] init];
-    return @[localNotesViewController, publishedNotesViewController, collectedNotesViewController];
+    return @[recordNotedViewController, publishedNotesViewController, collectedNotesViewController];
 }
 
 - (void)moveToViewControllerAtIndex:(NSUInteger)index
