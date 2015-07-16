@@ -24,6 +24,9 @@
 		05E75B221B4BCECC0098FC6E /* RDVTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E75B1F1B4BCECC0098FC6E /* RDVTabBarItem.m */; };
 		05E7CADF1B4CB74000C8A220 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E7CADE1B4CB74000C8A220 /* User.m */; };
 		05E7CB001B4D27F800C8A220 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 05E7CB021B4D27F800C8A220 /* Localizable.strings */; };
+		05F3189F1B57408300FB66D1 /* WK_CollectedNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3189A1B57408300FB66D1 /* WK_CollectedNotesViewController.m */; };
+		05F318A01B57408300FB66D1 /* WK_RecordlNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3189C1B57408300FB66D1 /* WK_RecordlNotesViewController.m */; };
+		05F318A11B57408300FB66D1 /* WK_PublishedNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3189E1B57408300FB66D1 /* WK_PublishedNotesViewController.m */; };
 		05FECFB81B4E3C520009F53A /* FLEXArgumentInputColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FECF461B4E3C520009F53A /* FLEXArgumentInputColorView.m */; };
 		05FECFB91B4E3C520009F53A /* FLEXArgumentInputFontsPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FECF481B4E3C520009F53A /* FLEXArgumentInputFontsPickerView.m */; };
 		05FECFBA1B4E3C520009F53A /* FLEXArgumentInputFontView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FECF4A1B4E3C520009F53A /* FLEXArgumentInputFontView.m */; };
@@ -132,10 +135,6 @@
 		18F53D531B4D5EFD003B93EB /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53D461B4D5EFD003B93EB /* NSArray+MASAdditions.m */; };
 		18F53D541B4D5EFD003B93EB /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53D491B4D5EFD003B93EB /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		18F53D551B4D5EFD003B93EB /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53D4B1B4D5EFD003B93EB /* View+MASAdditions.m */; };
-		18F53DAA1B568749003B93EB /* WK_PageContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DA91B568749003B93EB /* WK_PageContainerViewController.m */; };
-		18F53DAE1B5690F6003B93EB /* WK_LocalNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DAD1B5690F6003B93EB /* WK_LocalNotesViewController.m */; };
-		18F53DB11B56910E003B93EB /* WK_PublishedNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DB01B56910E003B93EB /* WK_PublishedNotesViewController.m */; };
-		18F53DB41B56913A003B93EB /* WK_CollectedNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DB31B56913A003B93EB /* WK_CollectedNotesViewController.m */; };
 		18F53DEA1B569FAE003B93EB /* XLBarPagerTabStripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DD71B569FAE003B93EB /* XLBarPagerTabStripViewController.m */; };
 		18F53DEB1B569FAE003B93EB /* XLButtonBarPagerTabStripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DD91B569FAE003B93EB /* XLButtonBarPagerTabStripViewController.m */; };
 		18F53DEC1B569FAE003B93EB /* XLPagerTabStripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DDB1B569FAE003B93EB /* XLPagerTabStripViewController.m */; };
@@ -185,6 +184,12 @@
 		05E7CADE1B4CB74000C8A220 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		05E7CB011B4D27F800C8A220 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		05E7CB031B4D280500C8A220 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		05F318991B57408300FB66D1 /* WK_CollectedNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_CollectedNotesViewController.h; sourceTree = "<group>"; };
+		05F3189A1B57408300FB66D1 /* WK_CollectedNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_CollectedNotesViewController.m; sourceTree = "<group>"; };
+		05F3189B1B57408300FB66D1 /* WK_RecordlNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_RecordlNotesViewController.h; sourceTree = "<group>"; };
+		05F3189C1B57408300FB66D1 /* WK_RecordlNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_RecordlNotesViewController.m; sourceTree = "<group>"; };
+		05F3189D1B57408300FB66D1 /* WK_PublishedNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_PublishedNotesViewController.h; sourceTree = "<group>"; };
+		05F3189E1B57408300FB66D1 /* WK_PublishedNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_PublishedNotesViewController.m; sourceTree = "<group>"; };
 		05FECF451B4E3C520009F53A /* FLEXArgumentInputColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLEXArgumentInputColorView.h; sourceTree = "<group>"; };
 		05FECF461B4E3C520009F53A /* FLEXArgumentInputColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLEXArgumentInputColorView.m; sourceTree = "<group>"; };
 		05FECF471B4E3C520009F53A /* FLEXArgumentInputFontsPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLEXArgumentInputFontsPickerView.h; sourceTree = "<group>"; };
@@ -414,14 +419,6 @@
 		18F53D4B1B4D5EFD003B93EB /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
 		18F53D4C1B4D5EFD003B93EB /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		18F53D561B4D6053003B93EB /* Waklout-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Waklout-Prefix.pch"; sourceTree = "<group>"; };
-		18F53DA81B568749003B93EB /* WK_PageContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_PageContainerViewController.h; sourceTree = "<group>"; };
-		18F53DA91B568749003B93EB /* WK_PageContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_PageContainerViewController.m; sourceTree = "<group>"; };
-		18F53DAC1B5690F6003B93EB /* WK_LocalNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_LocalNotesViewController.h; sourceTree = "<group>"; };
-		18F53DAD1B5690F6003B93EB /* WK_LocalNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_LocalNotesViewController.m; sourceTree = "<group>"; };
-		18F53DAF1B56910E003B93EB /* WK_PublishedNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_PublishedNotesViewController.h; sourceTree = "<group>"; };
-		18F53DB01B56910E003B93EB /* WK_PublishedNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_PublishedNotesViewController.m; sourceTree = "<group>"; };
-		18F53DB21B56913A003B93EB /* WK_CollectedNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_CollectedNotesViewController.h; sourceTree = "<group>"; };
-		18F53DB31B56913A003B93EB /* WK_CollectedNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_CollectedNotesViewController.m; sourceTree = "<group>"; };
 		18F53DD61B569FAE003B93EB /* XLBarPagerTabStripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLBarPagerTabStripViewController.h; sourceTree = "<group>"; };
 		18F53DD71B569FAE003B93EB /* XLBarPagerTabStripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLBarPagerTabStripViewController.m; sourceTree = "<group>"; };
 		18F53DD81B569FAE003B93EB /* XLButtonBarPagerTabStripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLButtonBarPagerTabStripViewController.h; sourceTree = "<group>"; };
@@ -576,7 +573,6 @@
 		05E75B4F1B4BDA6A0098FC6E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				18F53DA71B56872B003B93EB /* PageContainViewController */,
 				05FED0851B4E54150009F53A /* HomeViewController */,
 				05FED08F1B4E54320009F53A /* LifeViewController */,
 				05FED0891B4E54150009F53A /* MineViewController */,
@@ -591,6 +587,19 @@
 				05E7CADE1B4CB74000C8A220 /* User.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		05F318981B57408300FB66D1 /* PersonalViewController */ = {
+			isa = PBXGroup;
+			children = (
+				05F3189B1B57408300FB66D1 /* WK_RecordlNotesViewController.h */,
+				05F3189C1B57408300FB66D1 /* WK_RecordlNotesViewController.m */,
+				05F3189D1B57408300FB66D1 /* WK_PublishedNotesViewController.h */,
+				05F3189E1B57408300FB66D1 /* WK_PublishedNotesViewController.m */,
+				05F318991B57408300FB66D1 /* WK_CollectedNotesViewController.h */,
+				05F3189A1B57408300FB66D1 /* WK_CollectedNotesViewController.m */,
+			);
+			path = PersonalViewController;
 			sourceTree = "<group>";
 		};
 		05FECF3E1B4E3C010009F53A /* BaseClass */ = {
@@ -974,7 +983,7 @@
 			children = (
 				05FED08A1B4E54150009F53A /* WK_MineViewController.h */,
 				05FED08B1B4E54150009F53A /* WK_MineViewController.m */,
-				18F53DAB1B56902A003B93EB /* PersonCollectionViewController */,
+				05F318981B57408300FB66D1 /* PersonalViewController */,
 			);
 			path = MineViewController;
 			sourceTree = "<group>";
@@ -1025,28 +1034,6 @@
 				18F53D4C1B4D5EFD003B93EB /* View+MASShorthandAdditions.h */,
 			);
 			path = Masonry;
-			sourceTree = "<group>";
-		};
-		18F53DA71B56872B003B93EB /* PageContainViewController */ = {
-			isa = PBXGroup;
-			children = (
-				18F53DA81B568749003B93EB /* WK_PageContainerViewController.h */,
-				18F53DA91B568749003B93EB /* WK_PageContainerViewController.m */,
-			);
-			path = PageContainViewController;
-			sourceTree = "<group>";
-		};
-		18F53DAB1B56902A003B93EB /* PersonCollectionViewController */ = {
-			isa = PBXGroup;
-			children = (
-				18F53DAC1B5690F6003B93EB /* WK_LocalNotesViewController.h */,
-				18F53DAD1B5690F6003B93EB /* WK_LocalNotesViewController.m */,
-				18F53DAF1B56910E003B93EB /* WK_PublishedNotesViewController.h */,
-				18F53DB01B56910E003B93EB /* WK_PublishedNotesViewController.m */,
-				18F53DB21B56913A003B93EB /* WK_CollectedNotesViewController.h */,
-				18F53DB31B56913A003B93EB /* WK_CollectedNotesViewController.m */,
-			);
-			path = PersonCollectionViewController;
 			sourceTree = "<group>";
 		};
 		18F53DD41B569FAE003B93EB /* XLPagerTabStrip */ = {
@@ -1240,13 +1227,13 @@
 				18F53DEA1B569FAE003B93EB /* XLBarPagerTabStripViewController.m in Sources */,
 				05FECFD81B4E3C520009F53A /* FLEXSystemLogTableViewCell.m in Sources */,
 				05FECFD51B4E3C520009F53A /* FLEXLiveObjectsTableViewController.m in Sources */,
+				05F3189F1B57408300FB66D1 /* WK_CollectedNotesViewController.m in Sources */,
 				05E75B201B4BCECC0098FC6E /* RDVTabBar.m in Sources */,
 				05FED0251B4E417B0009F53A /* JGProgressHUDFadeZoomAnimation.m in Sources */,
 				18F53D4D1B4D5EFD003B93EB /* MASCompositeConstraint.m in Sources */,
 				05FECFC31B4E3C520009F53A /* FLEXArgumentInputViewFactory.m in Sources */,
 				05FED0241B4E417B0009F53A /* JGProgressHUDFadeAnimation.m in Sources */,
 				05FECFD61B4E3C520009F53A /* FLEXWebViewController.m in Sources */,
-				18F53DAE1B5690F6003B93EB /* WK_LocalNotesViewController.m in Sources */,
 				05FECFDC1B4E3C520009F53A /* FLEXDefaultsExplorerViewController.m in Sources */,
 				18F53D4F1B4D5EFD003B93EB /* MASConstraintMaker.m in Sources */,
 				18F53D551B4D5EFD003B93EB /* View+MASAdditions.m in Sources */,
@@ -1287,7 +1274,6 @@
 				05FECFD71B4E3C520009F53A /* FLEXSystemLogMessage.m in Sources */,
 				18F53D541B4D5EFD003B93EB /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				05FED02A1B4E417B0009F53A /* JGProgressHUDSuccessIndicatorView.m in Sources */,
-				18F53DAA1B568749003B93EB /* WK_PageContainerViewController.m in Sources */,
 				05FECFDD1B4E3C520009F53A /* FLEXDescriptionTableViewCell.m in Sources */,
 				05FED0221B4E417B0009F53A /* JGProgressHUDAnimation.m in Sources */,
 				05FECFDE1B4E3C520009F53A /* FLEXDictionaryExplorerViewController.m in Sources */,
@@ -1296,8 +1282,10 @@
 				05FED08C1B4E54150009F53A /* WK_HomeViewController.m in Sources */,
 				05FECFCB1B4E3C520009F53A /* FLEXExplorerViewController.m in Sources */,
 				05FECFD21B4E3C520009F53A /* FLEXGlobalsTableViewController.m in Sources */,
+				05F318A01B57408300FB66D1 /* WK_RecordlNotesViewController.m in Sources */,
 				05FED07E1B4E45910009F53A /* M16CollectionViewCell.m in Sources */,
 				05FED0591B4E41AC0009F53A /* AFSecurityPolicy.m in Sources */,
+				05F318A11B57408300FB66D1 /* WK_PublishedNotesViewController.m in Sources */,
 				05FECFBA1B4E3C520009F53A /* FLEXArgumentInputFontView.m in Sources */,
 				05FED0551B4E41AC0009F53A /* AFHTTPRequestOperation.m in Sources */,
 				05FED0261B4E417B0009F53A /* JGProgressHUDIndeterminateIndicatorView.m in Sources */,
@@ -1309,7 +1297,6 @@
 				05FECFCA1B4E3C520009F53A /* FLEXExplorerToolbar.m in Sources */,
 				05FECFE21B4E3C520009F53A /* FLEXObjectExplorerFactory.m in Sources */,
 				05FED06C1B4E42710009F53A /* UIScrollView+SVInfiniteScrolling.m in Sources */,
-				18F53DB41B56913A003B93EB /* WK_CollectedNotesViewController.m in Sources */,
 				05FED0291B4E417B0009F53A /* JGProgressHUDRingIndicatorView.m in Sources */,
 				05FECFC71B4E3C520009F53A /* FLEXIvarEditorViewController.m in Sources */,
 				05FED0641B4E41AC0009F53A /* UIRefreshControl+AFNetworking.m in Sources */,
@@ -1325,7 +1312,6 @@
 				05FED0001B4E41050009F53A /* M16TableViewController.m in Sources */,
 				05FECFB81B4E3C520009F53A /* FLEXArgumentInputColorView.m in Sources */,
 				05FECFD91B4E3C520009F53A /* FLEXSystemLogTableViewController.m in Sources */,
-				18F53DB11B56910E003B93EB /* WK_PublishedNotesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1446,6 +1432,7 @@
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Waklout/Waklout-Prefix.pch";
 				INFOPLIST_FILE = Waklout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1461,6 +1448,7 @@
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Waklout/Waklout-Prefix.pch";
 				INFOPLIST_FILE = Waklout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

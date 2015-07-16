@@ -7,7 +7,8 @@
 //
 
 #import "M16ViewController.h"
+#import "XLPagerTabStripViewController.h"
 
-@interface WK_CollectedNotesViewController : M16ViewController
+@interface WK_CollectedNotesViewController : M16ViewController <XLPagerTabStripChildItem>
 
 @end
