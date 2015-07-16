@@ -12,6 +12,8 @@
 #import "WK_RecordlNotesViewController.h"
 #import "WK_PublishedNotesViewController.h"
 #import "WK_CollectedNotesViewController.h"
+#import "WK_LoginViewController.h"
+#import "WK_NavigationController.h"
 
 static CGFloat const kTopContentViewHeight = 60.0f;
 static CGFloat const kUserIconImageViewWidth = 45.0f;
@@ -29,6 +31,7 @@ static CGFloat const kFansViewHeight = 30.0f;
 @property (strong, nonatomic) UIImageView *userIconImageView;
 @property (strong, nonatomic) WK_FollowView *fansView;
 
+@property (strong, nonatomic) WK_NavigationController *loginNavigationController;
 @end
 
 @implementation WK_MineViewController
@@ -73,7 +76,11 @@ static CGFloat const kFansViewHeight = 30.0f;
     
     self.userIconImageView = [[UIImageView alloc] init];
     self.userIconImageView.backgroundColor = [UIColor cyanColor];
+    self.userIconImageView.userInteractionEnabled = YES;
     [self.topContentView addSubview:self.userIconImageView];
+    
+    UITapGestureRecognizer *userIconTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapUserIconHandler:)];
+    [self.userIconImageView addGestureRecognizer:userIconTap];
     
     self.fansView = [[WK_FollowView alloc] init];
     self.fansView.backgroundColor = [UIColor brownColor];
@@ -99,6 +106,15 @@ static CGFloat const kFansViewHeight = 30.0f;
         make.centerY.equalTo(self.topContentView.mas_centerY);
         make.height.equalTo(@(kFansViewHeight));
     }];
+}
+
+- (void)tapUserIconHandler:(UIGestureRecognizer *)gesture
+{
+    if (!self.loginNavigationController) {
+        WK_LoginViewController *loginViewController = [[WK_LoginViewController alloc] init];
+        self.loginNavigationController = [[WK_NavigationController alloc] initWithRootViewController:loginViewController];
+    }
+    [self presentViewController:self.loginNavigationController animated:YES completion:nil];
 }
 
 #pragma mark - PageContainerViewControllerDataSource

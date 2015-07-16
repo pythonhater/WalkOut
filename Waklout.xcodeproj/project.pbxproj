@@ -27,6 +27,7 @@
 		05F3189F1B57408300FB66D1 /* WK_CollectedNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3189A1B57408300FB66D1 /* WK_CollectedNotesViewController.m */; };
 		05F318A01B57408300FB66D1 /* WK_RecordlNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3189C1B57408300FB66D1 /* WK_RecordlNotesViewController.m */; };
 		05F318A11B57408300FB66D1 /* WK_PublishedNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3189E1B57408300FB66D1 /* WK_PublishedNotesViewController.m */; };
+		05F318AB1B575E5B00FB66D1 /* WK_LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F318AA1B575E5B00FB66D1 /* WK_LoginViewController.m */; };
 		05FECFB81B4E3C520009F53A /* FLEXArgumentInputColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FECF461B4E3C520009F53A /* FLEXArgumentInputColorView.m */; };
 		05FECFB91B4E3C520009F53A /* FLEXArgumentInputFontsPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FECF481B4E3C520009F53A /* FLEXArgumentInputFontsPickerView.m */; };
 		05FECFBA1B4E3C520009F53A /* FLEXArgumentInputFontView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FECF4A1B4E3C520009F53A /* FLEXArgumentInputFontView.m */; };
@@ -190,6 +191,8 @@
 		05F3189C1B57408300FB66D1 /* WK_RecordlNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_RecordlNotesViewController.m; sourceTree = "<group>"; };
 		05F3189D1B57408300FB66D1 /* WK_PublishedNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_PublishedNotesViewController.h; sourceTree = "<group>"; };
 		05F3189E1B57408300FB66D1 /* WK_PublishedNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_PublishedNotesViewController.m; sourceTree = "<group>"; };
+		05F318A91B575E5B00FB66D1 /* WK_LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_LoginViewController.h; sourceTree = "<group>"; };
+		05F318AA1B575E5B00FB66D1 /* WK_LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_LoginViewController.m; sourceTree = "<group>"; };
 		05FECF451B4E3C520009F53A /* FLEXArgumentInputColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLEXArgumentInputColorView.h; sourceTree = "<group>"; };
 		05FECF461B4E3C520009F53A /* FLEXArgumentInputColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLEXArgumentInputColorView.m; sourceTree = "<group>"; };
 		05FECF471B4E3C520009F53A /* FLEXArgumentInputFontsPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLEXArgumentInputFontsPickerView.h; sourceTree = "<group>"; };
@@ -573,6 +576,7 @@
 		05E75B4F1B4BDA6A0098FC6E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				05F318A81B575E3D00FB66D1 /* LoginViewController */,
 				05FED0851B4E54150009F53A /* HomeViewController */,
 				05FED08F1B4E54320009F53A /* LifeViewController */,
 				05FED0891B4E54150009F53A /* MineViewController */,
@@ -600,6 +604,15 @@
 				05F3189A1B57408300FB66D1 /* WK_CollectedNotesViewController.m */,
 			);
 			path = PersonalViewController;
+			sourceTree = "<group>";
+		};
+		05F318A81B575E3D00FB66D1 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				05F318A91B575E5B00FB66D1 /* WK_LoginViewController.h */,
+				05F318AA1B575E5B00FB66D1 /* WK_LoginViewController.m */,
+			);
+			path = LoginViewController;
 			sourceTree = "<group>";
 		};
 		05FECF3E1B4E3C010009F53A /* BaseClass */ = {
@@ -1305,6 +1318,7 @@
 				05FED05B1B4E41AC0009F53A /* AFURLRequestSerialization.m in Sources */,
 				05E75B221B4BCECC0098FC6E /* RDVTabBarItem.m in Sources */,
 				05FECFD01B4E3C520009F53A /* FLEXFileBrowserSearchOperation.m in Sources */,
+				05F318AB1B575E5B00FB66D1 /* WK_LoginViewController.m in Sources */,
 				05FED0601B4E41AC0009F53A /* UIAlertView+AFNetworking.m in Sources */,
 				18F53DEF1B569FAE003B93EB /* FXPageControl.m in Sources */,
 				05FECFDA1B4E3C520009F53A /* FLEXArrayExplorerViewController.m in Sources */,
