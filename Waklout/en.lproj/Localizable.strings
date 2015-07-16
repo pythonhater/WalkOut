@@ -12,3 +12,8 @@
 "WK_Record" = "Record";
 "WK_Published" = "Published";
 "WK_Collected" = "Collected";
+
+//Login
+"WK_Email" = "Email";
+"WK_Username" = "Username";
+"WK_Password" = "Password";

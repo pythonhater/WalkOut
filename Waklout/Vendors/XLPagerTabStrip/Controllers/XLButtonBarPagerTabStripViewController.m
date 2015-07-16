@@ -111,7 +111,7 @@ NSUInteger const kXLButtonBarViewCellHeight = 40;
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
     [flowLayout setSectionInset:UIEdgeInsetsMake(0, 5, 0, 5)];
     _buttonBarView = [[XLButtonBarView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), kXLButtonBarViewCellHeight) collectionViewLayout:flowLayout];
-    _buttonBarView.selectedBar.backgroundColor = [UIColor clearColor];
+    _buttonBarView.selectedBar.backgroundColor = [UIColor lightGrayColor];
     _buttonBarView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     return _buttonBarView;
 }

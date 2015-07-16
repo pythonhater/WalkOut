@@ -7,9 +7,14 @@
 //
 
 #import "WK_LoginViewController.h"
+#import "WK_LoginTableViewCell.h"
+static CGFloat const kLoginTableViewCellHeight = 44.0f;
 
 @interface WK_LoginViewController ()
 @property (strong, nonatomic) UIButton *closeButton;
+
+@property (strong, nonatomic) UIButton *loginButton;
+@property (strong, nonatomic) UIButton *webxinButton;
 
 @end
 
@@ -58,6 +63,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.tableView.backgroundColor = [UIColor redColor];
+    [self stopPullToRefresh];
+    [self stopInfiniteScrolling];
+    
+}
+
+#pragma mark - UITableViewDelegate
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return kLoginTableViewCellHeight;
+}
+
+#pragma mark - UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 2;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    WK_LoginTableViewCell *cell = [WK_LoginTableViewCell cellForTableView:tableView];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    [cell bindViewModel:nil atIndexPath:indexPath];
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {

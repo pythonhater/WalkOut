@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "WK_Model.h"
 #import "RDVTabBarController.h"
 #import "RDVTabBarItem.h"
 #import "WK_NavigationController.h"
@@ -27,7 +28,11 @@ static NSString *const kAVOSCloudAppKey = @"pw0hhi7mfhu95vmul4mtt3vsrsdb3yjljsl2
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [WK_Model registerSubclass];
     [AVOSCloud setApplicationId:kAVOSCloudAppID clientKey:kAVOSCloudAppKey];
+    /*NO为测试环境,YES为生产环境*/
+    [AVCloud setProductionMode:NO];
+    
     AVObject *testObject = [AVObject objectWithClassName:@"TestObject"];
     [testObject setObject:@"bar" forKey:@"foo"];
     [testObject save];

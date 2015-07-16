@@ -59,14 +59,16 @@ static CGFloat const kFansViewHeight = 30.0f;
     flowLayout.minimumLineSpacing = 0;
     flowLayout.minimumInteritemSpacing = 0;
     
-    self.containerView.bounces = NO;
+    self.containerView.bounces = YES;
     self.containerView.frame = CGRectMake(0, CGRectGetMaxY(self.buttonBarView.frame), SCREEN_WIDTH, CGRectGetHeight(self.view.frame) - kTopContentViewHeight - kXLButtonBarViewCellHeight);
+    
+    [self reloadPagerTabStripView];
 }
 
 - (void)setupTopContentView
 {
     self.topContentView = [[UIView alloc] init];
-    self.topContentView.backgroundColor = [UIColor redColor];
+    self.topContentView.backgroundColor = [UIColor clearColor];
     self.topContentView.frame = CGRectMake(0, 0, SCREEN_WIDTH, kTopContentViewHeight);
     [self.view addSubview:self.topContentView];
     

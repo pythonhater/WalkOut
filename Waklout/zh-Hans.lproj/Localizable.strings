@@ -12,3 +12,8 @@
 "WK_Record" = "记录";
 "WK_Published" = "发布";
 "WK_Collected" = "收藏";
+
+//Login
+"WK_Email" = "邮箱";
+"WK_Username" = "用户名";
+"WK_Password" = "密码";

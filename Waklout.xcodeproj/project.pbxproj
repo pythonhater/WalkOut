@@ -145,6 +145,8 @@
 		18F53DF01B569FAE003B93EB /* XLBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DE51B569FAE003B93EB /* XLBarView.m */; };
 		18F53DF11B569FAE003B93EB /* XLButtonBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DE71B569FAE003B93EB /* XLButtonBarView.m */; };
 		18F53DF21B569FAE003B93EB /* XLButtonBarViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DE91B569FAE003B93EB /* XLButtonBarViewCell.m */; };
+		18F53E001B57E647003B93EB /* WK_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DFF1B57E647003B93EB /* WK_Model.m */; };
+		18F53E041B57F7B3003B93EB /* WK_LoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53E031B57F7B3003B93EB /* WK_LoginTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -440,6 +442,10 @@
 		18F53DE71B569FAE003B93EB /* XLButtonBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLButtonBarView.m; sourceTree = "<group>"; };
 		18F53DE81B569FAE003B93EB /* XLButtonBarViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLButtonBarViewCell.h; sourceTree = "<group>"; };
 		18F53DE91B569FAE003B93EB /* XLButtonBarViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLButtonBarViewCell.m; sourceTree = "<group>"; };
+		18F53DFE1B57E647003B93EB /* WK_Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_Model.h; sourceTree = "<group>"; };
+		18F53DFF1B57E647003B93EB /* WK_Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_Model.m; sourceTree = "<group>"; };
+		18F53E021B57F7B3003B93EB /* WK_LoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_LoginTableViewCell.h; sourceTree = "<group>"; };
+		18F53E031B57F7B3003B93EB /* WK_LoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_LoginTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -618,6 +624,7 @@
 		05FECF3E1B4E3C010009F53A /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
+				18F53DFD1B57E632003B93EB /* Models */,
 				05FECFEE1B4E3CA00009F53A /* Macros */,
 				05FED06E1B4E43FA0009F53A /* Utils */,
 				05FED0791B4E45910009F53A /* Views */,
@@ -1015,6 +1022,7 @@
 			children = (
 				05FED09A1B4E5C560009F53A /* WK_FollowView.h */,
 				05FED09B1B4E5C560009F53A /* WK_FollowView.m */,
+				18F53E011B57F7A3003B93EB /* LoginCell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1096,6 +1104,24 @@
 				18F53DE31B569FAE003B93EB /* FXPageControl.m */,
 			);
 			path = FXPageControl;
+			sourceTree = "<group>";
+		};
+		18F53DFD1B57E632003B93EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18F53DFE1B57E647003B93EB /* WK_Model.h */,
+				18F53DFF1B57E647003B93EB /* WK_Model.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18F53E011B57F7A3003B93EB /* LoginCell */ = {
+			isa = PBXGroup;
+			children = (
+				18F53E021B57F7B3003B93EB /* WK_LoginTableViewCell.h */,
+				18F53E031B57F7B3003B93EB /* WK_LoginTableViewCell.m */,
+			);
+			path = LoginCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1235,6 +1261,7 @@
 				05FED05E1B4E41AC0009F53A /* AFNetworkActivityIndicatorManager.m in Sources */,
 				18F53DED1B569FAE003B93EB /* XLSegmentedPagerTabStripViewController.m in Sources */,
 				05FECFE01B4E3C520009F53A /* FLEXImageExplorerViewController.m in Sources */,
+				18F53E041B57F7B3003B93EB /* WK_LoginTableViewCell.m in Sources */,
 				05FECFC01B4E3C520009F53A /* FLEXArgumentInputSwitchView.m in Sources */,
 				05FECFBB1B4E3C520009F53A /* FLEXArgumentInputJSONObjectView.m in Sources */,
 				18F53DEA1B569FAE003B93EB /* XLBarPagerTabStripViewController.m in Sources */,
@@ -1317,6 +1344,7 @@
 				05FECFE81B4E3C520009F53A /* FLEXResources.m in Sources */,
 				05FED05B1B4E41AC0009F53A /* AFURLRequestSerialization.m in Sources */,
 				05E75B221B4BCECC0098FC6E /* RDVTabBarItem.m in Sources */,
+				18F53E001B57E647003B93EB /* WK_Model.m in Sources */,
 				05FECFD01B4E3C520009F53A /* FLEXFileBrowserSearchOperation.m in Sources */,
 				05F318AB1B575E5B00FB66D1 /* WK_LoginViewController.m in Sources */,
 				05FED0601B4E41AC0009F53A /* UIAlertView+AFNetworking.m in Sources */,
