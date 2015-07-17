@@ -208,6 +208,7 @@
 		05F3B6DB1B58C7C30061D7D6 /* EnumMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnumMacros.h; sourceTree = "<group>"; };
 		05F3B6DD1B58CA280061D7D6 /* WK_LoginUIModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_LoginUIModel.h; sourceTree = "<group>"; };
 		05F3B6DE1B58CA280061D7D6 /* WK_LoginUIModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_LoginUIModel.m; sourceTree = "<group>"; };
+		05F3B6E01B58EDC40061D7D6 /* BlockMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockMacros.h; sourceTree = "<group>"; };
 		05FECF451B4E3C520009F53A /* FLEXArgumentInputColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLEXArgumentInputColorView.h; sourceTree = "<group>"; };
 		05FECF461B4E3C520009F53A /* FLEXArgumentInputColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLEXArgumentInputColorView.m; sourceTree = "<group>"; };
 		05FECF471B4E3C520009F53A /* FLEXArgumentInputFontsPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLEXArgumentInputFontsPickerView.h; sourceTree = "<group>"; };
@@ -881,6 +882,7 @@
 				05FECFF11B4E3CE80009F53A /* PathMacros.h */,
 				05FECFEF1B4E3CA70009F53A /* UtilsMacros.h */,
 				05F3B6DB1B58C7C30061D7D6 /* EnumMacros.h */,
+				05F3B6E01B58EDC40061D7D6 /* BlockMacros.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";

@@ -13,6 +13,7 @@
 //#import "StringMacros.h"
 //#import "UserBehaviorMacros.h"
 #import "PathMacros.h"
+#import "BlockMacros.h"
 //#import "MobClick.h"
 //#import "YH_Umeng.h"
 

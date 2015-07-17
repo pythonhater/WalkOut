@@ -46,6 +46,27 @@
     }
 }
 
+- (void)signupWithEmail:(NSString *)email username:(NSString *)uname password:(NSString *)pwd completionBlock:(BoolBlock)block
+{
+    AVUser *user = [AVUser user];
+    user.email = email;
+    user.password = pwd;
+    [user setObject:uname forKey:@"username"];
+    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (block) {
+            block(succeeded, error);
+        }
+    }];
+}
+
+- (void)loginWithEmail:(NSString *)email password:(NSString *)pwd completionBlock:(UserBlock)block
+{
+    [AVUser logInWithUsernameInBackground:email password:pwd block:^(AVUser *user, NSError *error) {
+        if (block) {
+            block(user, error);
+        }
+    }];
+}
 
 //--output
 - (NSInteger)count
