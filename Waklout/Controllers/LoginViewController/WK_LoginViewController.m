@@ -21,10 +21,17 @@ static CGFloat const kWechatButtonHeight = 38.0f;
 
 @interface WK_LoginViewController ()
 @property (strong, nonatomic) UIButton *closeButton;
-@property (strong, nonatomic) UITableView *tableView;
+
 @property (strong, nonatomic) UIView *footerContentView;
 @property (strong, nonatomic) UIButton *loginButton;
 @property (strong, nonatomic) UIButton *wechatButton;
+
+@end
+
+@interface WK_LoginViewController ()
+/*以下两个TextField是为了获取用户输入的登陆信息*/
+@property (strong, nonatomic) UITextField *emailTextField;
+@property (strong, nonatomic) UITextField *passwordTextField;
 
 @end
 
@@ -69,6 +76,7 @@ static CGFloat const kWechatButtonHeight = 38.0f;
     
     self.loginButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.loginButton setTitle:NSLocalizedString(@"WK_Login", nil) forState:UIControlStateNormal];
+    [self.loginButton addTarget:self action:@selector(loginButtonClicked) forControlEvents:UIControlEventTouchUpInside];
     self.loginButton.backgroundColor = [UIColor lightGrayColor];
     [self.footerContentView addSubview:self.loginButton];
     
@@ -92,6 +100,12 @@ static CGFloat const kWechatButtonHeight = 38.0f;
     }];
 }
 
+- (void)loginButtonClicked
+{
+    NSString *email = self.emailTextField.text;
+    NSString *password = self.passwordTextField.text;
+}
+
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -101,7 +115,7 @@ static CGFloat const kWechatButtonHeight = 38.0f;
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 2;
+    return [self.loginViewModel count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -109,6 +123,11 @@ static CGFloat const kWechatButtonHeight = 38.0f;
     WK_LoginTableViewCell *cell = [WK_LoginTableViewCell cellForTableView:tableView];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     [cell bindViewModel:self.loginViewModel atIndexPath:indexPath];
+    if (indexPath.row == 0) {
+        self.emailTextField = cell.textField;
+    } else if (indexPath.row == 1) {
+        self.passwordTextField = cell.textField;
+    }
     return cell;
 }
 

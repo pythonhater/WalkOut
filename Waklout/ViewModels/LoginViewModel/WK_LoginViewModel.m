@@ -36,14 +36,23 @@
 - (void)loadBaseInfoForUI
 {
     if (self.userActionType == WK_UserActionTypeRegister) {
+        
         self.uiInfos = @[self.emailUIModel, self.passwordUIModel, self.confirmPwdUIModel];
+        
     } else if (self.userActionType == WK_UserActionTypeLogin) {
+        
         self.uiInfos = @[self.emailUIModel, self.passwordUIModel];
+        
     }
 }
 
 
 //--output
+- (NSInteger)count
+{
+    return [self.uiInfos count];
+}
+
 - (NSString *)labelText:(NSInteger)index
 {
     return [(WK_LoginUIModel *)[self.uiInfos objectAtIndex:index] labelText];

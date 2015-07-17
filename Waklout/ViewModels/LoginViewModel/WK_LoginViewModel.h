@@ -15,8 +15,8 @@
 - (void)loadBaseInfoForUI;
 
 //输出-output
+- (NSInteger)count;
 - (NSString *)labelText:(NSInteger)index;
-
 - (NSString *)textFieldText:(NSInteger)index;
 
 @end

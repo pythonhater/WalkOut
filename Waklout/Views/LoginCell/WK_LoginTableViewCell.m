@@ -10,8 +10,6 @@
 #import "WK_LoginViewModel.h"
 
 @interface WK_LoginTableViewCell ()
-@property (strong, nonatomic) UILabel *label;
-@property (strong, nonatomic) UITextField *textField;
 
 @end
 

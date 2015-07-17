@@ -7,5 +7,5 @@
 * 后续支持微信登陆
 
 ####20150717
-* Present弹出登陆界面时候，没有动画效果
-* 个人设置页面，滑动切换时候，所属模块的标题字体颜色没有改变
+* <span style="text-decoration:line-through;">Present弹出登陆界面时候，没有动画效果</span>
+* <span style="text-decoration:line-through;">个人设置页面，滑动切换时候，所属模块的标题字体颜色没有改变</span>

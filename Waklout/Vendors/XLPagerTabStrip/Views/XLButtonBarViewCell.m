@@ -58,7 +58,9 @@ static CGFloat const kLabelRigthEdge = 10.0f;
 {
     [super setSelected:selected];
     [self setLabelColor:selected];
+#ifdef DEBUG_NEED_ANIMATE
     [self animateVerticalLines:selected];
+#endif
 }
 
 -(void)setLabelColor:(BOOL)selected

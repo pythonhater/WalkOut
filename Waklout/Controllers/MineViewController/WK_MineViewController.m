@@ -64,6 +64,7 @@ static CGFloat const kFansViewHeight = 30.0f;
     self.containerView.frame = CGRectMake(0, CGRectGetMaxY(self.buttonBarView.frame), SCREEN_WIDTH, CGRectGetHeight(self.view.frame) - kTopContentViewHeight - kXLButtonBarViewCellHeight);
     
     [self reloadPagerTabStripView];
+    [self selectFirstItemAutomatically];
 }
 
 - (void)setupTopContentView
@@ -117,17 +118,38 @@ static CGFloat const kFansViewHeight = 30.0f;
         WK_LoginViewModel *loginViewModel = [[WK_LoginViewModel alloc] initWithUserActionType:WK_UserActionTypeLogin];
         WK_LoginViewController *loginViewController = [[WK_LoginViewController alloc] initWithViewModel:loginViewModel];
         self.loginNavigationController = [[WK_NavigationController alloc] initWithRootViewController:loginViewController];
+        self.loginNavigationController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     }
     [self presentViewController:self.loginNavigationController animated:YES completion:nil];
 }
 
+- (void)selectFirstItemAutomatically
+{
+    NSIndexPath *firstItemIndexPath = [NSIndexPath indexPathForItem:0 inSection:0];
+    [self.buttonBarView selectItemAtIndexPath:firstItemIndexPath animated:NO scrollPosition:UICollectionViewScrollPositionNone];
+}
+
 #pragma mark - PageContainerViewControllerDataSource
--(NSArray *)childViewControllersForPagerTabStripViewController:(XLPagerTabStripViewController *)pagerTabStripViewController
+- (NSArray *)childViewControllersForPagerTabStripViewController:(XLPagerTabStripViewController *)pagerTabStripViewController
 {
     WK_RecordlNotesViewController *recordNotedViewController = [[WK_RecordlNotesViewController alloc] init];
     WK_PublishedNotesViewController *publishedNotesViewController = [[WK_PublishedNotesViewController alloc] init];
     WK_CollectedNotesViewController *collectedNotesViewController = [[WK_CollectedNotesViewController alloc] init];
     return @[recordNotedViewController, publishedNotesViewController, collectedNotesViewController];
+}
+
+
+- (void)pagerTabStripViewController:(XLPagerTabStripViewController *)pagerTabStripViewController
+          updateIndicatorFromIndex:(NSInteger)fromIndex
+                           toIndex:(NSInteger)toIndex
+{
+    
+    [super pagerTabStripViewController:pagerTabStripViewController updateIndicatorFromIndex:fromIndex toIndex:toIndex];
+    
+    //滑动切换
+    if (self.shouldUpdateButtonBarView) {
+        [self updateBarStatus:toIndex];
+    }
 }
 
 - (void)moveToViewControllerAtIndex:(NSUInteger)index

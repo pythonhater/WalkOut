@@ -9,5 +9,7 @@
 #import "M16TableViewCell.h"
 
 @interface WK_LoginTableViewCell : M16TableViewCell
+@property (strong, nonatomic) UILabel *label;
+@property (strong, nonatomic) UITextField *textField;
 
 @end
