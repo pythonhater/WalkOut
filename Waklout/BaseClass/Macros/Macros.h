@@ -4,7 +4,7 @@
 //
 
 #import "UtilsMacros.h"
-//#import "EnumMacros.h"
+#import "EnumMacros.h"
 //#import "APIStringMacros.h"
 #import "DimensMacros.h"
 //#import "FeatureMacros.h"

@@ -10,24 +10,25 @@
 #import "WK_LoginTableViewCell.h"
 static CGFloat const kLoginTableViewCellHeight = 44.0f;
 
+static CGFloat const kFooterContentViewHeight = 40.0f;
+static CGFloat const kLoginButtonLeftEdge = 10.0f;
+static CGFloat const kLoginButtonWidth = 100.0f;
+static CGFloat const kLoginButtonHeight = 38.0f;
+
+static CGFloat const kWechatButtonLeftEdge = 10.0f;
+static CGFloat const kWechatButtonRightEdge = 10.0f;
+static CGFloat const kWechatButtonHeight = 38.0f;
+
 @interface WK_LoginViewController ()
 @property (strong, nonatomic) UIButton *closeButton;
-
+@property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) UIView *footerContentView;
 @property (strong, nonatomic) UIButton *loginButton;
-@property (strong, nonatomic) UIButton *webxinButton;
+@property (strong, nonatomic) UIButton *wechatButton;
 
 @end
 
 @implementation WK_LoginViewController
-
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        self.push = YES;
-    }
-    return self;
-}
 
 - (void)setupLeftButton
 {
@@ -63,10 +64,32 @@ static CGFloat const kLoginTableViewCellHeight = 44.0f;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.tableView.backgroundColor = [UIColor redColor];
-    [self stopPullToRefresh];
-    [self stopInfiniteScrolling];
+    self.footerContentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), kFooterContentViewHeight)];
+    self.tableView.tableFooterView = self.footerContentView;
     
+    self.loginButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.loginButton setTitle:NSLocalizedString(@"WK_Login", nil) forState:UIControlStateNormal];
+    self.loginButton.backgroundColor = [UIColor lightGrayColor];
+    [self.footerContentView addSubview:self.loginButton];
+    
+    self.wechatButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.wechatButton setTitle:NSLocalizedString(@"WK_WechatLogin", nil) forState:UIControlStateNormal];
+    self.wechatButton.backgroundColor = [UIColor lightGrayColor];
+    [self.footerContentView addSubview:self.wechatButton];
+    
+    [self.loginButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.footerContentView.mas_left).offset(kLoginButtonLeftEdge);
+        make.width.equalTo(@(kLoginButtonWidth));
+        make.centerY.equalTo(self.footerContentView.mas_centerY);
+        make.height.equalTo(@(kLoginButtonHeight));
+    }];
+    
+    [self.wechatButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.loginButton.mas_right).offset(kWechatButtonLeftEdge);
+        make.right.equalTo(self.footerContentView.mas_right).offset(-kWechatButtonRightEdge);
+        make.centerY.equalTo(self.footerContentView.mas_centerY);
+        make.height.equalTo(@(kWechatButtonHeight));
+    }];
 }
 
 #pragma mark - UITableViewDelegate
@@ -85,7 +108,7 @@ static CGFloat const kLoginTableViewCellHeight = 44.0f;
 {
     WK_LoginTableViewCell *cell = [WK_LoginTableViewCell cellForTableView:tableView];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    [cell bindViewModel:nil atIndexPath:indexPath];
+    [cell bindViewModel:self.loginViewModel atIndexPath:indexPath];
     return cell;
 }
 

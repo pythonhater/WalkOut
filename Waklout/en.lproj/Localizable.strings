@@ -15,5 +15,12 @@
 
 //Login
 "WK_Email" = "Email";
+"WK_InputEmail" = "Input your email please";
 "WK_Username" = "Username";
 "WK_Password" = "Password";
+"WK_Confirm" = "Confirm";
+"WK_InputPassword" = "Input your password please";
+"WK_ConfirmPassword" = "Confirm your password please";
+"WK_Login" = "Login";
+"WK_WechatLogin" = "Sign in with Wechat";
+"WK_Register" = "Register";

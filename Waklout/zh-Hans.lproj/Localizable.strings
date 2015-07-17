@@ -1,4 +1,4 @@
-/* 
+/*
   Localizable.strings
   Waklout
 
@@ -15,5 +15,12 @@
 
 //Login
 "WK_Email" = "邮箱";
+"WK_InputEmail" = "请输入邮箱";
 "WK_Username" = "用户名";
 "WK_Password" = "密码";
+"WK_Confirm" = "确认";
+"WK_InputPassword" = "请输入6~13位密码";
+"WK_ConfirmPassword" = "请确认密码";
+"WK_Login" = "登录";
+"WK_WechatLogin" = "微信登陆";
+"WK_Register" = "注册";

@@ -12,6 +12,7 @@
 #import "WK_RecordlNotesViewController.h"
 #import "WK_PublishedNotesViewController.h"
 #import "WK_CollectedNotesViewController.h"
+#import "WK_LoginViewModel.h"
 #import "WK_LoginViewController.h"
 #import "WK_NavigationController.h"
 
@@ -113,7 +114,8 @@ static CGFloat const kFansViewHeight = 30.0f;
 - (void)tapUserIconHandler:(UIGestureRecognizer *)gesture
 {
     if (!self.loginNavigationController) {
-        WK_LoginViewController *loginViewController = [[WK_LoginViewController alloc] init];
+        WK_LoginViewModel *loginViewModel = [[WK_LoginViewModel alloc] initWithUserActionType:WK_UserActionTypeLogin];
+        WK_LoginViewController *loginViewController = [[WK_LoginViewController alloc] initWithViewModel:loginViewModel];
         self.loginNavigationController = [[WK_NavigationController alloc] initWithRootViewController:loginViewController];
     }
     [self presentViewController:self.loginNavigationController animated:YES completion:nil];

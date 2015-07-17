@@ -28,6 +28,10 @@
 		05F318A01B57408300FB66D1 /* WK_RecordlNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3189C1B57408300FB66D1 /* WK_RecordlNotesViewController.m */; };
 		05F318A11B57408300FB66D1 /* WK_PublishedNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3189E1B57408300FB66D1 /* WK_PublishedNotesViewController.m */; };
 		05F318AB1B575E5B00FB66D1 /* WK_LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F318AA1B575E5B00FB66D1 /* WK_LoginViewController.m */; };
+		05F3B6D11B58C4B70061D7D6 /* M16GroupedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3B6D01B58C4B70061D7D6 /* M16GroupedTableViewController.m */; };
+		05F3B6D51B58C6FB0061D7D6 /* M16ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3B6D41B58C6FB0061D7D6 /* M16ViewModel.m */; };
+		05F3B6DA1B58C77D0061D7D6 /* WK_LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3B6D91B58C77D0061D7D6 /* WK_LoginViewModel.m */; };
+		05F3B6DF1B58CA280061D7D6 /* WK_LoginUIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3B6DE1B58CA280061D7D6 /* WK_LoginUIModel.m */; };
 		05FECFB81B4E3C520009F53A /* FLEXArgumentInputColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FECF461B4E3C520009F53A /* FLEXArgumentInputColorView.m */; };
 		05FECFB91B4E3C520009F53A /* FLEXArgumentInputFontsPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FECF481B4E3C520009F53A /* FLEXArgumentInputFontsPickerView.m */; };
 		05FECFBA1B4E3C520009F53A /* FLEXArgumentInputFontView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FECF4A1B4E3C520009F53A /* FLEXArgumentInputFontView.m */; };
@@ -145,7 +149,7 @@
 		18F53DF01B569FAE003B93EB /* XLBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DE51B569FAE003B93EB /* XLBarView.m */; };
 		18F53DF11B569FAE003B93EB /* XLButtonBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DE71B569FAE003B93EB /* XLButtonBarView.m */; };
 		18F53DF21B569FAE003B93EB /* XLButtonBarViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DE91B569FAE003B93EB /* XLButtonBarViewCell.m */; };
-		18F53E001B57E647003B93EB /* WK_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DFF1B57E647003B93EB /* WK_Model.m */; };
+		18F53E001B57E647003B93EB /* M16Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53DFF1B57E647003B93EB /* M16Model.m */; };
 		18F53E041B57F7B3003B93EB /* WK_LoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53E031B57F7B3003B93EB /* WK_LoginTableViewCell.m */; };
 /* End PBXBuildFile section */
 
@@ -195,6 +199,15 @@
 		05F3189E1B57408300FB66D1 /* WK_PublishedNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_PublishedNotesViewController.m; sourceTree = "<group>"; };
 		05F318A91B575E5B00FB66D1 /* WK_LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_LoginViewController.h; sourceTree = "<group>"; };
 		05F318AA1B575E5B00FB66D1 /* WK_LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_LoginViewController.m; sourceTree = "<group>"; };
+		05F3B6CF1B58C4B70061D7D6 /* M16GroupedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M16GroupedTableViewController.h; sourceTree = "<group>"; };
+		05F3B6D01B58C4B70061D7D6 /* M16GroupedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M16GroupedTableViewController.m; sourceTree = "<group>"; };
+		05F3B6D31B58C6FB0061D7D6 /* M16ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M16ViewModel.h; sourceTree = "<group>"; };
+		05F3B6D41B58C6FB0061D7D6 /* M16ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M16ViewModel.m; sourceTree = "<group>"; };
+		05F3B6D81B58C77D0061D7D6 /* WK_LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_LoginViewModel.h; sourceTree = "<group>"; };
+		05F3B6D91B58C77D0061D7D6 /* WK_LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_LoginViewModel.m; sourceTree = "<group>"; };
+		05F3B6DB1B58C7C30061D7D6 /* EnumMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnumMacros.h; sourceTree = "<group>"; };
+		05F3B6DD1B58CA280061D7D6 /* WK_LoginUIModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_LoginUIModel.h; sourceTree = "<group>"; };
+		05F3B6DE1B58CA280061D7D6 /* WK_LoginUIModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_LoginUIModel.m; sourceTree = "<group>"; };
 		05FECF451B4E3C520009F53A /* FLEXArgumentInputColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLEXArgumentInputColorView.h; sourceTree = "<group>"; };
 		05FECF461B4E3C520009F53A /* FLEXArgumentInputColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLEXArgumentInputColorView.m; sourceTree = "<group>"; };
 		05FECF471B4E3C520009F53A /* FLEXArgumentInputFontsPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLEXArgumentInputFontsPickerView.h; sourceTree = "<group>"; };
@@ -442,8 +455,8 @@
 		18F53DE71B569FAE003B93EB /* XLButtonBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLButtonBarView.m; sourceTree = "<group>"; };
 		18F53DE81B569FAE003B93EB /* XLButtonBarViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLButtonBarViewCell.h; sourceTree = "<group>"; };
 		18F53DE91B569FAE003B93EB /* XLButtonBarViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLButtonBarViewCell.m; sourceTree = "<group>"; };
-		18F53DFE1B57E647003B93EB /* WK_Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_Model.h; sourceTree = "<group>"; };
-		18F53DFF1B57E647003B93EB /* WK_Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_Model.m; sourceTree = "<group>"; };
+		18F53DFE1B57E647003B93EB /* M16Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M16Model.h; sourceTree = "<group>"; };
+		18F53DFF1B57E647003B93EB /* M16Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M16Model.m; sourceTree = "<group>"; };
 		18F53E021B57F7B3003B93EB /* WK_LoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_LoginTableViewCell.h; sourceTree = "<group>"; };
 		18F53E031B57F7B3003B93EB /* WK_LoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_LoginTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -515,6 +528,7 @@
 				05FECF3E1B4E3C010009F53A /* BaseClass */,
 				05E7CADC1B4CB72A00C8A220 /* Models */,
 				05FED0991B4E5C200009F53A /* Views */,
+				05F3B6D61B58C7450061D7D6 /* ViewModels */,
 				05E75B4F1B4BDA6A0098FC6E /* Controllers */,
 				05E75B181B4BCEC10098FC6E /* Vendors */,
 				05E75AFF1B4BCAE90098FC6E /* Images.xcassets */,
@@ -582,6 +596,7 @@
 		05E75B4F1B4BDA6A0098FC6E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				05F3B6CE1B58C4740061D7D6 /* RegisterViewController */,
 				05F318A81B575E3D00FB66D1 /* LoginViewController */,
 				05FED0851B4E54150009F53A /* HomeViewController */,
 				05FED08F1B4E54320009F53A /* LifeViewController */,
@@ -593,6 +608,7 @@
 		05E7CADC1B4CB72A00C8A220 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				05F3B6DC1B58CA050061D7D6 /* Login&Register UI */,
 				05E7CADD1B4CB74000C8A220 /* User.h */,
 				05E7CADE1B4CB74000C8A220 /* User.m */,
 			);
@@ -621,9 +637,52 @@
 			path = LoginViewController;
 			sourceTree = "<group>";
 		};
+		05F3B6CE1B58C4740061D7D6 /* RegisterViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RegisterViewController;
+			sourceTree = "<group>";
+		};
+		05F3B6D21B58C6FB0061D7D6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				05F3B6D31B58C6FB0061D7D6 /* M16ViewModel.h */,
+				05F3B6D41B58C6FB0061D7D6 /* M16ViewModel.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		05F3B6D61B58C7450061D7D6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				05F3B6D71B58C7680061D7D6 /* LoginViewModel */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		05F3B6D71B58C7680061D7D6 /* LoginViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				05F3B6D81B58C77D0061D7D6 /* WK_LoginViewModel.h */,
+				05F3B6D91B58C77D0061D7D6 /* WK_LoginViewModel.m */,
+			);
+			path = LoginViewModel;
+			sourceTree = "<group>";
+		};
+		05F3B6DC1B58CA050061D7D6 /* Login&Register UI */ = {
+			isa = PBXGroup;
+			children = (
+				05F3B6DD1B58CA280061D7D6 /* WK_LoginUIModel.h */,
+				05F3B6DE1B58CA280061D7D6 /* WK_LoginUIModel.m */,
+			);
+			path = "Login&Register UI";
+			sourceTree = "<group>";
+		};
 		05FECF3E1B4E3C010009F53A /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
+				05F3B6D21B58C6FB0061D7D6 /* ViewModels */,
 				18F53DFD1B57E632003B93EB /* Models */,
 				05FECFEE1B4E3CA00009F53A /* Macros */,
 				05FED06E1B4E43FA0009F53A /* Utils */,
@@ -821,6 +880,7 @@
 				05FECFF21B4E3D840009F53A /* DimensMacros.h */,
 				05FECFF11B4E3CE80009F53A /* PathMacros.h */,
 				05FECFEF1B4E3CA70009F53A /* UtilsMacros.h */,
+				05F3B6DB1B58C7C30061D7D6 /* EnumMacros.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
@@ -842,6 +902,8 @@
 				05FECFFA1B4E41050009F53A /* M16ControllerProtocol.h */,
 				05FECFFB1B4E41050009F53A /* M16TableViewController.h */,
 				05FECFFC1B4E41050009F53A /* M16TableViewController.m */,
+				05F3B6CF1B58C4B70061D7D6 /* M16GroupedTableViewController.h */,
+				05F3B6D01B58C4B70061D7D6 /* M16GroupedTableViewController.m */,
 				05FECFFD1B4E41050009F53A /* M16ViewController.h */,
 				05FECFFE1B4E41050009F53A /* M16ViewController.m */,
 			);
@@ -1109,8 +1171,8 @@
 		18F53DFD1B57E632003B93EB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				18F53DFE1B57E647003B93EB /* WK_Model.h */,
-				18F53DFF1B57E647003B93EB /* WK_Model.m */,
+				18F53DFE1B57E647003B93EB /* M16Model.h */,
+				18F53DFF1B57E647003B93EB /* M16Model.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1239,6 +1301,7 @@
 				18F53D511B4D5EFD003B93EB /* MASViewAttribute.m in Sources */,
 				05FED0541B4E41AC0009F53A /* AFDownloadRequestOperation.m in Sources */,
 				05FECFEB1B4E3C520009F53A /* FLEXHierarchyTableViewCell.m in Sources */,
+				05F3B6D51B58C6FB0061D7D6 /* M16ViewModel.m in Sources */,
 				05FED0211B4E417B0009F53A /* JGProgressHUD.m in Sources */,
 				05FECFD31B4E3C520009F53A /* FLEXInstancesTableViewController.m in Sources */,
 				05FED08E1B4E54150009F53A /* WK_MineViewController.m in Sources */,
@@ -1255,6 +1318,7 @@
 				18F53DF21B569FAE003B93EB /* XLButtonBarViewCell.m in Sources */,
 				05FED0621B4E41AC0009F53A /* UIImageView+AFNetworking.m in Sources */,
 				18F53DF01B569FAE003B93EB /* XLBarView.m in Sources */,
+				05F3B6D11B58C4B70061D7D6 /* M16GroupedTableViewController.m in Sources */,
 				05FED05C1B4E41AC0009F53A /* AFURLResponseSerialization.m in Sources */,
 				05FED0781B4E45250009F53A /* UIColor+M16RGB.m in Sources */,
 				05FED05F1B4E41AC0009F53A /* UIActivityIndicatorView+AFNetworking.m in Sources */,
@@ -1266,6 +1330,7 @@
 				05FECFBB1B4E3C520009F53A /* FLEXArgumentInputJSONObjectView.m in Sources */,
 				18F53DEA1B569FAE003B93EB /* XLBarPagerTabStripViewController.m in Sources */,
 				05FECFD81B4E3C520009F53A /* FLEXSystemLogTableViewCell.m in Sources */,
+				05F3B6DA1B58C77D0061D7D6 /* WK_LoginViewModel.m in Sources */,
 				05FECFD51B4E3C520009F53A /* FLEXLiveObjectsTableViewController.m in Sources */,
 				05F3189F1B57408300FB66D1 /* WK_CollectedNotesViewController.m in Sources */,
 				05E75B201B4BCECC0098FC6E /* RDVTabBar.m in Sources */,
@@ -1300,6 +1365,7 @@
 				05FECFC21B4E3C520009F53A /* FLEXArgumentInputView.m in Sources */,
 				05FECFE11B4E3C520009F53A /* FLEXLayerExplorerViewController.m in Sources */,
 				05FECFE41B4E3C520009F53A /* FLEXSetExplorerViewController.m in Sources */,
+				05F3B6DF1B58CA280061D7D6 /* WK_LoginUIModel.m in Sources */,
 				05FED0281B4E417B0009F53A /* JGProgressHUDPieIndicatorView.m in Sources */,
 				05FECFFF1B4E41050009F53A /* M16CollectionViewController.m in Sources */,
 				05E75B211B4BCECC0098FC6E /* RDVTabBarController.m in Sources */,
@@ -1344,7 +1410,7 @@
 				05FECFE81B4E3C520009F53A /* FLEXResources.m in Sources */,
 				05FED05B1B4E41AC0009F53A /* AFURLRequestSerialization.m in Sources */,
 				05E75B221B4BCECC0098FC6E /* RDVTabBarItem.m in Sources */,
-				18F53E001B57E647003B93EB /* WK_Model.m in Sources */,
+				18F53E001B57E647003B93EB /* M16Model.m in Sources */,
 				05FECFD01B4E3C520009F53A /* FLEXFileBrowserSearchOperation.m in Sources */,
 				05F318AB1B575E5B00FB66D1 /* WK_LoginViewController.m in Sources */,
 				05FED0601B4E41AC0009F53A /* UIAlertView+AFNetworking.m in Sources */,

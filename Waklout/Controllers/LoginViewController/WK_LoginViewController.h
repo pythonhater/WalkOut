@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 janlee. All rights reserved.
 //
 
-#import "M16TableViewController.h"
+#import "M16GroupedTableViewController.h"
 
-@interface WK_LoginViewController : M16TableViewController
+@interface WK_LoginViewController : M16GroupedTableViewController
 
 @end

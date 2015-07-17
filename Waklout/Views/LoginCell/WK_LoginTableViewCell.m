@@ -7,6 +7,7 @@
 //
 
 #import "WK_LoginTableViewCell.h"
+#import "WK_LoginViewModel.h"
 
 @interface WK_LoginTableViewCell ()
 @property (strong, nonatomic) UILabel *label;
@@ -21,7 +22,7 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         self.label = [[UILabel alloc] init];
-        self.label.textAlignment = NSTextAlignmentCenter;
+        self.label.textAlignment = NSTextAlignmentLeft;
         [self.contentView addSubview:self.label];
         
         self.textField = [[UITextField alloc] init];
@@ -47,13 +48,11 @@
 - (void)bindViewModel:(id)viewModel atIndexPath:(NSIndexPath *)indexPath
 {
     NSUInteger index = indexPath.row;
-    if (index == 0) {
-        self.label.text = NSLocalizedString(@"WK_Email", nil);
-        self.textField.placeholder = NSLocalizedString(@"WK_Email", nil);
-    } else {
-        self.label.text = NSLocalizedString(@"WK_Password", nil);
-        self.textField.placeholder = NSLocalizedString(@"WK_Password", nil);
-    }
+    WK_LoginViewModel *loginViewModel = (WK_LoginViewModel *)viewModel;
+    NSString *labelText = [loginViewModel labelText:index];
+    NSString *textFieldText = [loginViewModel textFieldText:index];
+    self.label.text = labelText;
+    self.textField.placeholder = textFieldText;
 }
 
 @end
