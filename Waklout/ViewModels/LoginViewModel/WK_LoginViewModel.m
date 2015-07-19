@@ -36,11 +36,9 @@
 - (void)loadBaseInfoForUI
 {
     if (self.userActionType == WK_UserActionTypeRegister) {
-        
         self.uiInfos = @[self.emailUIModel, self.passwordUIModel, self.confirmPwdUIModel];
         
     } else if (self.userActionType == WK_UserActionTypeLogin) {
-        
         self.uiInfos = @[self.emailUIModel, self.passwordUIModel];
         
     }
@@ -69,7 +67,7 @@
 }
 
 //--output
-- (NSInteger)count
+- (NSInteger)cellsCount
 {
     return [self.uiInfos count];
 }

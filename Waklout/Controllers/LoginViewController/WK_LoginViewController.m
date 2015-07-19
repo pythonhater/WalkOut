@@ -7,10 +7,8 @@
 //
 
 #import "WK_LoginViewController.h"
-#import "WK_LoginTableViewCell.h"
-static CGFloat const kLoginTableViewCellHeight = 44.0f;
+#import "WK_RegisterViewController.h"
 
-static CGFloat const kFooterContentViewHeight = 40.0f;
 static CGFloat const kLoginButtonLeftEdge = 10.0f;
 static CGFloat const kLoginButtonWidth = 100.0f;
 static CGFloat const kLoginButtonHeight = 38.0f;
@@ -21,11 +19,12 @@ static CGFloat const kWechatButtonHeight = 38.0f;
 
 @interface WK_LoginViewController ()
 @property (strong, nonatomic) UIButton *closeButton;
+@property (strong, nonatomic) UIButton *registerButton;
 
-@property (strong, nonatomic) UIView *footerContentView;
 @property (strong, nonatomic) UIButton *loginButton;
 @property (strong, nonatomic) UIButton *wechatButton;
 
+@property (strong, nonatomic) WK_RegisterViewController *registerViewController;
 @end
 
 @interface WK_LoginViewController ()
@@ -42,8 +41,8 @@ static CGFloat const kWechatButtonHeight = 38.0f;
     self.closeButton = [UIButton buttonWithType:UIButtonTypeCustom];
     self.closeButton.exclusiveTouch = YES;
     self.closeButton.frame = CGRectMake(0, 0, NAVIGATION_BAR_HEIGHT, NAVIGATION_BAR_HEIGHT);
-    [self.closeButton setImage:[UIImage imageNamed:@"button_nav_icon_normal"] forState:UIControlStateNormal];
-    [self.closeButton setImage:[UIImage imageNamed:@"button_nav_icon_highlighted"] forState:UIControlStateHighlighted];
+    [self.closeButton setImage:[UIImage imageNamed:@"close"] forState:UIControlStateNormal];
+    [self.closeButton setImage:[UIImage imageNamed:@"close"] forState:UIControlStateHighlighted];
     [self.closeButton addTarget:self action:@selector(closeButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     
     UIBarButtonItem *negativeSeperatorItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
@@ -65,14 +64,28 @@ static CGFloat const kWechatButtonHeight = 38.0f;
 
 - (void)setupRightButton
 {
+    self.registerButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.registerButton.exclusiveTouch = YES;
+    self.registerButton.frame = CGRectMake(0, 0, NAVIGATION_BAR_HEIGHT, NAVIGATION_BAR_HEIGHT);
+    [self.registerButton setImage:[UIImage imageNamed:@"adduser"] forState:UIControlStateNormal];
+    [self.registerButton setImage:[UIImage imageNamed:@"adduser"] forState:UIControlStateHighlighted];
+    [self.registerButton addTarget:self action:@selector(registerButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.registerButton];
+}
 
+- (void)registerButtonClicked
+{
+    if (!self.registerViewController) {
+        WK_LoginViewModel *loginViewModel = [[WK_LoginViewModel alloc] initWithUserActionType:WK_UserActionTypeRegister];
+        self.registerViewController = [[WK_RegisterViewController alloc] initWithViewModel:loginViewModel];
+    }
+    [self.navigationController pushViewController:self.registerViewController animated:YES];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.footerContentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), kFooterContentViewHeight)];
-    self.tableView.tableFooterView = self.footerContentView;
     
     self.loginButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.loginButton setTitle:NSLocalizedString(@"WK_Login", nil) forState:UIControlStateNormal];
@@ -104,28 +117,18 @@ static CGFloat const kWechatButtonHeight = 38.0f;
 {
     NSString *email = self.emailTextField.text;
     NSString *password = self.passwordTextField.text;
+    __weak typeof(self) weakSelf = self;
     [self.loginViewModel loginWithEmail:email password:password completionBlock:^(AVUser *user, NSError *error) {
-        
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        if (user) {
+            [strongSelf dismissViewControllerAnimated:YES completion:nil];
+        }
     }];
-}
-
-#pragma mark - UITableViewDelegate
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return kLoginTableViewCellHeight;
-}
-
-#pragma mark - UITableViewDataSource
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return [self.loginViewModel count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    WK_LoginTableViewCell *cell = [WK_LoginTableViewCell cellForTableView:tableView];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    [cell bindViewModel:self.loginViewModel atIndexPath:indexPath];
+    WK_LoginTableViewCell *cell = (WK_LoginTableViewCell *)[super tableView:tableView cellForRowAtIndexPath:indexPath];
     if (indexPath.row == 0) {
         self.emailTextField = cell.textField;
     } else if (indexPath.row == 1) {
@@ -133,6 +136,7 @@ static CGFloat const kWechatButtonHeight = 38.0f;
     }
     return cell;
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -131,6 +131,7 @@
 		05FED08E1B4E54150009F53A /* WK_MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FED08B1B4E54150009F53A /* WK_MineViewController.m */; };
 		05FED0921B4E544C0009F53A /* WK_LifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FED0911B4E544C0009F53A /* WK_LifeViewController.m */; };
 		05FED09C1B4E5C560009F53A /* WK_FollowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FED09B1B4E5C560009F53A /* WK_FollowView.m */; };
+		189C3ABC1B5BB3A700E79F4F /* WK_RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C3ABB1B5BB3A700E79F4F /* WK_RegisterViewController.m */; };
 		18F53D4D1B4D5EFD003B93EB /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53D371B4D5EFD003B93EB /* MASCompositeConstraint.m */; };
 		18F53D4E1B4D5EFD003B93EB /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53D3A1B4D5EFD003B93EB /* MASConstraint.m */; };
 		18F53D4F1B4D5EFD003B93EB /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53D3C1B4D5EFD003B93EB /* MASConstraintMaker.m */; };
@@ -414,6 +415,8 @@
 		05FED0911B4E544C0009F53A /* WK_LifeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_LifeViewController.m; sourceTree = "<group>"; };
 		05FED09A1B4E5C560009F53A /* WK_FollowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_FollowView.h; sourceTree = "<group>"; };
 		05FED09B1B4E5C560009F53A /* WK_FollowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_FollowView.m; sourceTree = "<group>"; };
+		189C3ABA1B5BB3A700E79F4F /* WK_RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_RegisterViewController.h; sourceTree = "<group>"; };
+		189C3ABB1B5BB3A700E79F4F /* WK_RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_RegisterViewController.m; sourceTree = "<group>"; };
 		18F53D361B4D5EFD003B93EB /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		18F53D371B4D5EFD003B93EB /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
 		18F53D381B4D5EFD003B93EB /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -597,7 +600,7 @@
 		05E75B4F1B4BDA6A0098FC6E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				05F3B6CE1B58C4740061D7D6 /* RegisterViewController */,
+				189C3AB91B5BB37000E79F4F /* RegisterViewController */,
 				05F318A81B575E3D00FB66D1 /* LoginViewController */,
 				05FED0851B4E54150009F53A /* HomeViewController */,
 				05FED08F1B4E54320009F53A /* LifeViewController */,
@@ -636,13 +639,6 @@
 				05F318AA1B575E5B00FB66D1 /* WK_LoginViewController.m */,
 			);
 			path = LoginViewController;
-			sourceTree = "<group>";
-		};
-		05F3B6CE1B58C4740061D7D6 /* RegisterViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RegisterViewController;
 			sourceTree = "<group>";
 		};
 		05F3B6D21B58C6FB0061D7D6 /* ViewModels */ = {
@@ -1091,6 +1087,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		189C3AB91B5BB37000E79F4F /* RegisterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				189C3ABA1B5BB3A700E79F4F /* WK_RegisterViewController.h */,
+				189C3ABB1B5BB3A700E79F4F /* WK_RegisterViewController.m */,
+			);
+			path = RegisterViewController;
+			sourceTree = "<group>";
+		};
 		18F53D351B4D5EFD003B93EB /* Masonry */ = {
 			isa = PBXGroup;
 			children = (
@@ -1380,6 +1385,7 @@
 				05FECFDB1B4E3C520009F53A /* FLEXClassExplorerViewController.m in Sources */,
 				05FED0611B4E41AC0009F53A /* UIButton+AFNetworking.m in Sources */,
 				05FECFD71B4E3C520009F53A /* FLEXSystemLogMessage.m in Sources */,
+				189C3ABC1B5BB3A700E79F4F /* WK_RegisterViewController.m in Sources */,
 				18F53D541B4D5EFD003B93EB /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				05FED02A1B4E417B0009F53A /* JGProgressHUDSuccessIndicatorView.m in Sources */,
 				05FECFDD1B4E3C520009F53A /* FLEXDescriptionTableViewCell.m in Sources */,

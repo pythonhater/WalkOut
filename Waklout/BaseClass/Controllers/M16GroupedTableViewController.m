@@ -8,6 +8,9 @@
 
 #import "M16GroupedTableViewController.h"
 
+static CGFloat const kFooterContentViewHeight = 40.0f;
+static CGFloat const kLoginTableViewCellHeight = 44.0f;
+
 @interface M16GroupedTableViewController ()
 
 @end
@@ -41,24 +44,31 @@
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
     
+    self.footerContentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), kFooterContentViewHeight)];
+    self.tableView.tableFooterView = self.footerContentView;
+    
     [self.loginViewModel loadBaseInfoForUI];
 }
 
 #pragma mark - UITableViewDelegate
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+#pragma mark - UITableViewDelegate
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    return kLoginTableViewCellHeight;
 }
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return [self.loginViewModel cellsCount];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return nil;
+    WK_LoginTableViewCell *cell = [WK_LoginTableViewCell cellForTableView:tableView];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    [cell bindViewModel:self.loginViewModel atIndexPath:indexPath];
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {

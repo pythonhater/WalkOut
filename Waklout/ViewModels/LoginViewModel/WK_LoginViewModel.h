@@ -13,11 +13,12 @@
 - (instancetype)initWithUserActionType:(WK_UserActionType)userActionType;
 
 - (void)loadBaseInfoForUI;
+
 - (void)signupWithEmail:(NSString *)email username:(NSString *)uname password:(NSString *)pwd completionBlock:(BoolBlock)block;
 - (void)loginWithEmail:(NSString *)email password:(NSString *)pwd completionBlock:(UserBlock)block;
 
 //输出-output
-- (NSInteger)count;
+- (NSInteger)cellsCount;
 - (NSString *)labelText:(NSInteger)index;
 - (NSString *)textFieldText:(NSInteger)index;
 
