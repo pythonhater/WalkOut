@@ -8,6 +8,14 @@
 
 #import "M16GroupedTableViewController.h"
 
+@protocol WK_LoginViewControllerDelegate <NSObject>
+
+- (void)walkoutAccountDidLoginSucceed;
+
+@end
+
 @interface WK_LoginViewController : M16GroupedTableViewController
+
+@property (assign, nonatomic) id<WK_LoginViewControllerDelegate> delegate;
 
 @end

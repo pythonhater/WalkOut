@@ -131,6 +131,12 @@
 		05FED08E1B4E54150009F53A /* WK_MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FED08B1B4E54150009F53A /* WK_MineViewController.m */; };
 		05FED0921B4E544C0009F53A /* WK_LifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FED0911B4E544C0009F53A /* WK_LifeViewController.m */; };
 		05FED09C1B4E5C560009F53A /* WK_FollowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FED09B1B4E5C560009F53A /* WK_FollowView.m */; };
+		18581B381B5BE96F00C1588A /* GVUserDefaults+WK_Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = 18581B371B5BE96F00C1588A /* GVUserDefaults+WK_Properties.m */; };
+		18581B3C1B5BE97E00C1588A /* GVUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 18581B3B1B5BE97E00C1588A /* GVUserDefaults.m */; };
+		18581B411B5BEDB300C1588A /* WK_LoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = 18581B401B5BEDB300C1588A /* WK_LoginService.m */; };
+		18581B471B5BEDF200C1588A /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 18581B441B5BEDF200C1588A /* SSKeychain.m */; };
+		18581B481B5BEDF200C1588A /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 18581B461B5BEDF200C1588A /* SSKeychainQuery.m */; };
+		18581B4C1B5BEE5000C1588A /* M16Services.m in Sources */ = {isa = PBXBuildFile; fileRef = 18581B4B1B5BEE5000C1588A /* M16Services.m */; };
 		189C3ABC1B5BB3A700E79F4F /* WK_RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C3ABB1B5BB3A700E79F4F /* WK_RegisterViewController.m */; };
 		18F53D4D1B4D5EFD003B93EB /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53D371B4D5EFD003B93EB /* MASCompositeConstraint.m */; };
 		18F53D4E1B4D5EFD003B93EB /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F53D3A1B4D5EFD003B93EB /* MASConstraint.m */; };
@@ -415,6 +421,18 @@
 		05FED0911B4E544C0009F53A /* WK_LifeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_LifeViewController.m; sourceTree = "<group>"; };
 		05FED09A1B4E5C560009F53A /* WK_FollowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_FollowView.h; sourceTree = "<group>"; };
 		05FED09B1B4E5C560009F53A /* WK_FollowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_FollowView.m; sourceTree = "<group>"; };
+		18581B361B5BE96F00C1588A /* GVUserDefaults+WK_Properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GVUserDefaults+WK_Properties.h"; sourceTree = "<group>"; };
+		18581B371B5BE96F00C1588A /* GVUserDefaults+WK_Properties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GVUserDefaults+WK_Properties.m"; sourceTree = "<group>"; };
+		18581B3A1B5BE97E00C1588A /* GVUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVUserDefaults.h; sourceTree = "<group>"; };
+		18581B3B1B5BE97E00C1588A /* GVUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVUserDefaults.m; sourceTree = "<group>"; };
+		18581B3F1B5BEDB300C1588A /* WK_LoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_LoginService.h; sourceTree = "<group>"; };
+		18581B401B5BEDB300C1588A /* WK_LoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_LoginService.m; sourceTree = "<group>"; };
+		18581B431B5BEDF200C1588A /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
+		18581B441B5BEDF200C1588A /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
+		18581B451B5BEDF200C1588A /* SSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychainQuery.h; sourceTree = "<group>"; };
+		18581B461B5BEDF200C1588A /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychainQuery.m; sourceTree = "<group>"; };
+		18581B4A1B5BEE5000C1588A /* M16Services.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M16Services.h; sourceTree = "<group>"; };
+		18581B4B1B5BEE5000C1588A /* M16Services.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M16Services.m; sourceTree = "<group>"; };
 		189C3ABA1B5BB3A700E79F4F /* WK_RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WK_RegisterViewController.h; sourceTree = "<group>"; };
 		189C3ABB1B5BB3A700E79F4F /* WK_RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WK_RegisterViewController.m; sourceTree = "<group>"; };
 		18F53D361B4D5EFD003B93EB /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
@@ -534,6 +552,7 @@
 				05FED0991B4E5C200009F53A /* Views */,
 				05F3B6D61B58C7450061D7D6 /* ViewModels */,
 				05E75B4F1B4BDA6A0098FC6E /* Controllers */,
+				18581B3D1B5BED7C00C1588A /* Services */,
 				05E75B181B4BCEC10098FC6E /* Vendors */,
 				05E75AFF1B4BCAE90098FC6E /* Images.xcassets */,
 				05E75AF61B4BCAE90098FC6E /* Waklout.xcdatamodeld */,
@@ -573,6 +592,8 @@
 		05E75B181B4BCEC10098FC6E /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				18581B421B5BEDF200C1588A /* SSKeychain */,
+				18581B391B5BE97E00C1588A /* GVUserDefaults */,
 				18F53DD41B569FAE003B93EB /* XLPagerTabStrip */,
 				05FED02B1B4E41AC0009F53A /* AFNetworking */,
 				05FECF421B4E3C520009F53A /* FLEX */,
@@ -686,6 +707,7 @@
 				05FED0791B4E45910009F53A /* Views */,
 				05FECFF71B4E40CD0009F53A /* Controllers */,
 				05FECFF31B4E3DCC0009F53A /* NavigationController */,
+				18581B491B5BEE2800C1588A /* Services */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -1012,6 +1034,8 @@
 		05FED06E1B4E43FA0009F53A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				18581B361B5BE96F00C1588A /* GVUserDefaults+WK_Properties.h */,
+				18581B371B5BE96F00C1588A /* GVUserDefaults+WK_Properties.m */,
 				05FED0761B4E45250009F53A /* UIColor+M16RGB.h */,
 				05FED0771B4E45250009F53A /* UIColor+M16RGB.m */,
 				05FED0731B4E44C10009F53A /* M16HUDUtil.h */,
@@ -1085,6 +1109,52 @@
 				18F53E011B57F7A3003B93EB /* LoginCell */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		18581B391B5BE97E00C1588A /* GVUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				18581B3A1B5BE97E00C1588A /* GVUserDefaults.h */,
+				18581B3B1B5BE97E00C1588A /* GVUserDefaults.m */,
+			);
+			path = GVUserDefaults;
+			sourceTree = "<group>";
+		};
+		18581B3D1B5BED7C00C1588A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				18581B3E1B5BED9D00C1588A /* LoginService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		18581B3E1B5BED9D00C1588A /* LoginService */ = {
+			isa = PBXGroup;
+			children = (
+				18581B3F1B5BEDB300C1588A /* WK_LoginService.h */,
+				18581B401B5BEDB300C1588A /* WK_LoginService.m */,
+			);
+			path = LoginService;
+			sourceTree = "<group>";
+		};
+		18581B421B5BEDF200C1588A /* SSKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				18581B431B5BEDF200C1588A /* SSKeychain.h */,
+				18581B441B5BEDF200C1588A /* SSKeychain.m */,
+				18581B451B5BEDF200C1588A /* SSKeychainQuery.h */,
+				18581B461B5BEDF200C1588A /* SSKeychainQuery.m */,
+			);
+			path = SSKeychain;
+			sourceTree = "<group>";
+		};
+		18581B491B5BEE2800C1588A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				18581B4A1B5BEE5000C1588A /* M16Services.h */,
+				18581B4B1B5BEE5000C1588A /* M16Services.m */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		189C3AB91B5BB37000E79F4F /* RegisterViewController */ = {
@@ -1308,6 +1378,7 @@
 				18F53D511B4D5EFD003B93EB /* MASViewAttribute.m in Sources */,
 				05FED0541B4E41AC0009F53A /* AFDownloadRequestOperation.m in Sources */,
 				05FECFEB1B4E3C520009F53A /* FLEXHierarchyTableViewCell.m in Sources */,
+				18581B471B5BEDF200C1588A /* SSKeychain.m in Sources */,
 				05F3B6D51B58C6FB0061D7D6 /* M16ViewModel.m in Sources */,
 				05FED0211B4E417B0009F53A /* JGProgressHUD.m in Sources */,
 				05FECFD31B4E3C520009F53A /* FLEXInstancesTableViewController.m in Sources */,
@@ -1316,6 +1387,7 @@
 				05FECFBD1B4E3C520009F53A /* FLEXArgumentInputNumberView.m in Sources */,
 				05FECFC61B4E3C520009F53A /* FLEXFieldEditorViewController.m in Sources */,
 				05E75AF21B4BCAE90098FC6E /* main.m in Sources */,
+				18581B481B5BEDF200C1588A /* SSKeychainQuery.m in Sources */,
 				05E7CADF1B4CB74000C8A220 /* User.m in Sources */,
 				05FECFED1B4E3C520009F53A /* FLEXImagePreviewViewController.m in Sources */,
 				05FECFBE1B4E3C520009F53A /* FLEXArgumentInputStringView.m in Sources */,
@@ -1360,6 +1432,7 @@
 				18F53DEE1B569FAE003B93EB /* XLTwitterPagerTabStripViewController.m in Sources */,
 				05FED07F1B4E45910009F53A /* M16TableViewCell.m in Sources */,
 				05FED0751B4E44C10009F53A /* M16HUDUtil.m in Sources */,
+				18581B4C1B5BEE5000C1588A /* M16Services.m in Sources */,
 				05FECFBF1B4E3C520009F53A /* FLEXArgumentInputStructView.m in Sources */,
 				18F53D4E1B4D5EFD003B93EB /* MASConstraint.m in Sources */,
 				05FECFC51B4E3C520009F53A /* FLEXFieldEditorView.m in Sources */,
@@ -1370,6 +1443,7 @@
 				05FECFCE1B4E3C520009F53A /* FLEXWindow.m in Sources */,
 				05FED0271B4E417B0009F53A /* JGProgressHUDIndicatorView.m in Sources */,
 				05FECFC21B4E3C520009F53A /* FLEXArgumentInputView.m in Sources */,
+				18581B411B5BEDB300C1588A /* WK_LoginService.m in Sources */,
 				05FECFE11B4E3C520009F53A /* FLEXLayerExplorerViewController.m in Sources */,
 				05FECFE41B4E3C520009F53A /* FLEXSetExplorerViewController.m in Sources */,
 				05F3B6DF1B58CA280061D7D6 /* WK_LoginUIModel.m in Sources */,
@@ -1387,6 +1461,7 @@
 				05FECFD71B4E3C520009F53A /* FLEXSystemLogMessage.m in Sources */,
 				189C3ABC1B5BB3A700E79F4F /* WK_RegisterViewController.m in Sources */,
 				18F53D541B4D5EFD003B93EB /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				18581B3C1B5BE97E00C1588A /* GVUserDefaults.m in Sources */,
 				05FED02A1B4E417B0009F53A /* JGProgressHUDSuccessIndicatorView.m in Sources */,
 				05FECFDD1B4E3C520009F53A /* FLEXDescriptionTableViewCell.m in Sources */,
 				05FED0221B4E417B0009F53A /* JGProgressHUDAnimation.m in Sources */,
@@ -1422,6 +1497,7 @@
 				05FECFD01B4E3C520009F53A /* FLEXFileBrowserSearchOperation.m in Sources */,
 				05F318AB1B575E5B00FB66D1 /* WK_LoginViewController.m in Sources */,
 				05FED0601B4E41AC0009F53A /* UIAlertView+AFNetworking.m in Sources */,
+				18581B381B5BE96F00C1588A /* GVUserDefaults+WK_Properties.m in Sources */,
 				18F53DEF1B569FAE003B93EB /* FXPageControl.m in Sources */,
 				05FECFDA1B4E3C520009F53A /* FLEXArrayExplorerViewController.m in Sources */,
 				05FECFD11B4E3C520009F53A /* FLEXFileBrowserTableViewController.m in Sources */,

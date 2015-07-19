@@ -26,7 +26,7 @@ static CGFloat const kFansViewLeftEdge = 10.0f;
 static CGFloat const kFansViewWidth = 30.0f;
 static CGFloat const kFansViewHeight = 30.0f;
 
-@interface WK_MineViewController ()
+@interface WK_MineViewController () <WK_LoginViewControllerDelegate>
 @property (strong, nonatomic) UIView *topContentView;
 @property (strong, nonatomic) WK_FollowView *focusView;
 @property (strong, nonatomic) UIImageView *userIconImageView;
@@ -117,6 +117,7 @@ static CGFloat const kFansViewHeight = 30.0f;
     if (!self.loginNavigationController) {
         WK_LoginViewModel *loginViewModel = [[WK_LoginViewModel alloc] initWithUserActionType:WK_UserActionTypeLogin];
         WK_LoginViewController *loginViewController = [[WK_LoginViewController alloc] initWithViewModel:loginViewModel];
+        loginViewController.delegate = self;
         self.loginNavigationController = [[WK_NavigationController alloc] initWithRootViewController:loginViewController];
         self.loginNavigationController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     }
@@ -156,6 +157,12 @@ static CGFloat const kFansViewHeight = 30.0f;
 {
     //点击频道名称切换
     [super moveToViewControllerAtIndex:index];
+}
+
+#pragma mark - WK_LoginViewControllerDelegate
+- (void)walkoutAccountDidLoginSucceed
+{
+    
 }
 
 - (void)didReceiveMemoryWarning

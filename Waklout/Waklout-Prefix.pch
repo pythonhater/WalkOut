@@ -22,4 +22,5 @@
 #import "YHAssistant.h"
 #import "Masonry.h"
 #import "UIColor+M16RGB.h"
+#import "GVUserDefaults+WK_Properties.h"
 #endif

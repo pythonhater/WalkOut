@@ -8,6 +8,7 @@
 
 #import "WK_LoginViewModel.h"
 #import "WK_LoginUIModel.h"
+#import "WK_LoginService.h"
 
 @interface WK_LoginViewModel ()
 @property (assign, nonatomic) WK_UserActionType userActionType;
@@ -15,6 +16,7 @@
 @property (strong, nonatomic) WK_LoginUIModel *emailUIModel;
 @property (strong, nonatomic) WK_LoginUIModel *passwordUIModel;
 @property (strong, nonatomic) WK_LoginUIModel *confirmPwdUIModel;
+@property (strong, nonatomic) AVUser *avuser;
 
 @end
 
@@ -61,6 +63,8 @@
 {
     [AVUser logInWithUsernameInBackground:email password:pwd block:^(AVUser *user, NSError *error) {
         if (block) {
+            self.avuser = user;
+            [self setUserLoginInfo];
             block(user, error);
         }
     }];
@@ -80,6 +84,17 @@
 - (NSString *)textFieldText:(NSInteger)index
 {
     return [(WK_LoginUIModel *)[self.uiInfos objectAtIndex:index] textFieldText];
+}
+
+#pragma mark - private method
+- (void)setUserLoginInfo
+{
+    [GVUserDefaults standardUserDefaults].userLogged = YES;
+//    [GVUserDefaults standardUserDefaults].yohoId = [NSString stringWithFormat:@"%d", self.user.uid];
+    [GVUserDefaults standardUserDefaults].nickName = self.avuser.username;
+//    [GVUserDefaults standardUserDefaults].avtar = self.user.avtar;
+//    [GVUserDefaults standardUserDefaults].yohoAccount = self.account;
+//    [WK_LoginService savePassword:self.password account:self.account];
 }
 
 @end
