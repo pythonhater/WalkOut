@@ -123,6 +123,10 @@ static CGFloat const kWechatButtonHeight = 38.0f;
         if (user) {
             [strongSelf dismissViewControllerAnimated:YES completion:nil];
         }
+        
+        if (error) {
+            NSLog(@"login error %@",error);
+        }
     }];
 }
 
