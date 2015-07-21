@@ -105,7 +105,9 @@ static CGFloat const kWechatButtonHeight = 38.0f;
     NSString *email = self.emailTextField.text;
     NSString *password = self.passwordTextField.text;
     [self.loginViewModel loginWithEmail:email password:password completionBlock:^(AVUser *user, NSError *error) {
-        
+        if (error) {
+            NSLog(@"login error %@",error);
+        }
     }];
 }
 
