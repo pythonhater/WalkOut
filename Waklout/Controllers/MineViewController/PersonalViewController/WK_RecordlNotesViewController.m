@@ -26,7 +26,7 @@
 #pragma mark - XLPagerTabStripViewControllerDelegate
 - (NSString *)titleForPagerTabStripViewController:(XLPagerTabStripViewController *)pagerTabStripViewController
 {
-    return NSLocalizedString(@"WK_Record", nil);
+    return NSLocalizedString(@"LOCAL_RECORD", nil);
 }
 
 - (void)didReceiveMemoryWarning {

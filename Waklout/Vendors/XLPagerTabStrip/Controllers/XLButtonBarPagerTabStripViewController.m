@@ -25,7 +25,6 @@
 
 #import "XLButtonBarViewCell.h"
 #import "XLButtonBarPagerTabStripViewController.h"
-NSUInteger const kXLButtonBarViewCellHeight = 40;
 
 @interface XLButtonBarPagerTabStripViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
 
@@ -110,7 +109,7 @@ NSUInteger const kXLButtonBarViewCellHeight = 40;
     UICollectionViewFlowLayout * flowLayout = [[UICollectionViewFlowLayout alloc] init];
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
     [flowLayout setSectionInset:UIEdgeInsetsMake(0, 5, 0, 5)];
-    _buttonBarView = [[XLButtonBarView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), kXLButtonBarViewCellHeight) collectionViewLayout:flowLayout];
+    _buttonBarView = [[XLButtonBarView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), kXLBUttonBarViewCellHeight) collectionViewLayout:flowLayout];
     _buttonBarView.selectedBar.backgroundColor = [UIColor lightGrayColor];
     _buttonBarView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     return _buttonBarView;
@@ -179,29 +178,11 @@ NSUInteger const kXLButtonBarViewCellHeight = 40;
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    
     UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
-    switch (indexPath.item) {
-        case 0:
-        {
-            cell.contentView.backgroundColor = [UIColor purpleColor];
-        }
-            break;
-            case 1:
-        {
-            cell.contentView.backgroundColor = [UIColor blueColor];
-        }
-            break;
-        case 2:{
-            cell.contentView.backgroundColor = [UIColor redColor];
-        }
-            break;
-        default:
-            break;
-    }
     if (!cell){
-        cell = [[XLButtonBarViewCell alloc] initWithFrame:CGRectMake(0, 0, 50, self.buttonBarView.frame.size.height)];
+        cell = [[XLButtonBarViewCell alloc] initWithFrame:CGRectMake(0, 0, kXLBUttonBarViewCellWidth, self.buttonBarView.frame.size.height)];
     }
+    
     NSAssert([cell isKindOfClass:[XLButtonBarViewCell class]], @"UICollectionViewCell should be or extend XLButtonBarViewCell");
     XLButtonBarViewCell * buttonBarCell = (XLButtonBarViewCell *)cell;
     UIViewController<XLPagerTabStripChildItem> * childController =   [self.pagerTabStripChildViewControllers objectAtIndex:indexPath.item];

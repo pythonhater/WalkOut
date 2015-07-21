@@ -25,8 +25,8 @@
 
 #import <UIKit/UIKit.h>
 
-#define BlackImage [UIImage imageNamed:@"solidus_black"]
-#define GrayImage [UIImage imageNamed:@"solidus_gray"]
+static CGFloat const kXLBUttonBarViewCellWidth = 100.0f;
+static CGFloat const kXLBUttonBarViewCellHeight = 40.0f;
 
 @interface XLButtonBarViewCell : UICollectionViewCell
 

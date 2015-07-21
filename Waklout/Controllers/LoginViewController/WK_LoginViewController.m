@@ -75,13 +75,13 @@ static CGFloat const kWechatButtonHeight = 38.0f;
     self.tableView.tableFooterView = self.footerContentView;
     
     self.loginButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self.loginButton setTitle:NSLocalizedString(@"WK_Login", nil) forState:UIControlStateNormal];
+    [self.loginButton setTitle:NSLocalizedString(@"LOCAL_LOGIN", nil) forState:UIControlStateNormal];
     [self.loginButton addTarget:self action:@selector(loginButtonClicked) forControlEvents:UIControlEventTouchUpInside];
     self.loginButton.backgroundColor = [UIColor lightGrayColor];
     [self.footerContentView addSubview:self.loginButton];
     
     self.wechatButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self.wechatButton setTitle:NSLocalizedString(@"WK_WechatLogin", nil) forState:UIControlStateNormal];
+    [self.wechatButton setTitle:NSLocalizedString(@"LOCAL_WechatLogin", nil) forState:UIControlStateNormal];
     self.wechatButton.backgroundColor = [UIColor lightGrayColor];
     [self.footerContentView addSubview:self.wechatButton];
     
