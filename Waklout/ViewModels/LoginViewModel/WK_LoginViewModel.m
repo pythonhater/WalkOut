@@ -27,9 +27,9 @@
     self = [super init];
     if (self) {
         self.userActionType = userActionType;
-        self.emailUIModel = [[WK_LoginUIModel alloc] initWithLabelText:NSLocalizedString(@"WK_Email", nil) textFieldText:NSLocalizedString(@"WK_InputEmail", nil)];
-        self.passwordUIModel = [[WK_LoginUIModel alloc] initWithLabelText:NSLocalizedString(@"WK_Password", nil) textFieldText:NSLocalizedString(@"WK_InputPassword", nil)];
-        self.confirmPwdUIModel = [[WK_LoginUIModel alloc] initWithLabelText:NSLocalizedString(@"WK_Confirm", nil) textFieldText:NSLocalizedString(@"WK_ConfirmPassword", nil)];
+        self.emailUIModel = [[WK_LoginUIModel alloc] initWithLabelText:NSLocalizedString(@"LOCAL_EMAIL", nil) textFieldText:NSLocalizedString(@"LOCAL_INPUTEMAIL", nil)];
+        self.passwordUIModel = [[WK_LoginUIModel alloc] initWithLabelText:NSLocalizedString(@"LOCAL_PASSWORD", nil) textFieldText:NSLocalizedString(@"LOCAL_InputPassword", nil)];
+        self.confirmPwdUIModel = [[WK_LoginUIModel alloc] initWithLabelText:NSLocalizedString(@"LOCAL_CONFIRM", nil) textFieldText:NSLocalizedString(@"LOCAL_ConfirmPassword", nil)];
         
     }
     return self;

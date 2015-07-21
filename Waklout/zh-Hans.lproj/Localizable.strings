@@ -5,22 +5,22 @@
   Created by yoho on 15/7/8.
   Copyright (c) 2015年 janlee. All rights reserved.
 */
-"WK_HOME" = "首页";
-"WK_LIFE" = "生活";
-"WK_MINE" = "我的";
+"LOCAL_HOME" = "首页";
+"LOCAL_LIFE" = "生活";
+"LOCAL_MINE" = "我的";
 
-"WK_Record" = "记录";
-"WK_Published" = "发布";
-"WK_Collected" = "收藏";
+"LOCAL_RECORD" = "记录";
+"LOCAL_PUBLISHED" = "发布";
+"LOCAL_COLLECTED" = "收藏";
 
 //Login
-"WK_Email" = "邮箱";
-"WK_InputEmail" = "请输入邮箱";
-"WK_Username" = "用户名";
-"WK_Password" = "密码";
-"WK_Confirm" = "确认";
-"WK_InputPassword" = "请输入6~13位密码";
-"WK_ConfirmPassword" = "请确认密码";
-"WK_Login" = "登录";
-"WK_WechatLogin" = "微信登陆";
-"WK_Register" = "注册";
+"LOCAL_EMAIL" = "邮箱";
+"LOCAL_INPUTEMAIL" = "请输入邮箱";
+"LOCAL_USERNAME" = "用户名";
+"LOCAL_PASSWORD" = "密码";
+"LOCAL_CONFIRM" = "确认";
+"LOCAL_InputPassword" = "请输入6~13位密码";
+"LOCAL_ConfirmPassword" = "请确认密码";
+"LOCAL_LOGIN" = "登录";
+"LOCAL_WechatLogin" = "微信登陆";
+"LOCAL_REGISTER" = "注册";

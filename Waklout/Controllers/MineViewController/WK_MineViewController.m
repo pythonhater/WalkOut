@@ -41,7 +41,7 @@ static CGFloat const kFansViewHeight = 30.0f;
 {
     self = [super init];
     if (self) {
-        self.title = NSLocalizedString(@"WK_MINE", nil);
+        self.title = NSLocalizedString(@"LOCAL_MINE", nil);
     }
     return self;
 }
@@ -52,16 +52,19 @@ static CGFloat const kFansViewHeight = 30.0f;
     // Do any additional setup after loading the view.
     [self setupTopContentView];
     
-    self.buttonBarView.frame = CGRectMake(0, CGRectGetMaxY(self.topContentView.frame), SCREEN_WIDTH, kXLButtonBarViewCellHeight);
+    self.buttonBarView.frame = CGRectMake(0, CGRectGetMaxY(self.topContentView.frame), SCREEN_WIDTH, kXLBUttonBarViewCellHeight);
     self.buttonBarView.backgroundColor = [UIColor m16_colorwithHexString:@"#F5F5F5"];
     [self.buttonBarView registerClass:[XLButtonBarViewCell class] forCellWithReuseIdentifier:@"Cell"];
     
+    CGFloat leftInset = (SCREEN_WIDTH - kXLBUttonBarViewCellWidth * 3) / 2.0;
+    CGFloat rightInset = (SCREEN_WIDTH - kXLBUttonBarViewCellWidth * 3) / 2.0;
     UICollectionViewFlowLayout *flowLayout = (UICollectionViewFlowLayout *)self.buttonBarView.collectionViewLayout;
+    flowLayout.sectionInset = UIEdgeInsetsMake(0, leftInset, 0, rightInset);
     flowLayout.minimumLineSpacing = 0;
     flowLayout.minimumInteritemSpacing = 0;
     
     self.containerView.bounces = YES;
-    self.containerView.frame = CGRectMake(0, CGRectGetMaxY(self.buttonBarView.frame), SCREEN_WIDTH, CGRectGetHeight(self.view.frame) - kTopContentViewHeight - kXLButtonBarViewCellHeight);
+    self.containerView.frame = CGRectMake(0, CGRectGetMaxY(self.buttonBarView.frame), SCREEN_WIDTH, CGRectGetHeight(self.view.frame) - kTopContentViewHeight - kXLBUttonBarViewCellHeight);
     
     [self reloadPagerTabStripView];
     [self selectFirstItemAutomatically];
@@ -129,6 +132,13 @@ static CGFloat const kFansViewHeight = 30.0f;
     NSIndexPath *firstItemIndexPath = [NSIndexPath indexPathForItem:0 inSection:0];
     [self.buttonBarView selectItemAtIndexPath:firstItemIndexPath animated:NO scrollPosition:UICollectionViewScrollPositionNone];
 }
+
+#pragma mark - UICollectionViewFlowLayout
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return CGSizeMake(kXLBUttonBarViewCellWidth, kXLBUttonBarViewCellHeight);
+}
+
 
 #pragma mark - PageContainerViewControllerDataSource
 - (NSArray *)childViewControllersForPagerTabStripViewController:(XLPagerTabStripViewController *)pagerTabStripViewController

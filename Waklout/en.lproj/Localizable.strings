@@ -5,22 +5,22 @@
   Created by yoho on 15/7/8.
   Copyright (c) 2015年 janlee. All rights reserved.
 */
-"WK_HOME" = "Home";
-"WK_LIFE" = "Life";
-"WK_MINE" = "Mine";
+"LOCAL_HOME" = "Home";
+"LOCAL_LIFE" = "Life";
+"LOCAL_MINE" = "Mine";
 
-"WK_Record" = "Record";
-"WK_Published" = "Published";
-"WK_Collected" = "Collected";
+"LOCAL_RECORD" = "Record";
+"LOCAL_PUBLISHED" = "Published";
+"LOCAL_COLLECTED" = "Collected";
 
 //Login
-"WK_Email" = "Email";
-"WK_InputEmail" = "Input your email please";
-"WK_Username" = "Username";
-"WK_Password" = "Password";
-"WK_Confirm" = "Confirm";
-"WK_InputPassword" = "Input your password please";
-"WK_ConfirmPassword" = "Confirm your password please";
-"WK_Login" = "Login";
-"WK_WechatLogin" = "Sign in with Wechat";
-"WK_Register" = "Register";
+"LOCAL_EMAIL" = "Email";
+"LOCAL_INPUTEMAIL" = "Input your email please";
+"LOCAL_USERNAME" = "Username";
+"LOCAL_PASSWORD" = "Password";
+"LOCAL_CONFIRM" = "Confirm";
+"LOCAL_InputPassword" = "Input your password please";
+"LOCAL_ConfirmPassword" = "Confirm your password please";
+"LOCAL_LOGIN" = "Login";
+"LOCAL_WechatLogin" = "Sign in with Wechat";
+"LOCAL_REGISTER" = "Register";

@@ -18,7 +18,7 @@
 {
     self = [super init];
     if (self) {
-        self.title = NSLocalizedString(@"WK_LIFE", nil);
+        self.title = NSLocalizedString(@"LOCAL_LIFE", nil);
     }
     return self;
 }
